@@ -1,4 +1,5 @@
 # Stoccoin-Website
+[Under Development] </br>
 
 This is a web application for trading stocks and crypto, as well as displaying news feeds and real-time data processing for stock and crypto prices.
 
@@ -52,4 +53,4 @@ If you're interested in working on any of these issues, please let us know by su
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the Affero General Public License v3.0. See the [LICENSE](LICENSE) file for details.
