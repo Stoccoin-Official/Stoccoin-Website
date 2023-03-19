@@ -52,4 +52,4 @@ If you're interested in working on any of these issues, please let us know by su
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the AGPL License. See the LICENSE file for details.
