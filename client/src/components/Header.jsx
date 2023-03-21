@@ -7,6 +7,11 @@ const navigation = [
   { name: 'Stocks', href: '#' },
   { name: 'Cryptocurrencies', href: '#' },
   { name: 'News', href: '#' },
+  { name: 'NFT', href: '#' },
+  { name: 'Trade', href: '#' },
+  { name: 'Institutional', href: '#' },
+  { name: 'Derivatives', href: '#' },
+  { name: 'News', href: '#' },
 ]
 
 export default function Example() {
