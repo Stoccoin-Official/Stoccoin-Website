@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Trade', href: '#' },
   { name: 'Institutional', href: '#' },
   { name: 'Derivatives', href: '#' },
-  { name: 'News', href: '#' },
+  { name: 'Support', href: '#' },
 ]
 
 export default function Example() {
