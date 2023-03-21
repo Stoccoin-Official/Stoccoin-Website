@@ -131,11 +131,12 @@ export default function Example() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Stoccoin
-            </h1>
+            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl" style={{ fontFamily: "'Open Sans Extra Bold', sans-serif" }}>
+  Stoccoin
+</h1>
+
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              This is a web application for trading stocks and crypto, as well as displaying news feeds and real-time data processing for stock and crypto prices.
+              Learn-Invest-Repeat
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
