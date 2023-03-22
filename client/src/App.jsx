@@ -12,8 +12,8 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Features />
       <Stats />
+      <Features />      
       <ContactForm />
       <Footer />
     </div>
