@@ -1,13 +1,19 @@
 # Contribution Guidelines
 
 1. Fork the repository.
-2. Create a new branch with a descriptive name for your feature/bug fix.
-3. Make changes and commits to your branch.
-4. Push your branch to your forked repository.
-5. Submit a pull request to the original repository's master branch.
-6. Wait for the maintainers to review your pull request and provide feedback.
-7. Make any requested changes and push them to your forked repository.
-8. Once your pull request is approved, it will be merged into the master branch.
+2. Clone the repository. <br/>
+`git clone https://github.com/your-username/repository-name.git`
+3. Create a new branch with a descriptive name for your feature/bug fix. <br/>
+`git checkout -b feature/new-feature`
+4. Make changes and commits to your branch. <br/>
+`git add .` <br/>
+`git commit -m "feat: Add new feature"`
+5. Push your branch to your forked repository. <br/>
+`git push origin feature/new-feature`
+6. Submit a pull request to the original repository's master branch.
+7. Wait for the maintainers to review your pull request and provide feedback.
+8. Make any requested changes and push them to your forked repository.
+9. Once your pull request is approved, it will be merged into the master branch.
 
 That being said, it's important to write clear and descriptive commit messages to help other contributors understand the changes you've made to the code. Here are some common commit message types and their meanings:
 
