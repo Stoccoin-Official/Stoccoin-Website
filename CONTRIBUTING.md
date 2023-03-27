@@ -24,13 +24,8 @@ That being said, it's important to write clear and descriptive commit messages t
 - refactor: The code has been refactored without changing its functionality.
 - test: Changes have been made to unit tests or test cases.
 - chore: Changes have been made to the build process or other non-code related tasks.
-
 For example, a commit message for adding a new feature to a project could be:
-
 `feat: Add user authentication system`
-
 And a commit message for fixing a bug could be:
-
 `fix: Fix bug in search function`
-
 Using clear and descriptive commit messages like these can help others understand your changes and make it easier to maintain the codebase.
