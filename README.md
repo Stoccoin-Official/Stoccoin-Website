@@ -24,7 +24,7 @@ To get started with this project, you'll need to follow these steps:
 
 ## Contributing
 
-We welcome contributions from anyone who is interested in improving this project. If you'd like to contribute (see [CONTRIBUTING][contributions] guidelines for further information), here are some ways you can get started:
+We welcome [contributions](CONTRIBUTING) from anyone who is interested in improving this project. If you'd like to [contribute](CONTRIBUTING) , here are some ways you can get started:
 
 - Submit a bug report if you find any issues with the application.
 - Suggest new features or improvements.
@@ -55,5 +55,3 @@ If you're interested in working on any of these issues, please let us know by su
 ## License
 
 This project is licensed under the Affero General Public License v3.0. See the [LICENSE](LICENSE) file for details.
-
-[def]: contribution
