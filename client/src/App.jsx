@@ -5,7 +5,8 @@ import Footer from "./components/Footer";
 import Stats from "./components/Stats";
 import ContactForm from './components/ContactForm';
 import Features from './components/Features';
-
+import Accordion from './components/Accordion';
+import Pricing from './components/Pricing';
 const App = () => {
   const [count, setCount] = useState(0)
 
@@ -13,9 +14,11 @@ const App = () => {
     <div className="App">
       <Header />
       <Stats />
-      <Features />      
+      <Features />
+      <Pricing />
+      <Accordion />
       <ContactForm />
-      <Footer />
+      <Footer />   
     </div>
   )
 }
