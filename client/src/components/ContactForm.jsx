@@ -2,7 +2,7 @@ import React from "react";
 
 export default function App() {
   return (
-  <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-8 rounded-lg bg-white-100 px-8 py-16 text-gray-900 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 pt-55">
+  <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-8 rounded-lg bg-white-100 px-8 py-16 text-gray-900 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 pt-55 pb-20">
   <div className="flex flex-col justify-between">
     <div>
       <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
