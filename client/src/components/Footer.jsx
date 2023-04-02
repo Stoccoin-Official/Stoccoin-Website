@@ -15,9 +15,9 @@ function Footer() {
           <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0 text-left">
             <h2 className="text-xl font-bold text-black mb-4">Follow Us</h2>
             <ul className="list-none">
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-instagram-f"></i>Instagram</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-twitter"></i>Twitter</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-instagram"></i>LinkedIn</a></li>
+              <li className="mb-2"><a href="https://www.instagram.com/stoccoin/" className="text-gray-400 hover:text-white"><i className="fab fa-instagram-f"></i>Instagram</a></li>
+              <li className="mb-2"><a href="https://twitter.com/stoc_coin" className="text-gray-400 hover:text-white"><i className="fab fa-twitter"></i>Twitter</a></li>
+              <li className="mb-2"><a href="https://www.linkedin.com/company/stoccoin/" className="text-gray-400 hover:text-white"><i className="fab fa-instagram"></i>LinkedIn</a></li>
             </ul>
           </div>
           <div className="w-full md:w-1/4 px-3 mb-3 md:mb-0 text-left">
