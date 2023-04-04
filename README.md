@@ -54,3 +54,12 @@ If you're interested in working on any of these issues, please let us know by su
 ## License
 
 This project is licensed under the Affero General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+
+## Connect With Us
+<p align="left">
+  
+  [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/stoc_coin)
+  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/stoccoin/)
+  [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/stoccoin/)
+  
+</p>
