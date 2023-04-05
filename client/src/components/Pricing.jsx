@@ -3,10 +3,10 @@ export default function Example() {
     <section className="bg-white">
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
     <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-      <h2 className="mb-5 text-6xl md:text-8xl xl:text-4xl text-center font-bold font-heading tracking-px-n leading-none">
+      <h2 className="mb-5 text-4xl md:text-8xl xl:text-4xl text-center font-bold font-heading tracking-px-n leading-none">
         Pricing that Fits Your Trading Strategy
       </h2>
-      <h5 className="mb-8 text-center tracking-px-n leading-none">
+      <h5 className="mb-5 text-center tracking-px-n leading-none">
         Take Your Trading to the Next Level with Our Plans
       </h5>
     </div>

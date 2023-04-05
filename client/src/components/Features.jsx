@@ -33,9 +33,9 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">Trade Boosters</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Streamlined Trading Features
-          </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Streamlined Trading Features
+            </h2> 
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Explore the comprehensive list of features that make our trading platform stand out from the rest. Our powerful tools and advanced technologies are designed to enhance your trading experience and give you an edge in the market.
           </p>
