@@ -51,10 +51,6 @@ Here are some issues that need to be addressed in this project:
 
 If you're interested in working on any of these issues, please let us know by submitting a pull request or reaching out to us.
 
-## License
-
-This project is licensed under the Affero General Public License v3.0. See the [LICENSE](LICENSE) file for details.
-
 ## Connect With Us
 <p align="left">
   
@@ -63,3 +59,7 @@ This project is licensed under the Affero General Public License v3.0. See the [
   [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/stoccoin/)
   
 </p>
+
+## License
+
+This project is licensed under the Affero General Public License v3.0. See the [LICENSE](LICENSE) file for details.
