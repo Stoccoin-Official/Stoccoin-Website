@@ -7,11 +7,13 @@ import ContactForm from './components/ContactForm';
 import Features from './components/Features';
 import Accordion from './components/Accordion';
 import Pricing from './components/Pricing';
+import Navbar from './components/Navbar';
 const App = () => {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
+      <Navbar />
       <Header />
       <Stats />
       <Features />
