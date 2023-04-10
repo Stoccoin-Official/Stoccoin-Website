@@ -209,7 +209,7 @@ useEffect ( () =>{
                     </a>
                   ))}
 
-                  {/* Add the toggle here for mobile screen  */}
+                  {/* Add the toggle here for mobile screen again   */}
 
                   <FormGroup>
                   <FormControlLabel
