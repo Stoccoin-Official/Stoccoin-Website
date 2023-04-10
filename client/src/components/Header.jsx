@@ -1,7 +1,7 @@
 export default function Example() {
   
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-baki">
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
           

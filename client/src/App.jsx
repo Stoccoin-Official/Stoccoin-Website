@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './App.css'
+
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Stats from "./components/Stats";
@@ -8,11 +8,14 @@ import Features from './components/Features';
 import Accordion from './components/Accordion';
 import Pricing from './components/Pricing';
 import Navbar from './components/Navbar';
+
+
+
 const App = () => {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <div className="App">
+    <div className="dark:bg-baki">
       <Navbar />
       <Header />
       <Stats />
