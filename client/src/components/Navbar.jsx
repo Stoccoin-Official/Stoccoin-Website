@@ -168,9 +168,7 @@ useEffect ( () =>{
             >
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
-          </div>
-
-        </nav>
+          </nav>
 
         <Dialog
           as="div"
