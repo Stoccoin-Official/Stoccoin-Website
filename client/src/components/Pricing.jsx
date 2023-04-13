@@ -1,6 +1,6 @@
 export default function Example() {
   return (
-    <section className="bg-white dark:bg-baki">
+    <section className="bg-white dark:bg-darkMode">
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
     <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
       <h2 className="mb-5 text-4xl md:text-8xl xl:text-4xl text-center font-bold font-heading tracking-px-n leading-none">

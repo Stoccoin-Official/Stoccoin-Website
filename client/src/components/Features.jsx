@@ -29,7 +29,7 @@ const features = [
 
 export default function Example() {
   return (
-    <div className="bg-white sm:py-14 dark:bg-baki">
+    <div className="bg-white sm:py-14 dark:bg-darkMode">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">Trade Boosters</h2>

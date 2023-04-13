@@ -15,7 +15,7 @@ const App = () => {
 
 
   return (
-    <div className="dark:bg-baki">
+    <div className="dark:bg-darkMode">
       <Navbar />
       <Header />
       <Stats />

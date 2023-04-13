@@ -6,8 +6,7 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+
 
 
 const navigation = [
@@ -30,7 +29,7 @@ const navigation = [
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
-  padding: 7,
+  padding: 8,
   '& .MuiSwitch-switchBase': {
     margin: 1,
     padding: 0,
@@ -70,7 +69,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   '& .MuiSwitch-track': {
     opacity: 1,
     backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
-    borderRadius: 20 / 2,
+    borderRadius: 10 / 1,
   },
 }));
 
@@ -96,7 +95,6 @@ export default function Example() {
   const handleCheck = () => {
 
       setIsChecked(isChecked === false ? true : false)
-      console.log(isChecked);
   
 }
 
@@ -111,17 +109,17 @@ useEffect ( () =>{
 },[isChecked])
 
   return (
-    <div className="bg-white dark:bg-baki">
+    <div className=" dark:bg-darkMode">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
-          <div className="flex lg:flex-1">
+          <div className="flex lg:flex-1 ">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Stoccoin</span>
               <img
-                className="h-8 w-auto"
+                className="h-8 w-auto border-darkMode "
                 src="./logo.svg"
                 alt="Stoccoin Logo"
               />
@@ -138,7 +136,7 @@ useEffect ( () =>{
             </button>
           </div>
 
-          <div className=" hidden lg:flex lg:gap-x-12 dark:bg-baki">
+          <div className=" hidden lg:flex lg:gap-x-12 dark:bg-darkMode">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -149,11 +147,11 @@ useEffect ( () =>{
               </a>
             ))}
 
-            {/* Add darkmode toggel here for big screen */}
+            {/* Add darkmode toggle here for big screen */}
 
             <FormGroup>
               <FormControlLabel
-              control={<MaterialUISwitch sx={{ m: 0 }} />}
+              control={<MaterialUISwitch sx={{ m: -0.7 }} />}
               checked={isChecked}
               onChange={handleCheck}
               label=""
@@ -163,7 +161,7 @@ useEffect ( () =>{
 
           </div>
 
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
@@ -181,7 +179,7 @@ useEffect ( () =>{
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-baki px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-darkMode px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Stoccoin</span>

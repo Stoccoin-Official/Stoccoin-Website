@@ -2,7 +2,7 @@ import React from 'react';
 
 function Accordion() {
   return (
-<section className="relative pt-20 pb-20 bg-blueGray-50 overflow-hidden dark:bg-baki">
+<section className="relative pt-20 pb-20 bg-blueGray-50 overflow-hidden dark:bg-darkMode">
   <img
     className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
     src="flaro-assets/images/faqs/gradient.svg"
