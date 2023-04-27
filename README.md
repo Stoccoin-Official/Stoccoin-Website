@@ -60,6 +60,16 @@ If you're interested in working on any of these issues, please let us know by su
   
 </p>
 
+### Join our Discord Server:
+
+<p>
+
+We have a Discord server for contributors to the Stoccoin's website on GitHub. Join our community of developers, designers, marketers, and other contributors to share your skills, collaborate on code, provide feedback, and contribute to the Stoccoin's project in meaningful ways.
+
+[Click here to join our Discord server](https://discord.gg/XVE7eaS9AA)
+
+</p>
+
 ## License
 
 This project is licensed under the Affero General Public License v3.0. See the [LICENSE](LICENSE) file for details.
