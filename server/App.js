@@ -38,10 +38,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// start the server
-var port = 3000;
-app.listen(port, function () {
-  console.log('Server running on port ' + port);
-});
-
 module.exports = app;
