@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/Stoccoin-Official/Stoccoin-Website#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@heroicons/react": "^2.0.18",
     "axios": "^1.3.4",
     "bcrypt": "^5.1.0",
     "bootstrap": "^5.2.3",
