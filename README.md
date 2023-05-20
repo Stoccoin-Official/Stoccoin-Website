@@ -1,10 +1,6 @@
 # Stoccoin-Website
 [Under Development] </br>
-<div align="center">
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
-<img src="https://forthebadge.com/images/badges/uses-brains.svg" />
-<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
-   </div>
+
    <div align="center">
   <img src="https://img.shields.io/github/stars/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
 <img src="https://img.shields.io/github/issues/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" /><img src="https://img.shields.io/github/forks/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
