@@ -12,6 +12,8 @@ Please add your name and college above if you are a contributor:
 
 ## Contributors
 
+- Kartikay Asija \
+  GL Bajaj, Noida
 - Kapil \
   Amity University, Noida, Uttar Pradesh
 - Ridhiman Kaur Dhindsa \
