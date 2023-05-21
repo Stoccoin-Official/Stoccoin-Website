@@ -12,9 +12,11 @@ Please add your name and college above if you are a contributor:
 
 ## Contributors
 
-- [Kapil] \
-  College: Amity University, Noida, Uttar Pradesh
+- Kapil \
+  Amity University, Noida, Uttar Pradesh
 - Ridhiman Kaur Dhindsa \
-  College: IIT Guwahati
+  IIT Guwahati
 - Tushar Banik \
-  college: IIT Guwahati
+  IIT Guwahati
+- Shivani \
+  JSS Science and Technology University, Mysore
