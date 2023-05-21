@@ -31,7 +31,7 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-              <div pt-50 style={{ float: 'right' }}>
+              <div className="pt-50" style={{ float: 'right' }}>
                 <img src="./header.svg" alt="your-image-description" style={{ maxHeight: '50rem', maxWidth: '35rem' }}/>
               </div>
             </div>

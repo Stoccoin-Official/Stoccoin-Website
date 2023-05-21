@@ -67,7 +67,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
             </svg>
             <span>Individual configuration</span>
@@ -80,7 +80,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
             </svg>
             <span>Individual configuration</span>
@@ -93,8 +93,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-
+           <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             <span>Individual configuration</span>
           </li>
@@ -162,7 +161,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
             </svg>
             <span>Individual configuration</span>
@@ -175,7 +174,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
             </svg>
             <span>Individual configuration</span>
@@ -188,7 +187,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
             </svg>
             <span>Individual configuration</span>
@@ -257,7 +256,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
             </svg>
             <span>Individual configuration</span>
@@ -270,7 +269,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
             </svg>
             <span>Individual configuration</span>
@@ -283,7 +282,7 @@ export default function Example() {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
             </svg>
             <span>Individual configuration</span>

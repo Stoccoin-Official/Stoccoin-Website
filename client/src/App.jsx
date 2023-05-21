@@ -8,11 +8,14 @@ import Features from './components/Features';
 import Accordion from './components/Accordion';
 import Pricing from './components/Pricing';
 import Navbar from './components/Navbar';
+import GoToTop from './components/GoToTop';
+
 const App = () => {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
+      <GoToTop />
       <Navbar />
       <Header />
       <Stats />
