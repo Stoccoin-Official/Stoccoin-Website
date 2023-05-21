@@ -12,7 +12,7 @@ export default function Example() {
     </div>
     <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
       {/* Pricing Card */}
-      <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8">
+      <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 hover:shadow-2xl hover:scale-105">
         <h3 className="mb-4 text-2xl font-semibold">Free</h3>
         <p className="font-light sm:text-lg">
           Get a taste of trading with our free plan.
@@ -107,7 +107,7 @@ export default function Example() {
         </a>
       </div>
       {/* Pricing Card */}
-      <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8">
+      <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 hover:shadow-2xl hover:scale-105">
         <h3 className="mb-4 text-2xl font-semibold">Professional</h3>
         <p className="font-light sm:text-lg">
           Unlock advanced trading features with our premium plan.
@@ -202,7 +202,7 @@ export default function Example() {
         </a>
       </div>
       {/* Pricing Card */}
-      <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8">
+      <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 hover:shadow-2xl hover:scale-105">
         <h3 className="mb-4 text-2xl font-semibold">Enterprise</h3>
         <p className="font-light sm:text-lg">
           Custom solutions for your trading needs.
