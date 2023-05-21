@@ -6,8 +6,28 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/login');
+
+const middleware = require('./utils/middleware');
+const config = require('./utils/config');
 
 var app = express();
+
+require('express-async-errors');
+
+const mongoose = require('mongoose');
+
+console.log('connecting to', config.MONGODB_URI);
+
+mongoose.set('strictQuery', false);
+mongoose
+  .connect(config.MONGODB_URI)
+  .then(() => {
+    console.log('connected to MongoDB');
+  })
+  .catch((error) => {
+    console.log('error connecting to MongoDB:', error.message);
+  });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,11 +41,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/login', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
+// handler of requests which result to errors
+// this has to be the last loaded middleware
+app.use(middleware.errorHandler);
 
 // error handler
 app.use(function(err, req, res, next) {

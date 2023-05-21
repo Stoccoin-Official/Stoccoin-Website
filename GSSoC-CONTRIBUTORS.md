@@ -14,3 +14,5 @@ Please add your name and college above if you are a contributor:
 
 - [Kapil] \
   College: Amity University, Noida, Uttar Pradesh
+- Ridhiman Kaur Dhindsa \
+  College: IIT Guwahati
