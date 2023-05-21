@@ -22,3 +22,6 @@ Please add your name and college above if you are a contributor:
   JSS Science and Technology University, Mysore
 - Manash \
   Nitte Meenakshi Institute of Technology, Bangalore
+  College: IIT Guwahati
+- [Vaibhav Maurya](https://github.com/vaibhav-xt) \
+  College: College Of Innovative Management & Science
