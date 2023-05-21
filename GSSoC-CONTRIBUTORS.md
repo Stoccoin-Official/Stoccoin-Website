@@ -17,5 +17,7 @@ Please add your name and college above if you are a contributor:
 Contributors
 ------------
 
-- [Your Name] \
-  College: XYZ University
+- Mukul Ojha \
+  College: MBM university, Jodhpur.
+
+
