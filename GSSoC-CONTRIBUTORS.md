@@ -17,5 +17,5 @@ Please add your name and college above if you are a contributor:
 Contributors
 ------------
 
-- [Your Name] \
-  College: XYZ University
+- Ridhiman Kaur Dhindsa \
+  College: IIT Guwahati
