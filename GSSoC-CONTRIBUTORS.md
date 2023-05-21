@@ -16,3 +16,5 @@ Please add your name and college above if you are a contributor:
   College: Amity University, Noida, Uttar Pradesh
 - Ridhiman Kaur Dhindsa \
   College: IIT Guwahati
+- [Vaibhav Maurya](https://github.com/vaibhav-xt)
+  College: College Of Innovative Management & Science
