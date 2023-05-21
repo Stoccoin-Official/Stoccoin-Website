@@ -11,7 +11,8 @@ If you are participating in GSSoC 2023 and would like to contribute to this proj
 Please add your name and college above if you are a contributor:
 
 ## Contributors
-
+- Tushar Verma \
+- National Institute of Technology, Srinagar
 - Kapil \
   Amity University, Noida, Uttar Pradesh
 - Ridhiman Kaur Dhindsa \
