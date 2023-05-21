@@ -16,3 +16,5 @@ Please add your name and college above if you are a contributor:
   College: Amity University, Noida, Uttar Pradesh
 - Ridhiman Kaur Dhindsa \
   College: IIT Guwahati
+- Pavithra P
+- College: National Institute Of Technology Surathkal, Karnataka.
