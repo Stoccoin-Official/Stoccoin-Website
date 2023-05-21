@@ -20,3 +20,5 @@ Please add your name and college above if you are a contributor:
   IIT Guwahati
 - Shivani \
   JSS Science and Technology University, Mysore
+- Manash \
+  Nitte Meenakshi Institute of Technology, Bangalore
