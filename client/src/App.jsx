@@ -20,7 +20,7 @@ const App = () => {
       <Pricing />
       <Accordion />
       <ContactForm />
-      <Footer />   
+      <Footer />
     </div>
   )
 }
