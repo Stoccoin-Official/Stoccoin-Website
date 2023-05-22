@@ -12,13 +12,11 @@ Please add your name and college above if you are a contributor:
 
 ## Contributors
 
-- Kapil \
-  Amity University, Noida, Uttar Pradesh
-- Ridhiman Kaur Dhindsa \
-  IIT Guwahati
-- Tushar Banik \
-  IIT Guwahati
-- Shivani \
-  JSS Science and Technology University, Mysore
-- Manash \
-  Nitte Meenakshi Institute of Technology, Bangalore
+| Sr. No. | Contibutor's Name | Contributor's College                  |
+| :---   |        :---     |        :---                           |
+| 1.      | Kapil             | Amity University, Noida, Uttar Pradesh |
+| 2.      | Ridhiman Kaur Dhindsa            | IIT Guwahati |
+| 3.      | Tushar Banik          | IIT Guwahati |
+| 4.      | Shivani         | JSS Science and Technology University, Mysore |
+| 5.      | Manash        | Nitte Meenakshi Institute of Technology, Bangalore |
+| 6.      | Mahendra Dani       | VIT Bhopal University |
