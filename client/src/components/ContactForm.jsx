@@ -1,10 +1,9 @@
 import { React, useState } from "react";
 
 export default function App() {
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,13 +14,13 @@ export default function App() {
       message,
     };
 
-    const res = await fetch('http://localhost:3000/mail', {
+    const res = await fetch("http://localhost:3000/mail", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(data)
-    })
+      body: JSON.stringify(data),
+    });
   };
 
   return (
@@ -45,38 +44,38 @@ export default function App() {
       <form onSubmit={handleSubmit}>
         <div className="">
           <div>
-            <span className="text-sm font-bold uppercase text-gray-600">
+            <span className="text-sm font-bold uppercase text-gray-600 float-left">
               Full Name
             </span>
             <input
-              className="focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
+              className="focus:shadow-indigo-500 outline-none mt-2 w-full rounded-md bg-gray-200 p-2 text-gray-900 border-2 border-gray-200 focus:border-indigo-500 duration-100"
               type="text"
               placeholder=""
               onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="mt-8">
-            <span className="text-sm font-bold uppercase text-gray-600">
+            <span className="text-sm font-bold uppercase text-gray-600 float-left">
               Email
             </span>
             <input
-              className="focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
+              className="focus:shadow-indigo-500 outline-none mt-2 w-full rounded-md bg-gray-200 p-2 text-gray-900 border-2 border-gray-200 focus:border-indigo-500 duration-100"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="mt-8">
-            <span className="text-sm font-bold uppercase text-gray-600">
+            <span className="text-sm font-bold uppercase text-gray-600 float-left">
               Message
             </span>
             <textarea
-              className="focus:shadow-outline mt-2 h-32 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
+              className="focus:shadow-indigo-500 mt-2 h-32 w-full rounded-md bg-gray-200 p-2 text-gray-900 border-2 border-gray-200 focus:border-indigo-500 duration-100 outline-none"
               defaultValue={""}
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
           <div className="mt-8">
-            <button className="focus:shadow-outline w-full rounded-lg bg-indigo-500 p-3 text-sm font-bold uppercase tracking-wide text-gray-100 focus:outline-none">
+            <button className="focus:shadow-outline w-full rounded-lg bg-indigo-500 p-3 text-sm font-bold uppercase tracking-wide text-gray-100 focus:outline-none border-2 border-indigo-500 hover:bg-white hover:text-indigo-500 ease-out duration-200">
               Send Message
             </button>
           </div>
