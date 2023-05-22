@@ -23,5 +23,3 @@ Please add your name and college above if you are a contributor:
 - Manash \
   Nitte Meenakshi Institute of Technology, Bangalore
   College: IIT Guwahati
-- [Vaibhav Maurya](https://github.com/vaibhav-xt) \
-  College: College Of Innovative Management & Science
