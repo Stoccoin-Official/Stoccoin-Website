@@ -22,3 +22,5 @@ Please add your name and college above if you are a contributor:
   JSS Science and Technology University, Mysore
 - Manash \
   Nitte Meenakshi Institute of Technology, Bangalore
+- Krishna Kalani \
+  Sarvajanik College of Engineering and Technology , Surat,Gujurat
