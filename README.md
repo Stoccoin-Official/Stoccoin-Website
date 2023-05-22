@@ -1,6 +1,17 @@
 # Stoccoin-Website
 [Under Development] </br>
 
+   <div align="center">
+  <img src="https://img.shields.io/github/stars/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+<img src="https://img.shields.io/github/issues/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" /><img src="https://img.shields.io/github/forks/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+<img src="https://img.shields.io/github/issues-pr/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/contributors/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+    <img src="https://img.shields.io/github/repo-size/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+
+   </div>
 This is a web application for trading stocks and crypto, as well as displaying news feeds and real-time data processing for stock and crypto prices.
 
 ## Tech Stack
