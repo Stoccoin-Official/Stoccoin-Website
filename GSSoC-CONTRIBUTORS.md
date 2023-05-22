@@ -22,3 +22,5 @@ Please add your name and college above if you are a contributor:
   JSS Science and Technology University, Mysore
 - Manash \
   Nitte Meenakshi Institute of Technology, Bangalore
+- Raghav Kumar Jha \
+  Maharaja Agrasen Institute of Technology, New Delhi
