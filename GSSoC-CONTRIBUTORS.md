@@ -12,6 +12,7 @@ Please add your name and college above if you are a contributor:
 
 ## Contributors
 
+
 | Sr. No. | Contibutor's Name | Contributor's College                  |
 | :---   |        :---     |        :---                           |
 | 1.      | Kapil             | Amity University, Noida, Uttar Pradesh |
@@ -20,3 +21,4 @@ Please add your name and college above if you are a contributor:
 | 4.      | Shivani         | JSS Science and Technology University, Mysore |
 | 5.      | Manash        | Nitte Meenakshi Institute of Technology, Bangalore |
 | 6.      | Mahendra Dani       | VIT Bhopal University |
+| 7.      | Kartikay Asija       | GL Bajaj, Noida |
