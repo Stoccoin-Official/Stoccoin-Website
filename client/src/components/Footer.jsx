@@ -3,11 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram,faTwitter,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
-
-
-
-
-
 function Footer() {
   return (
     <footer className="bg-white">
@@ -92,17 +87,7 @@ function Footer() {
               >
                 Subscribe
               </button>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-gray-200 rounded py-2 px-3 text-gray-200 w-full mb-2"
-              />
-              <button
-                type="submit"
-                className="bg-gray-600 hover:bg-gray-700 rounded py-2 px-4 text-white w-full"
-              >
-                Subscribe
-              </button>
+             
             </form>
           </div>
         </div>
@@ -111,9 +96,6 @@ function Footer() {
           &copy; 2023 Stoccoin. All rights reserved.
         </p>
         <br />
-        <p className="text-gray-500 text-center">
-          &copy; 2023 Stoccoin. All rights reserved.
-        </p>
       </div>
     </footer>
   );
