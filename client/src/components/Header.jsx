@@ -8,9 +8,9 @@ export default function Example() {
           </div>
             <div className="container mx-auto flex flex-wrap-reverse justify-center">
               <div className="md:w-1/2 max-w-xl w-full flex justify-center items-center my-1.5">
-                <div className="text-left">
+                <div className="md:text-left text-center">
                   <h1
-                    className="font-extrabold tracking-tight text-gray-900 text-6xl"
+                    className="font-extrabold tracking-tight text-gray-900 text-7xl"
                     style={{ fontFamily: "'Open Sans Extra Bold', sans-serif" }}
                   >
                     Stoccoin
@@ -18,7 +18,7 @@ export default function Example() {
                   <p className="mt-6 text-lg leading-8 text-gray-600">
                     Learn-Invest-Repeat
                   </p>
-                  <div className="mt-10 flex items-center justify-left gap-x-6 w-60">
+                  <div className="mt-10 flex items-center md:justify-left gap-x-6 w-60 mx-auto md:mx-0">
                     <a
                       href="#"
                       className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -31,7 +31,7 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-              <div pt-50 style={{ float: 'right', minWidth:'300px' }} className="md:w-1/2 flex items-center my-1.5 md:max-w-xl max-w-md">
+              <div pt-50 style={{ float: 'right', minWidth:'300px' }} className="md:w-1/2 md:flex items-center my-1.5 md:max-w-xl max-w-md hidden">
                 <img src="./header.svg" alt="your-image-description" style={{ maxHeight: '50rem', maxWidth: '35rem',width:'100%' }}/>
               </div>
             </div>
