@@ -22,3 +22,4 @@ Please add your name and college above if you are a contributor:
 | 5.      | Manash        | Nitte Meenakshi Institute of Technology, Bangalore |
 | 6.      | Mahendra Dani       | VIT Bhopal University |
 | 7.      | Kartikay Asija       | GL Bajaj, Noida |
+| 8.      | Bharatiya Ayush      | RNGPIT, Bardoli |
