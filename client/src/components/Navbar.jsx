@@ -49,7 +49,7 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 px-3 py-2 duration-200 rounded-md"
               >
                 {item.name}
               </a>
