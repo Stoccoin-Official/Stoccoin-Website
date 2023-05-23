@@ -1,7 +1,9 @@
+import Navbar from "../components/Navbar";
 const NFT = () => {
   return (
     <div>
-      <h1 className="text-5xl text-center p-8">NFT</h1>
+      <Navbar />
+      <h1 className="text-5xl text-center p-8 m-8">NFT</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
         placeat blanditiis, est non atque cum aut ratione pariatur quas eligendi
