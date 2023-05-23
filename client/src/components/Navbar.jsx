@@ -1,17 +1,18 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Dashboard", href: "#" },
-  { name: "Stocks", href: "#" },
-  { name: "Cryptocurrencies", href: "#" },
-  { name: "News", href: "#" },
-  { name: "NFT", href: "#" },
-  { name: "Trade", href: "#" },
-  { name: "Institutional", href: "#" },
-  { name: "Derivatives", href: "#" },
-  { name: "Support", href: "#" },
+  { name: "Dashboard", route: "/Dashboard" },
+  { name: "Stocks", route: "/Stocks" },
+  { name: "Cryptocurrencies", route: "/Cryptocurrencies" },
+  { name: "News", route: "/News" },
+  { name: "NFT", route: "/NFT" },
+  { name: "Trade", route: "/Trade" },
+  { name: "Institutional", route: "/Institutional" },
+  { name: "Derivatives", route: "/Derivatives" },
+  { name: "Support", route: "/Support" },
 ];
 
 export default function Example() {
@@ -25,15 +26,18 @@ export default function Example() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Stoccoin</span>
-              <img
-                className="h-8 w-auto"
-                src="./logo.svg"
-                alt="Stoccoin Logo"
-              />
-            </a>
+            <Link to={"/"}>
+              <div className="-m-1.5 p-1.5">
+                <span className="sr-only">Stoccoin</span>
+                <img
+                  className="h-8 w-auto"
+                  src="./logo.svg"
+                  alt="Stoccoin Logo"
+                />
+              </div>
+            </Link>
           </div>
+
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -46,13 +50,15 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 px-3 py-2 duration-200 rounded-md"
-              >
-                {item.name}
-              </a>
+              <Link to={item.route}>
+                <div
+                  key={item.name}
+                  // href={item.href}
+                  className="text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 px-3 py-2 duration-200 rounded-md"
+                >
+                  {item.name}
+                </div>
+              </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
