@@ -26,3 +26,4 @@ Please add your name and college above if you are a contributor:
 | 9.      | Pavithra P          | National Institute of Technology Surathkal, Karnataka |
 | 10.     | Tushar Verma        | National Institute of Technology, Srinagar |
 | 11.     | Amita Singh         | Sharda University, Greater Noida |
+| 12.     | Surav Krishna Shrestha | IOE, Pulchowk Campus, Tribhuvan University, Nepal |
