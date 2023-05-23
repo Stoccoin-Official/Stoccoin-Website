@@ -1,28 +1,34 @@
-import { useState } from 'react'
-import './App.css'
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Stats from "./components/Stats";
-import ContactForm from './components/ContactForm';
-import Features from './components/Features';
-import Accordion from './components/Accordion';
-import Pricing from './components/Pricing';
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Homepage from "./pages/Homepage";
+import Dashboard from "./pages/Dashboard";
+import Stocks from "./pages/Stocks";
+import Cryptocurrencies from "./pages/Cryptocurrencies";
+import News from "./pages/News";
+import NFT from "./pages/NFT";
+import Trade from "./pages/Trade";
+import Institutional from "./pages/Institutional";
+import Derivatives from "./pages/Derivatives";
+import Support from "./pages/Support";
 const App = () => {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <Stats />
-      <Features />
-      <Pricing />
-      <Accordion />
-      <ContactForm />
-      <Footer />   
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Stocks" element={<Stocks />} />
+          <Route path="/Cryptocurrencies" element={<Cryptocurrencies />} />
+          <Route path="/News" element={<News />} />
+          <Route path="/NFT" element={<NFT />} />
+          <Route path="/Trade" element={<Trade />} />
+          <Route path="/Institutional" element={<Institutional />} />
+          <Route path="/Derivatives" element={<Derivatives />} />
+          <Route path="/Support" element={<Support />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
