@@ -62,6 +62,8 @@ Here are some issues that need to be addressed in this project:
 
 If you're interested in working on any of these issues, please let us know by submitting a pull request or reaching out to us.
 
+> Contributors must finish their work for an issue within 4-5 days if they are either assigned or have shown interest in solving the issue to avoid conflicts.
+
 ## Connect With Us
 <p align="left">
   
