@@ -32,3 +32,4 @@ Please add your name and college above if you are a contributor:
 | 15.     | Shreya Bhardwaj     | I.T.S Engineering College, Greater Noida | 
 | 16.     | Ganeshprasad Revadi | R V College of Engineering |
 | 17.     | Sambhav kaushik     | Banaras Hindu University, Varanasi |
+| 18.     | Bharatiya Ayush     | RNGPIT, Bardoli |
