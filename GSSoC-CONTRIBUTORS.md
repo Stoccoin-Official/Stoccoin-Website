@@ -12,15 +12,19 @@ Please add your name and college above if you are a contributor:
 
 ## Contributors
 
-- Kapil \
-  Amity University, Noida, Uttar Pradesh
-- Ridhiman Kaur Dhindsa \
-  IIT Guwahati
-- Tushar Banik \
-  IIT Guwahati
-- Shivani \
-  JSS Science and Technology University, Mysore
-- Manash \
-  Nitte Meenakshi Institute of Technology, Bangalore
-- Krishna Kalani \
-  Sarvajanik College of Engineering and Technology , Surat,Gujurat
+
+| Sr. No. | Contibutor's Name | Contributor's College                  |
+| :---   |        :---     |        :---                           |
+| 1.      | Kapil             | Amity University, Noida |
+| 2.      | Ridhiman Kaur Dhindsa            | IIT Guwahati |
+| 3.      | Tushar Banik          | IIT Guwahati |
+| 4.      | Shivani         | JSS Science and Technology University, Mysore |
+| 5.      | Manash        | Nitte Meenakshi Institute of Technology, Bangalore |
+| 6.      | Mahendra Dani       | VIT Bhopal University |
+| 7.      | Kartikay Asija       | GL Bajaj, Noida |
+| 8.      | Mukul Ojha          | MBM university, Jodhpur |
+| 9.      | Pavithra P          | National Institute of Technology Surathkal, Karnataka |
+| 10.     | Tushar Verma        | National Institute of Technology, Srinagar |
+| 11.     | Amita Singh         | Sharda University, Greater Noida |
+| 12.     | Surav Krishna Shrestha | IOE, Pulchowk Campus, Tribhuvan University, Nepal |
+| 13.     | Krishna Kalani      | Sarvajanik College of Engineering and Technology , Surat |
