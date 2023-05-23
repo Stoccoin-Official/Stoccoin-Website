@@ -11,13 +11,17 @@ If you are participating in GSSoC 2023 and would like to contribute to this proj
 Please add your name and college above if you are a contributor:
 
 ## Contributors
-- Tushar Verma \
-- National Institute of Technology, Srinagar
-- Kapil \
-  Amity University, Noida, Uttar Pradesh
-- Ridhiman Kaur Dhindsa \
-  IIT Guwahati
-- Tushar Banik \
-  IIT Guwahati
-- Shivani \
-  JSS Science and Technology University, Mysore
+
+
+| Sr. No. | Contibutor's Name | Contributor's College                  |
+| :---   |        :---     |        :---                           |
+| 1.      | Kapil             | Amity University, Noida |
+| 2.      | Ridhiman Kaur Dhindsa            | IIT Guwahati |
+| 3.      | Tushar Banik          | IIT Guwahati |
+| 4.      | Shivani         | JSS Science and Technology University, Mysore |
+| 5.      | Manash        | Nitte Meenakshi Institute of Technology, Bangalore |
+| 6.      | Mahendra Dani       | VIT Bhopal University |
+| 7.      | Kartikay Asija       | GL Bajaj, Noida |
+| 8.      | Mukul Ojha          | MBM university, Jodhpur |
+| 9.      | Pavithra P          | National Institute of Technology Surathkal, Karnataka |
+| 10.     | Tushar Verma        | National Institute of Technology, Srinagar |
