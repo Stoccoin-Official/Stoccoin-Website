@@ -28,3 +28,4 @@ Please add your name and college above if you are a contributor:
 | 11.     | Amita Singh         | Sharda University, Greater Noida |
 | 12.     | Surav Krishna Shrestha | IOE, Pulchowk Campus, Tribhuvan University, Nepal |
 | 13.     | Krishna Kalani      | Sarvajanik College of Engineering and Technology , Surat |
+| 14.     | Raghav Kumar Jha    | Maharaja Agrasen Institute of Technology, New Delhi |
