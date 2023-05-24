@@ -1,6 +1,9 @@
 import { React, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function App() {
+
+  const { t } = useTranslation()
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -32,10 +35,10 @@ export default function App() {
       <div className="flex flex-col justify-between">
         <div>
           <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
-            Get in Touch
+            {t("Get in Touch")}
           </h2>
           <div className="mt-8 text-gray-700">
-            Reach out to us with any questions or feedback you may have
+            {t("Reach out to us with any questions or feedback you may have")}
           </div>
         </div>
         <div className="mt-8 text-center">
@@ -46,7 +49,7 @@ export default function App() {
         <div className="">
           <div>
             <span className="text-sm font-bold uppercase text-gray-600">
-              Full Name
+              {t("Full Name")}
             </span>
             <input
               className="focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
@@ -57,7 +60,7 @@ export default function App() {
           </div>
           <div className="mt-8">
             <span className="text-sm font-bold uppercase text-gray-600">
-              Email
+              {t("Email")}
             </span>
             <input
               className="focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
@@ -67,7 +70,7 @@ export default function App() {
           </div>
           <div className="mt-8">
             <span className="text-sm font-bold uppercase text-gray-600">
-              Message
+              {t("Message")}
             </span>
             <textarea
               className="focus:shadow-outline mt-2 h-32 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
@@ -77,7 +80,7 @@ export default function App() {
           </div>
           <div className="mt-8">
             <button className="focus:shadow-outline w-full rounded-lg bg-indigo-500 p-3 text-sm font-bold uppercase tracking-wide text-gray-100 focus:outline-none">
-              Send Message
+              {t("Send Message")}
             </button>
           </div>
         </div>
