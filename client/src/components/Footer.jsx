@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollToTopButton from "./scrollButton";
 
 function Footer() {
   return (
@@ -80,6 +81,7 @@ function Footer() {
         <p className="text-gray-500 text-center">
           &copy; 2023 Stoccoin. All rights reserved.
         </p>
+        <ScrollToTopButton/>
       </div>
     </footer>
   );
