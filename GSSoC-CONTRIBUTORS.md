@@ -33,4 +33,7 @@ Please add your name and college above if you are a contributor:
 | 16.     | Ganeshprasad Revadi | R V College of Engineering |
 | 17.     | Sambhav kaushik     | Banaras Hindu University, Varanasi |
 | 18.     | Bharatiya Ayush     | RNGPIT, Bardoli |
-| 19.     | Ankit Anand         | Kalinga Institute Of Industrial Technology, Bhubaneswar |
+| 19.     | Atharvashirsh Tiwary | I2IT, Pune |
+| 20.     | Manan Sharma        | Thapar Institute of Engineering & Technology, Patiala |
+| 21.     | Prakhar Kumar Srivastava     | NIT Agartala |  
+| 22.     | Ankit Anand         | Kalinga Institute Of Industrial Technology, Bhubaneswar |
