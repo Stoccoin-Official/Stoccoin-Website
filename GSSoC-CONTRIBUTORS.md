@@ -34,3 +34,4 @@ Please add your name and college above if you are a contributor:
 | 17.     | Sambhav kaushik     | Banaras Hindu University, Varanasi |
 | 18.     | Bharatiya Ayush     | RNGPIT, Bardoli |
 | 19.     | Atharvashirsh Tiwary | I2IT, Pune |
+| 20.     | Sagnik Das          | ABV-IIITM Gwalior |
