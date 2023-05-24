@@ -38,3 +38,4 @@ Please add your name and college above if you are a contributor:
 | 21.     | Prakhar Kumar Srivastava     | NIT Agartala |  
 | 22.     | Ankit Anand         | Kalinga Institute Of Industrial Technology, Bhubaneswar |
 | 23.     | Sagnik Das          | ABV-IIITM Gwalior |
+| 24.     | Sneha Kumari        | Galgotias University , Greater Noida |
