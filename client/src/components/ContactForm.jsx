@@ -1,27 +1,17 @@
 import { React, useState } from "react";
+import { sendMail } from "./helpers/apiCalls";
 
 export default function App() {
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [formData, setformData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const data = {
-      name,
-      email,
-      message,
-    };
-
-    const res = await fetch('http://localhost:3000/mail', {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    })
+    sendMail(formData)
   };
 
   return (
@@ -52,7 +42,10 @@ export default function App() {
               className="focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
               type="text"
               placeholder=""
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setformData({
+                ...formData,
+                name: e.target.value,
+              })}
             />
           </div>
           <div className="mt-8">
@@ -62,7 +55,10 @@ export default function App() {
             <input
               className="focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
               type="email"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setformData({
+                ...formData,
+                email: e.target.value,
+              })}
             />
           </div>
           <div className="mt-8">
@@ -72,7 +68,10 @@ export default function App() {
             <textarea
               className="focus:shadow-outline mt-2 h-32 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
               defaultValue={""}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={(e) => setformData({
+                ...formData,
+                message: e.target.value,
+              })}
             />
           </div>
           <div className="mt-8">
