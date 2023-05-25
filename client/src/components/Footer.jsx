@@ -1,11 +1,8 @@
 import React from "react";
 import ScrollToTopButton from "./scrollButton";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faTwitter,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram,faTwitter,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 
 function Footer() {
   return (
