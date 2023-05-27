@@ -10,6 +10,7 @@ router.get("/", (req, res) => {
   res.status(200).send({ success: true, message: "Api is working!" });
 });
 
+
 // user login, register route
 router.post("/api/register", userActivity.registerUser);
 router.post("/api/login", userActivity.loginUser);
