@@ -15,9 +15,10 @@ export default function Example() {
   }, [])
 
   const { t } = useTranslation();
-  const handleClick = (e) => {
-    localStorage.setItem('language', e.target.innerText)
+  const handleClick = (data) => {
+    localStorage.setItem('language', data)
     window.location.reload()
+
   }
 
   const navigation = [
@@ -41,7 +42,7 @@ export default function Example() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Stoccoin</span>
+              <span className="sr-only">{t("Stoccoin")}</span>
               <img
                 className="h-8 w-auto"
                 src="./logo.svg"
@@ -50,13 +51,13 @@ export default function Example() {
             </a>
           </div>
           <div className="flex lg:hidden">
-            <Languageoption onClick={handleClick} />
+            <Languageoption lang={handleClick} />
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(true)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{t("Open main menu")}</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -70,7 +71,7 @@ export default function Example() {
                 {item.name}
               </a>
             ))}
-            <Languageoption onClick={handleClick} />
+            <Languageoption lang={handleClick} />
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
@@ -91,7 +92,7 @@ export default function Example() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Stoccoin</span>
+                <span className="sr-only">{t("Stoccoin")}</span>
                 <img className="h-8 w-auto" src="./logo.svg" alt="" />
               </a>
               <button
