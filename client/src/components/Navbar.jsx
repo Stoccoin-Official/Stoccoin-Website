@@ -18,7 +18,10 @@ const navigation = [
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [modal, setModal] = useState(false);
+  const [showLogin, setshowLogin] = useState(false);
+  const [showSignup, setshowSignup] = useState(false);
+  const [createPasswordValue, setcreatePasswordValue] = useState("");
+  const [confirmPasswordValue, setconfirmPasswordValue] = useState("");
 
   return (
     <div className="bg-white">
@@ -67,7 +70,7 @@ export default function Example() {
             <button
               className="text-sm font-semibold leading-6 text-gray-900 hover:bg-indigo-500 px-3 py-1 rounded-sm duration-200 ease-out hover:text-white"
               onClick={() => {
-                setModal(true);
+                setshowLogin(true);
               }}
             >
               Log in <span aria-hidden="true">&rarr;</span>
@@ -114,7 +117,7 @@ export default function Example() {
                     className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     onClick={() => {
                       setMobileMenuOpen(false);
-                      setModal(true);
+                      setshowLogin(true);
                     }}
                   >
                     Log in
@@ -127,25 +130,27 @@ export default function Example() {
       </header>
       {/* Login Modal */}
       <Modal
-        isOpen={modal}
+        isOpen={showLogin}
         closeModal={() => {
-          setModal(false);
+          setshowLogin(false);
         }}
       >
-        <form className="flex flex-col items-start p-4 px-6 gap-6">
-          <h2 className="mx-auto text-xl md:text-2xl font-semibold">
+        <form className="flex flex-col items-start p-4 px-6 gap-6 text-lg">
+          <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
             Login in to our platform
           </h2>
           <div className="w-full flex flex-col items-start gap-2">
-            <label for="email">Your Email</label>
+            <label for="loginEmail">Your Email</label>
             <input
+              name="loginEmail"
               placeholder="name@company.com"
               className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
             />
           </div>
           <div className="w-full flex flex-col items-start gap-2">
-            <label for="email">Your Password</label>
+            <label for="loginPassword">Your Password</label>
             <input
+              name="loginPassword"
               type="password"
               placeholder="*********"
               className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
@@ -153,8 +158,11 @@ export default function Example() {
           </div>
           <div className="w-full flex flex-row justify-between items-center">
             <div className="flex flex-row justify-between items-center">
-              <input type="checkbox" className="h-4 w-4" />
-              <label className="px-2"> Remember Me</label>
+              <input type="checkbox" name="checkbox" className="h-4 w-4" />
+              <label className="px-2" for="checkbox">
+                {" "}
+                Remember Me
+              </label>
             </div>
             <a
               href="#"
@@ -169,14 +177,99 @@ export default function Example() {
           <div className="mx-auto">
             <p>
               Not Registered?{" "}
-              <a
-                href="#"
+              <button
                 className="text-blue-700 hover:underline duration-200 ease-out"
+                onClick={() => {
+                  setshowLogin(false);
+                  setshowSignup(true);
+                }}
               >
                 Create Account
-              </a>{" "}
+              </button>{" "}
             </p>
           </div>
+        </form>
+      </Modal>
+
+      {/* Signup Modal */}
+      <Modal
+        isOpen={showSignup}
+        closeModal={() => {
+          setshowSignup(false);
+        }}
+      >
+        <form className="flex flex-col items-start p-4 px-6 gap-6 text-lg">
+          <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
+            Signup to our platform
+          </h2>
+          <div className="w-full flex flex-row items-center justify-between gap-8">
+            <div className="flex flex-col items-start gap-2">
+              <label for="firstName">First Name</label>
+              <input
+                name="firstName"
+                placeholder="Jhon"
+                className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-2">
+              <label for="lastName">Last Name</label>
+              <input
+                name="lastName"
+                placeholder="Doe"
+                className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div className="w-full flex flex-col items-start gap-2">
+            <label for="username">Username</label>
+            <input
+              name="username"
+              placeholder="jhon007"
+              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+            />
+          </div>
+          <div className="w-full flex flex-col items-start gap-2">
+            <label for="signupEmail">Your Email</label>
+            <input
+              name="signupEmail"
+              placeholder="jhon@xyz.com"
+              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+            />
+          </div>
+          <div className="w-full flex flex-row items-center justify-between gap-8">
+            <div className="flex flex-col items-start gap-2">
+              <label for="singupCreatePassword">Create Password</label>
+              <input
+                name="singupCreatePassword"
+                type="password"
+                placeholder="********"
+                className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+                onChange={(e) => {
+                  setcreatePasswordValue(e.target.value);
+                }}
+              />
+            </div>
+            <div className="flex flex-col items-start gap-2">
+              <label for="signupConfirmPassword">Confirm Password</label>
+              <input
+                name="signupConfirmPassword"
+                type="password"
+                placeholder="********"
+                className={
+                  !confirmPasswordValue.length == 0 &&
+                  confirmPasswordValue === createPasswordValue
+                    ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
+                    : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
+                }
+                onChange={(e) => {
+                  setconfirmPasswordValue(e.target.value);
+                }}
+              />
+            </div>
+          </div>
+          <button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out ">
+            Signup to our platform
+          </button>
         </form>
       </Modal>
     </div>
