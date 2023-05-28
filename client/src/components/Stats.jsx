@@ -1,10 +1,15 @@
-const stats = [
-  { id: 1, name: 'Transactions every 24 hours', value: 'XX million' },
-  { id: 2, name: 'Assets under holding', value: '$XXX trillion' },
-  { id: 3, name: 'New users annually', value: 'XXXXX' },
-]
+import { useTranslation } from "react-i18next"
 
 export default function Example() {
+
+  const { t } = useTranslation()
+
+  const stats = [
+    { id: 1, name: t('Transactions every 24 hours'), value: t('XX million') },
+    { id: 2, name: t('Assets under holding'), value: t('$XXX trillion') },
+    { id: 3, name: t('New users annually'), value: t('XXXXX') },
+  ]
+
   return (
     <div className="bg-white py-24 sm:py-35 pb-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
