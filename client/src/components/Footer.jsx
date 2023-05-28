@@ -1,4 +1,11 @@
 import React from "react";
+import ScrollToTopButton from "./scrollButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -27,7 +34,11 @@ function Footer() {
                   target="blank"
                   className="text-gray-600 hover:text-black footerLogo"
                 >
-                  <i className="fab fa-instagram-f"></i>Instagram
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="text-indigo-500 text-3xl mr-2"
+                  />
+                  Instagram
                 </a>
               </li>
               <li className="mb-2">
@@ -36,7 +47,8 @@ function Footer() {
                   target="blank"
                   className="text-gray-600 hover:text-black footerLogo"
                 >
-                  <i className="fab fa-twitter"></i>Twitter
+                 <FontAwesomeIcon icon={faTwitter} className="text-indigo-500 text-3xl mr-2" />
+                  Twitter
                 </a>
               </li>
               <li className="mb-2">
@@ -45,7 +57,8 @@ function Footer() {
                   target="blank"
                   className="text-gray-600 hover:text-black footerLogo"
                 >
-                  <i className="fab fa-instagram"></i>LinkedIn
+                   <FontAwesomeIcon icon={faLinkedinIn} className="text-indigo-500 text-3xl mr-2" />
+                  LinkedIn
                 </a>
               </li>
               <li className="mb-2">
@@ -80,6 +93,7 @@ function Footer() {
         <p className="text-gray-500 text-center">
           &copy; 2023 Stoccoin. All rights reserved.
         </p>
+        <ScrollToTopButton />
       </div>
     </footer>
   );
