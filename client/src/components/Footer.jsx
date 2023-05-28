@@ -1,6 +1,12 @@
 import React from "react";
 import { useTranslation } from 'react-i18next'
 import ScrollToTopButton from "./scrollButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 
 function Footer() {
@@ -32,6 +38,11 @@ function Footer() {
                   className="text-gray-600 hover:text-black"
                 >
                   <i className="fab fa-instagram-f"></i>{t("Instagram")}
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="text-indigo-500 text-3xl mr-2"
+                  />
+                  Instagram
                 </a>
               </li>
               <li className="mb-2">
@@ -41,6 +52,8 @@ function Footer() {
                   className="text-gray-600 hover:text-black"
                 >
                   <i className="fab fa-twitter"></i>{t("Twitter")}
+                 <FontAwesomeIcon icon={faTwitter} className="text-indigo-500 text-3xl mr-2" />
+                  Twitter
                 </a>
               </li>
               <li className="mb-2">
@@ -50,6 +63,8 @@ function Footer() {
                   className="text-gray-600 hover:text-black"
                 >
                   <i className="fab fa-instagram"></i>{t("LinkedIn")}
+                   <FontAwesomeIcon icon={faLinkedinIn} className="text-indigo-500 text-3xl mr-2" />
+                  LinkedIn
                 </a>
               </li>
               <li className="mb-2">
@@ -84,7 +99,7 @@ function Footer() {
         <p className="text-gray-500 text-center">
           &copy; {t("2023 Stoccoin. All rights reserved.")}
         </p>
-        <ScrollToTopButton/>
+        <ScrollToTopButton />
       </div>
     </footer>
   );
