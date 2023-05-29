@@ -64,7 +64,7 @@ export default function Example() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="inline-block px-4 py-2 text-sm font-semibold leading-6 text-white transition-all duration-300 bg-gray-900 rounded hover:bg-indigo-500 hover:text-white"
             >
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
