@@ -4,7 +4,9 @@
   "description": "Welcome to Stoccoin's GitHub repository! Here, you'll find all the code and resources needed to build and deploy our user-friendly news, trading platform for stocks and cryptocurrencies.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format":"npx prettier --write .",
+    "format:check":"npx prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0"
+  },
+  "devDependencies": {
+    "prettier": "2.8.8"
   }
 }
