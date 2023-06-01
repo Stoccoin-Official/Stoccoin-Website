@@ -44,3 +44,4 @@ Please add your name and college above if you are a contributor:
 | 27.     | Laxmi               | Sharda University, Greater Noida |
 | 28.     | Akshaya              | Andhra University, Visakhapatnam  |
 | 29.     | Abhishek Kumar Verma | Haldia Institute Of Technology, West Bengal |
+| 30.     | Angel Mba               |University of Nigeria, Nsukka |
