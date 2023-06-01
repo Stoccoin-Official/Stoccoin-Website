@@ -6,8 +6,9 @@ import Features from "../components/Features";
 import Accordion from "../components/Accordion";
 import Pricing from "../components/Pricing";
 import Navbar from "../components/Navbar";
+import Modal from "../components/Modal";
 
-const Homepage = () => {
+const Homepage = ({ props }) => {
   return (
     <div>
       <Navbar />
