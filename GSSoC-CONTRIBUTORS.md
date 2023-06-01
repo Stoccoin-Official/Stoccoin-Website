@@ -46,3 +46,4 @@ Please add your name and college above if you are a contributor:
 | 29.     | Abhishek Kumar Verma | Haldia Institute Of Technology, West Bengal |
 | 30.     | Angel Mba            | University of Nigeria, Nsukka |
 | 31.     | Saloni Lathwariya   | Maa Shakumbhari University, Saharanpur |
+| 32.     | Rakhi M. Bhagwat    | K.K.Wagh Institute of Engineering Education & Research, Nashik, Maharashtra. |
