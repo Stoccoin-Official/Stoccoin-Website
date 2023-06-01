@@ -7,6 +7,7 @@ function ScrollToTopButton() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.pageYOffset;
+      console.log(scrollPosition)
       setShowButton(scrollPosition > 200); // Adjust the value (200) as per your requirement
     };
 
