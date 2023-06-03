@@ -47,3 +47,4 @@ Please add your name and college above if you are a contributor:
 | 30.     | Angel Mba            | University of Nigeria, Nsukka |
 | 31.     | Saloni Lathwariya   | Maa Shakumbhari University, Saharanpur |
 | 32.     | Aryan Rana               | Vellore Institute of Technology (VIT)   |
+| 33.     | Rakhi M. Bhagwat    | K.K.Wagh Institute of Engineering Education & Research, Nashik, Maharashtra |
