@@ -1,0 +1,33 @@
+#DockerFile for the website 
+FROM node:14
+
+WORKDIR /app
+
+# Copy JSON files to the working directory
+COPY package*.json ./
+
+#Now, Install the needed dependencies
+RUN npm install
+
+# Copy app to working dir
+COPY . .
+
+#Run command for build 
+RUN npm run build
+
+# Expose a port for the Node.js
+EXPOSE 5000
+#this website will run on the port 5000
+
+# if required, set the env variables
+# ENV VARIABLE_NAME value
+
+# Start the Node.js server by the below command!
+CMD ["npm", "start"]
+
+#To utilize this Dockerfile, ensure that it is located in the main directory of #the website, then construct a Docker Image by executing the command:
+#docker build -t stoccoin-website .  
+#or
+#docker build -t stoccoin-website:v1(Version number)
+#once over, start the container using:
+#docker run -d -p 5000:5000 stoccoin-website
