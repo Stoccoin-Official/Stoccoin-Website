@@ -42,11 +42,60 @@ We welcome contributions from anyone who is interested in improving this project
 
 To submit a pull request, please follow these steps:
 
-1. Fork this repository.
-2. Create a new branch for your changes.
-3. Make your changes and commit them to your branch.
-4. Push your changes to your forked repository.
-5. Create a pull request from your branch to the original repository.
+## Steps to Contribute
+ <p>
+Step 1: Fork the repo and Go to your Git terminal and clone it on your machine.
+</p>
+
+```git clone https://github.com/<your_github_username>/Stoccoin-Website.git```
+
+```cd Stoccoin-Website```
+
+<p>
+Step 2: Add an upstream link to the main branch in your cloned repo
+ </p>
+
+```git remote add upstream https://github.com/<your_github_username>/Stoccoin-Website.git```
+
+<p>
+Step 3: Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+</p>
+
+```git pull upstream main```
+
+<p>
+Step 4: Create your feature branch (This is a necessary step, so don't skip it)
+</p>
+
+```git checkout -b <branch-name>```
+
+<p>
+Step 5: Track and stage your changes.
+</p>
+
+```git status```
+
+<p>
+ Step 6: Add all the required changes
+</p>
+ 
+```git add .```
+
+<p>
+Step 7: Commit all the changes (Write commit message as "Small Message")
+</p>
+
+```git commit -m "<your-commit-message>"```
+
+<p>
+Step 8: Push the changes for review
+</p>
+
+```git push origin <branch-name>```
+
+<p>
+Step 9: Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
+</p>
 
 We will review your pull request and provide feedback. Once your changes are approved, we will merge them into the main branch.
 
