@@ -41,4 +41,10 @@ Please add your name and college above if you are a contributor:
 | 24.     | Sneha Kumari        | Galgotias University , Greater Noida |
 | 25.     | Vedant Bande        | IIIT Jabalpur |
 | 26.     | Saloni Singh        | Galgotias University , Greater Noida |
-| 27.     | Laxmi               |Sharda University, Greater Noida |
+| 27.     | Laxmi               | Sharda University, Greater Noida |
+| 28.     | Akshaya              | Andhra University, Visakhapatnam  |
+| 29.     | Abhishek Kumar Verma | Haldia Institute Of Technology, West Bengal |
+| 30.     | Angel Mba            | University of Nigeria, Nsukka |
+| 31.     | Saloni Lathwariya   | Maa Shakumbhari University, Saharanpur |
+| 32.     | Aryan Rana               | Vellore Institute of Technology (VIT)   |
+| 33.     | Tanbir Ali          | Aliah University, Kolkata | 
