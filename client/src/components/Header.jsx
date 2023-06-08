@@ -32,9 +32,8 @@ export default function Example() {
             </div>
           </div>
           <div
-            pt-50
             style={{ float: "right", minWidth: "300px" }}
-            className="md:w-1/2 md:flex items-center my-1.5 md:max-w-xl max-w-md hidden"
+            className="md:w-1/2 md:flex items-center my-1.5 md:max-w-xl max-w-md hidden pt-50"
           >
             <img
               src="./header.svg"
