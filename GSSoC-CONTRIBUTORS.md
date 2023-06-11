@@ -49,3 +49,4 @@ Please add your name and college above if you are a contributor:
 | 32.     | Aryan Rana               | Vellore Institute of Technology (VIT)   |
 | 33.     | Tanbir Ali          | Aliah University, Kolkata | 
 | 34.     | Rakhi M. Bhagwat    | K.K.Wagh Institute of Engineering Education & Research, Nashik, Maharashtra |
+| 35.     | Vaibhav Maurya(vaibhav-xt)      | IMRT Business School, Lucknow, Uttar Pradesh |
