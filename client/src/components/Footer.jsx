@@ -32,7 +32,7 @@ function Footer() {
                 <a
                   href="https://www.instagram.com/stoccoin/"
                   target="blank"
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black footerLogo"
                 >
                   <FontAwesomeIcon
                     icon={faInstagram}
@@ -45,7 +45,7 @@ function Footer() {
                 <a
                   href="https://twitter.com/stoc_coin"
                   target="blank"
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black footerLogo"
                 >
                  <FontAwesomeIcon icon={faTwitter} className="text-indigo-500 text-3xl mr-2" />
                   Twitter
@@ -55,7 +55,7 @@ function Footer() {
                 <a
                   href="https://www.linkedin.com/company/stoccoin/"
                   target="blank"
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black footerLogo"
                 >
                    <FontAwesomeIcon icon={faLinkedinIn} className="text-indigo-500 text-3xl mr-2" />
                   LinkedIn
@@ -65,7 +65,7 @@ function Footer() {
                 <a
                   href="https://www.kooapp.com/profile/stoccoin/"
                   target="blank"
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black footerLogo"
                 >
                   <i className="fab fa-instagram"></i>Koo
                 </a>
