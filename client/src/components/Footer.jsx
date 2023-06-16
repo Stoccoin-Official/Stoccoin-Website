@@ -5,6 +5,7 @@ import {
   faInstagram,
   faTwitter,
   faLinkedinIn,
+  faBitcoin,
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
@@ -32,7 +33,7 @@ function Footer() {
                 <a
                   href="https://www.instagram.com/stoccoin/"
                   target="blank"
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black flex flex-row items-center"
                 >
                   <FontAwesomeIcon
                     icon={faInstagram}
@@ -45,9 +46,12 @@ function Footer() {
                 <a
                   href="https://twitter.com/stoc_coin"
                   target="blank"
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black flex flex-row items-center"
                 >
-                 <FontAwesomeIcon icon={faTwitter} className="text-indigo-500 text-3xl mr-2" />
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    className="text-indigo-500 text-3xl mr-2"
+                  />
                   Twitter
                 </a>
               </li>
@@ -55,9 +59,12 @@ function Footer() {
                 <a
                   href="https://www.linkedin.com/company/stoccoin/"
                   target="blank"
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black flex flex-row items-center"
                 >
-                   <FontAwesomeIcon icon={faLinkedinIn} className="text-indigo-500 text-3xl mr-2" />
+                  <FontAwesomeIcon
+                    icon={faLinkedinIn}
+                    className="text-indigo-500 text-3xl mr-2"
+                  />
                   LinkedIn
                 </a>
               </li>
@@ -65,11 +72,18 @@ function Footer() {
                 <a
                   href="https://www.kooapp.com/profile/stoccoin/"
                   target="blank"
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black flex flex-row items-center"
                 >
-                  <i className="fab fa-instagram"></i>Koo
+                  <img
+                    src="/koo-icon.svg"
+                    alt="koo"
+                    height={24}
+                    width={24}
+                    className=" text-indigo-500 text-3xl mr-3"
+                  />
+                  Koo
                 </a>
-              </li>{" "}
+              </li>
             </ul>
           </div>
           <div className="w-full md:w-1/4 px-3 mb-3 md:mb-0 text-left">

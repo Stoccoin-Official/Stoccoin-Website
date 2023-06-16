@@ -36,6 +36,8 @@ To get started with this project, you'll need to follow these steps:
 
 We welcome contributions from anyone who is interested in improving this project. If you'd like to contribute, here are some ways you can get started:
 
+[Click here for the steps to Contribute](./CONTRIBUTING.md)
+
 - Submit a bug report if you find any issues with the application.
 - Suggest new features or improvements.
 - Submit a pull request to fix a bug or add a feature.
