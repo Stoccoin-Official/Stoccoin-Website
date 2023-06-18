@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const TradingViewWidget1 = () => {
+const Widget1 = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-screener.js';
@@ -34,4 +34,4 @@ const TradingViewWidget1 = () => {
   );
 };
 
-export default TradingViewWidget1;
+export default Widget1;

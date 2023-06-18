@@ -1,17 +1,17 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Widget1 from "../components/stocks/Widget1";
+import Widget2 from "../components/stocks/Widget2";
+
 const Stocks = () => {
   return (
     <div>
       <Navbar />
-      <h1 className="text-5xl text-center p-8 m-8">Stocks</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
-        placeat blanditiis, est non atque cum aut ratione pariatur quas eligendi
-        iure earum illo quos aspernatur beatae nesciunt expedita. Quidem nam ad
-        illo blanditiis optio consequuntur quis veritatis laudantium cum
-        consectetur animi magni nemo eveniet, reiciendis expedita, aperiam
-        laborum ut quaerat?
-      </p>
+        <h6 className="text-3xl text-left p-8 m-8">Stock Market Overview</h6>
+      <Widget1 />
+      <br/>
+      <Widget2 />
+      <Footer />
     </div>
   );
 };

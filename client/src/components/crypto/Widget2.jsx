@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 let tvScriptLoadingPromise;
 
-export default function TradingViewWidget() {
+export default function Widget2() {
   const onLoadScriptRef = useRef();
 
   useEffect(
@@ -26,11 +26,11 @@ export default function TradingViewWidget() {
       return () => onLoadScriptRef.current = null;
 
       function createWidget() {
-        if (document.getElementById('tradingview_7d84a') && 'TradingView' in window) {
+        if (document.getElementById('tradingview_20a86') && 'TradingView' in window) {
           new window.TradingView.widget({
             width: 1000,
             height: 600,
-            symbol: "NASDAQ:AAPL",
+            symbol: "BINANCE:BTCUSDT",
             interval: "D",
             timezone: "Etc/UTC",
             theme: "light",
@@ -39,7 +39,7 @@ export default function TradingViewWidget() {
             toolbar_bg: "#f1f3f6",
             enable_publishing: false,
             allow_symbol_change: true,
-            container_id: "tradingview_7d84a"
+            container_id: "tradingview_20a86"
           });
         }
       }
@@ -49,10 +49,9 @@ export default function TradingViewWidget() {
 
   return (
     <div className='tradingview-widget-container'>
-      <div id='tradingview_7d84a' />
+      <div id='tradingview_20a86' />
       <div className="tradingview-widget-copyright">
-        <a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"><span className="blue-text">Track all markets on TradingView</span></a>
-            </div>
+      </div>
     </div>
   );
 }
