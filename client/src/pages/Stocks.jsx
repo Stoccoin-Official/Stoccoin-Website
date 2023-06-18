@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Widget1 from "../components/stocks/Widget1";
 import Widget2 from "../components/stocks/Widget2";
+import Widget3 from "../components/stocks/Widget3";
 
 const Stocks = () => {
   return (
@@ -11,6 +12,8 @@ const Stocks = () => {
       <Widget1 />
       <br/>
       <Widget2 />
+      <br />
+      <Widget3 />
       <Footer />
     </div>
   );
