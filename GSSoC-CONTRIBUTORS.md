@@ -50,3 +50,4 @@ Please add your name and college above if you are a contributor:
 | 33.     | Tanbir Ali          | Aliah University, Kolkata | 
 | 34.     | Rakhi M. Bhagwat    | K.K.Wagh Institute of Engineering Education & Research, Nashik, Maharashtra |
 | 35.     | Vaibhav Maurya(vaibhav-xt)      | IMRT Business School, Lucknow, Uttar Pradesh |
+| 36.     | Atharva Raut(AtharvaRaut2002)      | NBN Sinhgad Institute of Technical Campus, Pune |
