@@ -1,6 +1,17 @@
 # Stoccoin-Website
 [Under Development] </br>
 
+   <div align="center">
+  <img src="https://img.shields.io/github/stars/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+<img src="https://img.shields.io/github/issues/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" /><img src="https://img.shields.io/github/forks/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+<img src="https://img.shields.io/github/issues-pr/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/contributors/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+    <img src="https://img.shields.io/github/repo-size/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed/Stoccoin-Official/Stoccoin-Website?style=for-the-badge" />
+
+   </div>
 This is a web application for trading stocks and crypto, as well as displaying news feeds and real-time data processing for stock and crypto prices.
 
 ## Tech Stack
@@ -24,6 +35,8 @@ To get started with this project, you'll need to follow these steps:
 ## Contributing
 
 We welcome contributions from anyone who is interested in improving this project. If you'd like to contribute, here are some ways you can get started:
+
+[Click here for the steps to Contribute](./CONTRIBUTING.md)
 
 - Submit a bug report if you find any issues with the application.
 - Suggest new features or improvements.
@@ -50,6 +63,8 @@ Here are some issues that need to be addressed in this project:
 - Improve error handling and logging for better debugging.
 
 If you're interested in working on any of these issues, please let us know by submitting a pull request or reaching out to us.
+
+> Contributors must finish their work for an issue within 4-5 days if they are either assigned or have shown interest in solving the issue to avoid conflicts.
 
 ## Connect With Us
 <p align="left">

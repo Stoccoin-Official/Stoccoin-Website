@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+.active{
+  width: fit-content;
+  position: relative;
+}
+.active::after{
+  display: block;
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: #4f46e5;
+  border-radius: 9999px;
+  width: 100%;
+  transform: scaleX(1);
+  transition: transform 0.5s;
+  transform-origin: center;
+}
