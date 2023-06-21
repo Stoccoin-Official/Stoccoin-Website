@@ -1,4 +1,5 @@
 # Stoccoin-Website
+
 [Under Development] </br>
 
    <div align="center">
@@ -53,6 +54,7 @@ If you're interested in working on any of these issues, please let us know by su
 > Contributors must finish their work for an issue within 4-5 days if they are either assigned or have shown interest in solving the issue to avoid conflicts.
 
 ## Connect With Us
+
 <p align="left">
   
   [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/stoc_coin)

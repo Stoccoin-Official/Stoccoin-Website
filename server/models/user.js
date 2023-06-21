@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
   firstName: {
@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     trim: true,
     lowercase: true,
-    match: [/^[a-z0-9_.]+$/, 'Invalid username'],
+    match: [/^[a-z0-9_.]+$/, "Invalid username"],
     index: true,
   },
   email: {
@@ -38,14 +38,14 @@ const userSchema = new mongoose.Schema({
     minLength: 7,
     trim: true,
     validate(value) {
-      if (value.toLowerCase().includes('password')) {
+      if (value.toLowerCase().includes("password")) {
         throw new Error("Password can't contain 'password'");
       }
-    }
-  }
+    },
+  },
 });
 
-userSchema.set('toJSON', {
+userSchema.set("toJSON", {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString();
     delete returnedObject._id;
@@ -55,6 +55,6 @@ userSchema.set('toJSON', {
   },
 });
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;

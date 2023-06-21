@@ -2,14 +2,14 @@
 
 1. Fork the repository.
 2. Clone the repository. <br/>
-`git clone https://github.com/your-username/repository-name.git`
+   `git clone https://github.com/your-username/repository-name.git`
 3. Create a new branch with a descriptive name for your feature/bug fix. <br/>
-`git checkout -b feature/new-feature`
+   `git checkout -b feature/new-feature`
 4. Make changes and commits to your branch. <br/>
-`git add .` <br/>
-`git commit -m "feat: Add new feature"`
+   `git add .` <br/>
+   `git commit -m "feat: Add new feature"`
 5. Push your branch to your forked repository. <br/>
-`git push origin feature/new-feature`
+   `git push origin feature/new-feature`
 6. Submit a pull request to the original repository's master branch.
 7. Wait for the maintainers to review your pull request and provide feedback.
 8. Make any requested changes and push them to your forked repository.
