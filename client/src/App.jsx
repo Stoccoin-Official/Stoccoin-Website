@@ -10,6 +10,7 @@ import Trade from "./pages/Trade";
 import Institutional from "./pages/Institutional";
 import Derivatives from "./pages/Derivatives";
 import Support from "./pages/Support";
+import NotFound from "./components/NotFound.jsx";
 const App = () => {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/Institutional" element={<Institutional />} />
           <Route path="/Derivatives" element={<Derivatives />} />
           <Route path="/Support" element={<Support />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
