@@ -1,4 +1,6 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 const Dashboard = () => {
   return (
     <div>
@@ -12,6 +14,7 @@ const Dashboard = () => {
         consectetur animi magni nemo eveniet, reiciendis expedita, aperiam
         laborum ut quaerat?
       </p>
+      <Footer />
     </div>
   );
 };
