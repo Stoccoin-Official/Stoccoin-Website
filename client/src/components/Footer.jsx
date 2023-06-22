@@ -44,7 +44,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="https://twitter.com/stoc_coin"
+                  href="https://twitter.com/stoccoinco"
                   target="blank"
                   className="text-gray-600 hover:text-black flex flex-row items-center"
                 >
