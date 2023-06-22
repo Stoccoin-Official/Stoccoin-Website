@@ -1,9 +1,10 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 const Derivatives = () => {
   return (
     <div>
       <Navbar />
-      <h1 className="text-5xl text-center p-8 m-8">Institutional</h1>
+      <h1 className="text-5xl text-center p-8 m-8">Derivatives</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
         placeat blanditiis, est non atque cum aut ratione pariatur quas eligendi
@@ -12,6 +13,7 @@ const Derivatives = () => {
         consectetur animi magni nemo eveniet, reiciendis expedita, aperiam
         laborum ut quaerat?
       </p>
+      <Footer />
     </div>
   );
 };

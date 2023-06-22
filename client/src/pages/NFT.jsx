@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 const NFT = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const NFT = () => {
         consectetur animi magni nemo eveniet, reiciendis expedita, aperiam
         laborum ut quaerat?
       </p>
+      <Footer />
     </div>
   );
 };
