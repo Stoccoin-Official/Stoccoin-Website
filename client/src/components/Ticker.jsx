@@ -51,7 +51,7 @@ const Ticker = () => {
   };
 
   return (
-    <div className="tradingview-widget-container ticker-widget-container" style={tickerContainerStyle}>
+    <div className="tradingview-widget-container ticker-widget-container py-7" style={tickerContainerStyle}>
       <div ref={widgetContainerRef} className="tradingview-widget-container__widget"></div>
         <div className="tradingview-widget-copyright">
         </div>

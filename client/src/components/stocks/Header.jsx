@@ -7,13 +7,13 @@ export default function Header() {
           <div className="md:w-1/2 max-w-xl w-full flex justify-center items-center my-1.5">
             <div className="md:text-left text-center">
               <h1
-                className="font-extrabold tracking-tight text-gray-900 text-7xl"
+                className="font-extrabold tracking-tight text-gray-900 text-6xl"
                 style={{ fontFamily: "'Open Sans Extra Bold', sans-serif" }}
               >
-                Stoccoin
+                Stocks
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Learn-Invest-Repeat
+                Unveiling Market Dynamics
               </p>
               <div className="mt-10 flex items-center md:justify-left gap-x-6 w-60 mx-auto md:mx-0">
                 <a
@@ -37,9 +37,9 @@ export default function Header() {
             className="md:w-1/2 md:flex items-center my-1.5 md:max-w-xl max-w-md hidden"
           >
             <img
-              src="./header.svg"
-              alt="stoccoin-homepage-header"
-              style={{ height: "25rem", maxHeight: "50rem", maxWidth: "35rem", width: "100%" }}
+              src="./stocks-header-image.svg"
+              alt="stoccoin-stocks-header"
+              style={{ height: "25rem", maxHeight: "50rem", maxWidth: "35rem", width: "30rem" }}
             />
           </div>
         </div>
