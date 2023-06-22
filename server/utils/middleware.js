@@ -1,21 +1,21 @@
-const User = require('../models/user');
+const User = require("../models/user");
 
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 const errorHandler = (err, req, res, next) => {
   console.log(err.message);
 
-  if (err.name === 'CastError') {
-    return res.status(400).send({ error: 'Malformatted ID.' });
-  } else if (err.name === 'ValidationError') {
+  if (err.name === "CastError") {
+    return res.status(400).send({ error: "Malformatted ID." });
+  } else if (err.name === "ValidationError") {
     return res.status(400).json({ error: err.message });
-  } else if (err.name === 'JsonWebTokenError') {
+  } else if (err.name === "JsonWebTokenError") {
     return res.status(401).json({
-      error: { token: 'Invalid token.' },
+      error: { token: "Invalid token." },
     });
-  } else if (err.name === 'TokenExpiredError') {
+  } else if (err.name === "TokenExpiredError") {
     return res.status(401).json({
-      error: { token: 'Token expired.' },
+      error: { token: "Token expired." },
     });
   }
 
@@ -23,9 +23,9 @@ const errorHandler = (err, req, res, next) => {
 };
 
 const tokenExtractor = (req, res, next) => {
-  const authorization = req.get('authorization');
+  const authorization = req.get("authorization");
 
-  if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
+  if (authorization && authorization.toLowerCase().startsWith("bearer ")) {
     req.token = authorization.substring(7);
   } else {
     req.token = null;
@@ -41,7 +41,7 @@ const userExtractor = async (req, res, next) => {
     req.user = null;
     return res
       .status(401)
-      .json({ error: { token: 'Token missing or invalid' } });
+      .json({ error: { token: "Token missing or invalid" } });
   }
 
   req.user = await User.findById(decodedToken.id);
