@@ -1,26 +1,42 @@
-<!-- Pull Request Template -->
+## What does this PR do?
 
-## Related Issue
+<!-- Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change. -->
 
-Closes #issue_number
-
-<!-- If there is no issue number, the PR will not be merged. Therefore, please ensure that the issue number is added -->
-
-## Description
-
-<!-- Write a brief description of the changes made in the PR. Explain the problem being addressed, or any relevant
-information. -->
+Fixes #(issue)
 
 ## Screenshots
 
 <!-- Add screenshots to preview the changes  -->
 
+## Type of change
+
+<!-- Please delete bullets that are not relevant. -->
+
+- Bug fix (non-breaking change which fixes an issue)
+- Chore (refactoring code, technical debt, workflow improvements)
+- New feature (non-breaking change which adds functionality)
+- Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- This change requires a documentation update
+
+## How should this be tested?
+
+<!-- Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration -->
+
+- [ ] Test A
+- [ ] Test B
+
+## Mandatory Tasks
+
+- [ ] Make sure you have self-reviewed the code. A decent size PR without self-review might be rejected.
+
 ## Checklist
 
-<!-- [x] - To mark checked, put 'x' in place of ' '(space)  -->
-<!-- [ ] - Keep unchecked using ' '(space)  -->
+<!-- Please remove all the irrelevant bullets to your PR -->
 
-- [ ] My code adheres to the established style guidelines of the project.
-- [ ] I have included comments in areas that may be difficult to understand.
-- [ ] My changes have not introduced any new warnings.
-- [ ] I have conducted a self-review of my code.
+- I haven't read the [contributing guide](https://github.com/Stoccoin-Official/Stoccoin-Website/blob/main/CONTRIBUTING.md)
+- My code doesn't follow the style guidelines of this project
+- I haven't commented my code, particularly in hard-to-understand areas
+- I haven't checked if my PR needs changes to the documentation
+- I haven't checked if my changes generate no new warnings
+- I haven't added tests that prove my fix is effective or that my feature works
+- I haven't checked if new and existing unit tests pass locally with my changes
