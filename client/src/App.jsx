@@ -11,6 +11,7 @@ import Institutional from "./pages/Institutional";
 import Derivatives from "./pages/Derivatives";
 import Support from "./pages/Support";
 import NotFound from "./components/NotFound.jsx";
+import CoinDetails from "./components/crypto/CoinDetails";
 const App = () => {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/Stocks" element={<Stocks />} />
           <Route path="/Cryptocurrencies" element={<Cryptocurrencies />} />
+          <Route path="/coin/:id" element= { <CoinDetails/> }/>
           <Route path="/News" element={<News />} />
           <Route path="/NFT" element={<NFT />} />
           <Route path="/Trade" element={<Trade />} />
