@@ -29,9 +29,10 @@ To get started with this project, you'll need to follow these steps:
 1. Install Node.js and MongoDB on your local machine.
 2. Clone this repository to your local machine.
 3. Install the project dependencies by running `npm install` in both the client and server directories.
-4. Start the frontend `cd client/` by running `npm run dev` in the client directory.
-5. Start the backend `cd server/` by running `nodemon dev` in the server directory.
-6. Open your web browser and navigate to `http://localhost:3000`.
+4. Start the frontend and backend by running `npm run con` in the root directory.
+5. If wanting to Start the frontend only `cd client/` by running `npm run dev` in the client directory.
+6. If wanting to Start the backend only  `cd server/` by running `nodemon dev` in the server directory.
+7. Open your web browser and navigate to `http://localhost:3000`.
 
 ## Contributing
 
