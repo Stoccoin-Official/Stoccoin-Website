@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import Modal from "./Modal";
 
 const navigation = [
@@ -28,7 +28,7 @@ export default function Example() {
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8 "
+          className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1 ">
@@ -56,9 +56,8 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-8">
             {navigation.map((item) => (
-              <NavLink to={item.route}>
+              <NavLink to={item.route} key={item.name}>
                 <div
-                  key={item.name}
                   // href={item.href}
                   className="nav text-sm font-semibold leading-6 text-gray-900 relative w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-indigo-600 after:rounded-full after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
                 >
@@ -106,12 +105,15 @@ export default function Example() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <div
-                      key={item.name}
-                      className="nav py-3 text-sm font-semibold leading-6 text-gray-900 relative w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-indigo-600 after:rounded-full after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
-                    >
-                      <NavLink to={item.route}>{item.name}</NavLink>
-                    </div>
+                    <NavLink to={item.route} key={item.name}>
+                      <div
+                        key={item.name}
+                        className="nav py-3 text-sm font-semibold leading-6 text-gray-900 relative w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-indigo-600 after:rounded-full after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
+                      >
+                        {item.name}
+                        {/* <NavLink to={item.route}>{item.name}</NavLink> */}
+                      </div>
+                    </NavLink>
                   ))}
                 </div>
                 <div className="py-6">
@@ -142,7 +144,7 @@ export default function Example() {
             Login in to our platform
           </h2>
           <div className="w-full flex flex-col items-start gap-2">
-            <label for="loginEmail">Your Email</label>
+            <label htmlFor="loginEmail">Your Email</label>
             <input
               name="loginEmail"
               placeholder="name@company.com"
@@ -150,7 +152,7 @@ export default function Example() {
             />
           </div>
           <div className="w-full flex flex-col items-start gap-2">
-            <label for="loginPassword">Your Password</label>
+            <label htmlFor="loginPassword">Your Password</label>
             <input
               name="loginPassword"
               type="password"
@@ -161,7 +163,7 @@ export default function Example() {
           <div className="w-full flex flex-row justify-between items-center">
             <div className="flex flex-row justify-between items-center">
               <input type="checkbox" name="checkbox" className="h-4 w-4" />
-              <label className="px-2" for="checkbox">
+              <label className="px-2" htmlFor="checkbox">
                 {" "}
                 Remember Me
               </label>
@@ -210,7 +212,7 @@ export default function Example() {
           </h2>
           <div className="w-full flex flex-row items-center justify-between gap-8">
             <div className="flex flex-col items-start gap-2">
-              <label for="firstName">First Name</label>
+              <label htmlFor="firstName">First Name</label>
               <input
                 name="firstName"
                 placeholder="Jhon"
@@ -218,7 +220,7 @@ export default function Example() {
               />
             </div>
             <div className="flex flex-col items-start gap-2">
-              <label for="lastName">Last Name</label>
+              <label htmlFor="lastName">Last Name</label>
               <input
                 name="lastName"
                 placeholder="Doe"
@@ -227,7 +229,7 @@ export default function Example() {
             </div>
           </div>
           <div className="w-full flex flex-col items-start gap-2">
-            <label for="username">Username</label>
+            <label htmlFor="username">Username</label>
             <input
               name="username"
               placeholder="jhon007"
@@ -235,7 +237,7 @@ export default function Example() {
             />
           </div>
           <div className="w-full flex flex-col items-start gap-2">
-            <label for="signupEmail">Your Email</label>
+            <label htmlFor="signupEmail">Your Email</label>
             <input
               name="signupEmail"
               placeholder="jhon@xyz.com"
@@ -244,7 +246,7 @@ export default function Example() {
           </div>
           <div className="w-full flex flex-row items-center justify-between gap-8">
             <div className="flex flex-col items-start gap-2">
-              <label for="singupCreatePassword">Create Password</label>
+              <label htmlFor="singupCreatePassword">Create Password</label>
               <input
                 name="singupCreatePassword"
                 type="password"
@@ -256,7 +258,7 @@ export default function Example() {
               />
             </div>
             <div className="flex flex-col items-start gap-2">
-              <label for="signupConfirmPassword">Confirm Password</label>
+              <label htmlFor="signupConfirmPassword">Confirm Password</label>
               <input
                 name="signupConfirmPassword"
                 type="password"
