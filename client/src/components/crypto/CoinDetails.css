@@ -1,0 +1,118 @@
+.main_container{
+    border:2px solid black;
+    padding: 2rem;
+    border-radius: 0.4cm;
+    width: 90rem;
+    height: auto;
+}
+
+img{
+    width: 12rem;
+    height: auto;
+}
+
+.name{
+    display: flex;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.symbol{
+    display: flex;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.rank{
+    display: flex;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.high{
+    display: flex;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.low{
+    display: flex;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.supply{
+    /* border: 12px solid red; */
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    margin-left:34rem ;
+    margin-top: -22rem;
+}
+
+.max_supply,
+.circulating_supply,
+.market_cap,
+.all_time_high,
+.all_time_low{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .chart-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chart-button.active {
+    background-color: #333;
+    font-weight: bold;
+  }
+  
+  .radio_btns{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #555;
+  }
+  
+  .back-icon {
+    font-size: 18px;
+  }
+
+  .time{
+    font-size: 1rem;
+    opacity: 0.5;
+    
+  }
+  

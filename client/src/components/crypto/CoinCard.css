@@ -1,0 +1,119 @@
+.radio_btns{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+/* Add the following CSS styles inside your CoinCard.css file */
+
+.topi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem;
+}
+
+  .card {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.7cm;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0,0,0,0.7);
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .image {
+    width: 10rem;
+    height: auto;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p{
+    font-size: 1.4rem;
+  }
+
+
+@media (max-width: 1019px) {
+  .topi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main_container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .chart {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .chart-button {
+    margin-bottom: 0.5rem;
+  }
+
+  .radio_btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    margin-top: 1rem;
+  }
+
+  .rank {
+    margin-top: 1rem;
+  }
+
+  .high_low {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .high,
+  .low {
+    margin: 0.5rem;
+  }
+
+  .supply {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .max_supply,
+  .circulating_supply,
+  .market_cap,
+  .all_time_high,
+  .all_time_low {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .topi {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Add any other responsive styles as needed */
+
+  
