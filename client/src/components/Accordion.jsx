@@ -2,6 +2,24 @@ import React,{useState} from 'react';
 
 
 function Accordion() {
+  const faq=[
+    {
+      que:"Do you have free plans?",
+      ans:"Yea we have free plans",
+    },
+    {
+      que:"Do you have free plans?",
+      ans:"Yea we have free plans",
+    },
+    {
+      que:"Do you have free plans?",
+      ans:"Yea we have free plans",
+    },
+    {
+      que:"Do you have free plans?",
+      ans:"Yea we have free plans",
+    },
+  ]
   return (
 <section className="relative pt-20 pb-20 bg-blueGray-50 overflow-hidden">
   <img
@@ -18,8 +36,7 @@ function Accordion() {
         Frequently Asked Questions
       </h2>
       <div className="mb-11 flex flex-wrap -m-1">
-        <QnA/>
-        <QnA/>
+        {faq.map((member,index)=>(<QnA key={index} faq={member}/>))}
       </div>
       <p className="text-gray-600 text-center font-medium">
         <span>Still have any questions? </span>
@@ -35,7 +52,7 @@ function Accordion() {
 </section>
   )
 }
-function QnA(){
+function QnA({faq}){
   const [show,setshow]=useState(false);
   return(
     <div className="w-full p-1">
@@ -44,11 +61,10 @@ function QnA(){
               <div className="flex flex-wrap justify-between -m-2">
                 <div className="flex-1 p-2">
                   <h3 className=" text-lg font-semibold leading-normal">
-                    Do you provide any free plan?
+                    {faq.que}
                   </h3>
                   <p className={`text-gray-600 font-medium mt-4 ${show?'':'hidden'}` }>
-                    Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
-                    Volutpat tempor to the condi mentum vitae vel purus.
+                    {faq.ans}
                   </p>
                 </div>
                 <div className="w-auto p-2">
