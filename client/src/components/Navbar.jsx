@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FaUserAlt } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { loginIMG } from "../assets/index";
 import Modal from "./Modal";
 
 const navigation = [
@@ -23,6 +27,16 @@ export default function Example() {
   const [showResetPassword, setshowResetPassword] = useState(false);
   const [createPasswordValue, setcreatePasswordValue] = useState("");
   const [confirmPasswordValue, setconfirmPasswordValue] = useState("");
+
+  const [show, setShow] = useState(false);
+
+  function showPW() {
+    document.getElementById("password").setAttribute("type", "text");
+  }
+
+  function hidePW() {
+    document.getElementById("password").setAttribute("type", "password");
+  }
 
   return (
     <div className="bg-white">
@@ -137,64 +151,98 @@ export default function Example() {
           setshowLogin(false);
         }}
       >
-        <form className="flex flex-col items-start p-4 px-6 gap-6 text-lg">
-          <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
-            Login in to our platform
-          </h2>
-          <div className="w-full flex flex-col items-start gap-2">
-            <label for="loginEmail">Your Email</label>
-            <input
-              name="loginEmail"
-              placeholder="name@company.com"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
-            />
-          </div>
-          <div className="w-full flex flex-col items-start gap-2">
-            <label for="loginPassword">Your Password</label>
-            <input
-              name="loginPassword"
-              type="password"
-              placeholder="*********"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
-            />
-          </div>
-          <div className="w-full flex flex-row justify-between items-center">
-            <div className="flex flex-row justify-between items-center">
-              <input type="checkbox" name="checkbox" className="h-4 w-4" />
-              <label className="px-2" for="checkbox">
-                {" "}
-                Remember Me
-              </label>
+        <div className="flex justify-between w-[700px] items-center bg-cyan-200 p-4 gap-12 rounded-md shadow-xl">
+          {/* left part */}
+          <div className="flex flex-col justify-around">
+            <div className="">
+              <h1 className="font-extrabold font-sans text-gray-900 text-4xl">Stoccoin</h1>
+              <h2 className="font-bold text-purple-700">Welcome Back</h2>
             </div>
-            <a
-              href="#"
-              className="text-blue-700 hover:underline duration-300 ease-out"
-              onClick={() => {
-                setshowLogin(false);
-                setshowResetPassword(true);
-              }}
-            >
-              Forgot password?
-            </a>
+            <div className="flex flex-col">
+              <h2>Log in using: </h2>
+              <div className="flex">
+                <h2>hello</h2>
+                <h2>hello</h2>
+                <h2>hello</h2>
+              </div>
+            </div>
           </div>
-          <button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out ">
-            Login to your account
-          </button>
-          <div className="mx-auto">
-            <p>
-              Not Registered?{" "}
-              <button
-                className="text-blue-700 hover:underline duration-200 ease-out"
+
+          {/* right part --form */}
+          <form className="bg-white flex flex-col rounded-md shadow-lg justify-center items-start p-6 px-8 gap-10 text-lg">
+            <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
+              Login in to our platform
+            </h2>
+            <div className="gap-8 flex flex-col">
+              <div className="flex flex-col w-full items-start gap-2">
+                <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <input
+                  name="loginEmail"
+                  placeholder="name@company.com"
+                  className="w-[100%] bg-slate-100 py-2 px-10 focus:outline-indigo-500 block text-center"
+                />
+              </div>
+              <div className="flex flex-col w-full items-start gap-2">
+                <RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <input
+                  id="password"
+                  name="loginPassword"
+                  type="password"
+                  placeholder="*********"
+                  className="w-[100%] bg-slate-100 py-2 px-10 focus:outline-indigo-500 block text-center"
+                />
+                {show ?
+                  <AiFillEyeInvisible className='w-[20px] h-[20px] text-cyan-600 absolute text-center cursor-pointer mt-3 ml-[260px]'
+                    onClick={() => {
+                      setShow(false);
+                      hidePW();
+                    }} />
+                  :
+                  <AiFillEye className='w-[20px] h-[20px] text-cyan-600 absolute  text-center cursor-pointer mt-3 ml-[260px]' onClick={() => {
+                    setShow(true);
+                    showPW();
+                  }} />
+                }
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-2 justify-between items-center">
+              <div className="flex flex-row justify-between items-center">
+                <input type="checkbox" name="checkbox" className="h-4 w-4" />
+                <label className="px-2" for="checkbox">
+                  {" "}
+                  Remember Me
+                </label>
+              </div>
+              <a
+                href="#"
+                className="text-blue-700 hover:underline duration-300 ease-in-out font-semibold text-sm"
                 onClick={() => {
                   setshowLogin(false);
-                  setshowSignup(true);
+                  setshowResetPassword(true);
                 }}
               >
-                Create Account
-              </button>{" "}
-            </p>
-          </div>
-        </form>
+                Forgot password?
+              </a>
+            </div>
+            <button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out">
+              Login to your account
+            </button>
+            <div className="mx-auto">
+              <p>
+                Not Registered?{" "}
+                <button
+                  className="text-blue-700 hover:underline duration-200 ease-out"
+                  onClick={() => {
+                    setshowLogin(false);
+                    setshowSignup(true);
+                  }}
+                >
+                  Create Account
+                </button>{" "}
+              </p>
+            </div>
+          </form>
+        </div>
       </Modal>
 
       {/* Signup Modal */}
@@ -263,7 +311,7 @@ export default function Example() {
                 placeholder="********"
                 className={
                   !confirmPasswordValue.length == 0 &&
-                  confirmPasswordValue === createPasswordValue
+                    confirmPasswordValue === createPasswordValue
                     ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
                     : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
                 }
@@ -319,7 +367,7 @@ export default function Example() {
                 placeholder="********"
                 className={
                   !confirmPasswordValue.length == 0 &&
-                  confirmPasswordValue === createPasswordValue
+                    confirmPasswordValue === createPasswordValue
                     ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
                     : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
                 }
