@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import NotFound from "./components/NotFound";
 import {FaCircleNotch} from 'react-icons/fa'
-
+import Navbar from './components/Navbar'
+import Footer from "./components/Footer";
 const Homepage = lazy(()=> import("./pages/Homepage"));
 const Dashboard = lazy(()=> import("./pages/Dashboard"));
 const Stocks = lazy(()=> import("./pages/Stocks"));
@@ -19,6 +20,7 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar/>
         <Suspense fallback={<FaCircleNotch className="spinner" size="5em"/>} >
           <Routes>
             <Route path="/" element={<Homepage />} />
@@ -34,6 +36,7 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
