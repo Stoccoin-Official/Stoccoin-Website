@@ -1,6 +1,39 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from "react";
+
 
 function Accordion() {
+
+  const buttonRef2 = useRef(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      setShowButton(scrollPosition > 200); // Adjust the value (200) as per your requirement
+    };
+
+    const scrollToForm = () => {
+      window.scrollTo({
+        top: 3000,
+        behavior: "smooth",
+      });
+
+    };
+
+    const button = buttonRef2.current;
+
+    if (button) {
+      button.addEventListener("click", scrollToForm);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      if (button) {
+        button.removeEventListener("click", scrollToForm);
+      }
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
 <section className="relative pt-20 pb-20 bg-blueGray-50 overflow-hidden">
   <img
@@ -149,10 +182,12 @@ function Accordion() {
       <p className="text-gray-600 text-center font-medium">
         <span>Still have any questions? </span>
         <a
+          ref = {buttonRef2}
           className="font-semibold text-indigo-600 hover:text-indigo-700"
-          href="#"
+          id = "contact-button"
         >
           Contact us
+
         </a>
       </p>
     </div>
@@ -160,4 +195,12 @@ function Accordion() {
 </section>
   )
 }
+
+
+
+
+  
+
+
+
 export default Accordion;
