@@ -5,10 +5,13 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
-var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
-var loginRouter = require("./routes/login");
-var mailRouter = require("./routes/mail");
+
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/login');
+var messagesRouter = require('./routes/message');
+var mailRouter = require('./routes/mail')
+
 
 const middleware = require("./utils/middleware");
 const config = require("./utils/config");
@@ -46,6 +49,8 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/login", loginRouter);
 app.use("/mail", mailRouter);
+
+app.use('/messages', messagesRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
