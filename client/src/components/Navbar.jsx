@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaUserAlt } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { AiFillEye, AiFillMail, AiFillEyeInvisible, AiFillGoogleCircle, AiFillFacebook, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 import Modal from "./Modal";
 
 const navigation = [
@@ -204,79 +207,88 @@ export default function Example() {
           setshowSignup(false);
         }}
       >
-        <form className="flex flex-col items-start p-4 px-6 gap-6 text-lg">
-          <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
-            Signup to our platform
-          </h2>
-          <div className="w-full flex flex-row items-center justify-between gap-8">
-            <div className="flex flex-col items-start gap-2">
-              <label for="firstName">First Name</label>
-              <input
-                name="firstName"
-                placeholder="Jhon"
-                className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
-              />
+        <div className="flex justify-evenly w-[700px] items-center bg-cyan-200 p-4 gap-12 rounded-md shadow-xl">
+
+          {/* left part */}
+          <div className="flex flex-col justify-between gap-36 items-center">
+            <div className="flex flex-col gap-4">
+              <h1 className="font-extrabold text-6xl">Stoccoin</h1>
+              <h2 className="font-semibold text-2xl font-sans">Welcome Back</h2>
             </div>
-            <div className="flex flex-col items-start gap-2">
-              <label for="lastName">Last Name</label>
-              <input
-                name="lastName"
-                placeholder="Doe"
-                className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
-              />
+            <div className="flex flex-col justify-center items-center gap-4">
+              <p className="font-semibold text-purple-700 text-xl">Login using</p>
+              <div className="flex gap-4 justify-center items-center">
+                <AiFillGoogleCircle className="text-4xl hover:text-yellow-700 text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
+                <AiFillFacebook className="text-4xl hover:text-[#3b5998] text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
+                <AiFillTwitterCircle className="text-4xl hover:text-[#00acee] text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
+                <AiFillGithub className="text-4xl hover:text-black text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
+              </div>
             </div>
           </div>
-          <div className="w-full flex flex-col items-start gap-2">
-            <label for="username">Username</label>
-            <input
-              name="username"
-              placeholder="jhon007"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
-            />
-          </div>
-          <div className="w-full flex flex-col items-start gap-2">
-            <label for="signupEmail">Your Email</label>
-            <input
-              name="signupEmail"
-              placeholder="jhon@xyz.com"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
-            />
-          </div>
-          <div className="w-full flex flex-row items-center justify-between gap-8">
-            <div className="flex flex-col items-start gap-2">
-              <label for="singupCreatePassword">Create Password</label>
+
+          {/* right part */}
+          <form className="flex flex-col justify-center items-start p-6 px-8 gap-6 text-lg bg-white rounded-md shadow-lg">
+            <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
+              Signup to our platform
+            </h2>
+            <div className="w-[320px] flex items-center">
+              <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-2 ml-2 text-center' />
+              <input
+                name="fullname"
+                placeholder="Full Name | John Doe"
+                className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+              />
+            </div>
+            <div className="w-[320px] flex flex-col items-start gap-2">
+              <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+              <input
+                name="username"
+                placeholder="Username | john007"
+                className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+              />
+            </div>
+            <div className="w-[320px] flex flex-col items-start gap-2">
+              <AiFillMail className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+              <input
+                name="signupEmail"
+                placeholder="Email | john@xyz.com"
+                className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+              />
+            </div>
+            <div className="w-[320px] flex flex-col items-start gap-2">
+              <RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
               <input
                 name="singupCreatePassword"
                 type="password"
-                placeholder="********"
-                className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+                placeholder="Create Password"
+                className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500 text-center"
                 onChange={(e) => {
                   setcreatePasswordValue(e.target.value);
                 }}
               />
             </div>
-            <div className="flex flex-col items-start gap-2">
-              <label for="signupConfirmPassword">Confirm Password</label>
+            <div className="w-[320px] flex flex-col items-start gap-2">
+              <RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
               <input
                 name="signupConfirmPassword"
                 type="password"
-                placeholder="********"
+                placeholder="Confirm Password"
                 className={
                   !confirmPasswordValue.length == 0 &&
-                  confirmPasswordValue === createPasswordValue
-                    ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
-                    : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
+                    confirmPasswordValue === createPasswordValue
+                    ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500 text-center"
+                    : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500 text-center"
                 }
                 onChange={(e) => {
                   setconfirmPasswordValue(e.target.value);
                 }}
               />
             </div>
-          </div>
-          <button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out ">
-            Signup to our platform
-          </button>
-        </form>
+            <button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out ">
+              Signup to our platform
+            </button>
+          </form>
+        </div>
       </Modal>
 
       {/* Reset Password Modal */}
@@ -319,7 +331,7 @@ export default function Example() {
                 placeholder="********"
                 className={
                   !confirmPasswordValue.length == 0 &&
-                  confirmPasswordValue === createPasswordValue
+                    confirmPasswordValue === createPasswordValue
                     ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
                     : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
                 }
