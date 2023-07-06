@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaUserAlt } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
-import { AiFillEye, AiFillEyeInvisible, AiFillGoogleCircle, AiFillFacebook, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
+import { AiFillEye, AiFillMail, AiFillEyeInvisible, AiFillGoogleCircle, AiFillFacebook, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { loginIMG } from "../assets/index";
@@ -188,7 +187,7 @@ export default function Example() {
             </h2>
             <div className="gap-8 flex flex-col">
               <div className="flex flex-col w-full items-start gap-2">
-                <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <AiFillMail className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
                 <input
                   name="loginEmail"
                   placeholder="name@company.com"
