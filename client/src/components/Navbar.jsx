@@ -27,6 +27,16 @@ export default function Example() {
   const [createPasswordValue, setcreatePasswordValue] = useState("");
   const [confirmPasswordValue, setconfirmPasswordValue] = useState("");
 
+  const [show, setShow] = useState(false);
+
+  function showPW() {
+    document.getElementById("password").setAttribute("type", "text");
+  }
+
+  function hidePW() {
+    document.getElementById("password").setAttribute("type", "password");
+  }
+
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -207,16 +217,16 @@ export default function Example() {
           setshowSignup(false);
         }}
       >
-        <div className="flex justify-evenly w-[700px] items-center bg-cyan-200 p-4 gap-12 rounded-md shadow-xl">
+        <div className="flex justify-evenly w-[700px] items-center bg-cyan-200 p-4 gap-6 rounded-md shadow-xl">
 
           {/* left part */}
-          <div className="flex flex-col justify-between gap-36 items-center">
+          <div className="flex flex-col justify-between gap-20 items-center">
             <div className="flex flex-col gap-4">
               <h1 className="font-extrabold text-6xl">Stoccoin</h1>
-              <h2 className="font-semibold text-2xl font-sans">Welcome Back</h2>
+              <h2 className="font-semibold text-2xl font-sans">Welcome</h2>
             </div>
             <div className="flex flex-col justify-center items-center gap-4">
-              <p className="font-semibold text-purple-700 text-xl">Login using</p>
+              <p className="font-semibold text-purple-700 text-xl">Sign Up using</p>
               <div className="flex gap-4 justify-center items-center">
                 <AiFillGoogleCircle className="text-4xl hover:text-yellow-700 text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
                 <AiFillFacebook className="text-4xl hover:text-[#3b5998] text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
@@ -224,65 +234,93 @@ export default function Example() {
                 <AiFillGithub className="text-4xl hover:text-black text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
               </div>
             </div>
+            <p className="font-semibold">
+              Already have an account?{" "}
+              <button
+                className="text-blue-700 hover:underline duration-200 ease-in-out font-semibold hover:text-purple-700"
+                onClick={() => {
+                  setshowLogin(true);
+                  setshowSignup(false);
+                }}
+              >
+                Login here
+              </button>{" "}
+            </p>
           </div>
 
           {/* right part */}
-          <form className="flex flex-col justify-center items-start p-6 px-8 gap-6 text-lg bg-white rounded-md shadow-lg">
-            <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
+          <form className="bg-white flex flex-col rounded-md shadow-lg justify-center items-start p-6 px-8 gap-4 text-lg">
+            <h2 className="mx-auto text-3xl md:text-2xl font-semibold">
               Signup to our platform
             </h2>
-            <div className="w-[320px] flex items-center">
-              <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-2 ml-2 text-center' />
-              <input
-                name="fullname"
-                placeholder="Full Name | John Doe"
-                className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
-              />
-            </div>
-            <div className="w-[320px] flex flex-col items-start gap-2">
-              <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
-              <input
-                name="username"
-                placeholder="Username | john007"
-                className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
-              />
-            </div>
-            <div className="w-[320px] flex flex-col items-start gap-2">
-              <AiFillMail className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
-              <input
-                name="signupEmail"
-                placeholder="Email | john@xyz.com"
-                className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
-              />
-            </div>
-            <div className="w-[320px] flex flex-col items-start gap-2">
-              <RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
-              <input
-                name="singupCreatePassword"
-                type="password"
-                placeholder="Create Password"
-                className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500 text-center"
-                onChange={(e) => {
-                  setcreatePasswordValue(e.target.value);
-                }}
-              />
-            </div>
-            <div className="w-[320px] flex flex-col items-start gap-2">
-              <RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
-              <input
-                name="signupConfirmPassword"
-                type="password"
-                placeholder="Confirm Password"
-                className={
-                  !confirmPasswordValue.length == 0 &&
-                    confirmPasswordValue === createPasswordValue
-                    ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500 text-center"
-                    : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500 text-center"
+            <div className="gap-4 flex flex-col">
+              <div className="w-[320px] flex items-center">
+                <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-2 ml-2 text-center' />
+                <input
+                  name="fullname"
+                  placeholder="Full Name | John Doe"
+                  className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+                />
+              </div>
+              <div className="w-[320px] flex flex-col items-start gap-2">
+                <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <input
+                  name="username"
+                  placeholder="Username | john007"
+                  className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+                />
+              </div>
+              <div className="w-[320px] flex flex-col items-start gap-2">
+                <AiFillMail className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <input
+                  name="signupEmail"
+                  placeholder="Email | john@xyz.com"
+                  className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+                />
+              </div>
+              <div className="w-[320px] flex flex-col items-start gap-2">
+                <RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <input
+                  name="singupCreatePassword"
+                  type="password"
+                  placeholder="Create Password"
+                  className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500 text-center"
+                  onChange={(e) => {
+                    setcreatePasswordValue(e.target.value);
+                  }}
+                />
+
+              </div>
+              <div className="w-[320px] flex flex-col items-start gap-2">
+                <RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <input
+                  name="signupConfirmPassword"
+                  type="password"
+                  placeholder="Confirm Password"
+                  id="password"
+                  className={
+                    !confirmPasswordValue.length == 0 &&
+                      confirmPasswordValue === createPasswordValue
+                      ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500 text-center"
+                      : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500 text-center"
+                  }
+                  onChange={(e) => {
+                    setconfirmPasswordValue(e.target.value);
+                  }}
+                />
+                {show ?
+                  <AiFillEyeInvisible className='w-[20px] h-[20px] text-cyan-600 absolute text-center cursor-pointer mt-3 ml-[290px]'
+                    onClick={() => {
+                      setShow(false);
+                      hidePW();
+                    }} />
+                  :
+                  <AiFillEye className='w-[20px] h-[20px] text-cyan-600 absolute  text-center cursor-pointer mt-3 ml-[290px]' onClick={() => {
+                    setShow(true);
+                    showPW();
+                  }} />
                 }
-                onChange={(e) => {
-                  setconfirmPasswordValue(e.target.value);
-                }}
-              />
+              </div>
             </div>
             <button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out ">
               Signup to our platform
