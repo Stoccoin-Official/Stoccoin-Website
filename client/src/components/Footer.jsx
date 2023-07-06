@@ -8,6 +8,7 @@ import {
   faTwitter,
   faLinkedinIn,
   faBitcoin,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
@@ -71,6 +72,18 @@ function Footer() {
                     className="text-indigo-500 text-3xl mr-2"
                   />
                   LinkedIn
+                </a>
+              </li>
+              <li className="mb-2">
+                <a
+                  href="https://github.com/Stoccoin-Official/Stoccoin-Website"
+                  target="blank"
+                  className="text-gray-600 hover:text-black flex flex-row items-center">
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-indigo-500 text-3xl mr-2"
+                  />
+                  Github
                 </a>
               </li>
               <li className="mb-2">
