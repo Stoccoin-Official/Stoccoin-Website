@@ -88,6 +88,21 @@ function Footer() {
                   Koo
                 </a>
               </li>
+              <li className="mb-2">
+                <a
+                  href="https://github.com/Stoccoin-Official/Stoccoin-Website"
+                  target="blank"
+                  className="text-gray-600 hover:text-black flex flex-row items-center">
+                  <img
+                    src="/github.svg"
+                    alt="github"
+                    height={24}
+                    width={24}
+                    className=" text-indigo-500 text-3xl mr-3"
+                  />
+                  Github
+                </a>
+              </li>
             </ul>
           </div>
           <div className="w-full md:w-1/4 px-3 mb-3 md:mb-0 text-left">
