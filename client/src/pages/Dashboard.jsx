@@ -1,10 +1,7 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 const Dashboard = () => {
   return (
     <div>
-      <Navbar />
       <h1 className="text-5xl text-center p-8 m-8">Dashboard</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
@@ -14,7 +11,6 @@ const Dashboard = () => {
         consectetur animi magni nemo eveniet, reiciendis expedita, aperiam
         laborum ut quaerat?
       </p>
-      <Footer />
     </div>
   );
 };

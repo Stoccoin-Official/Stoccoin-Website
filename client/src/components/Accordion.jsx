@@ -20,6 +20,7 @@ function Accordion() {
       ans:"Yea we have free plans",
     },
   ]
+
   return (
 <section className="relative pt-20 pb-20 bg-blueGray-50 overflow-hidden">
   <img
@@ -107,4 +108,12 @@ function QnA({faq}){
         </div>
   );
 }
+
+
+
+
+  
+
+
+
 export default Accordion;
