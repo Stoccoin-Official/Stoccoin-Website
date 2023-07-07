@@ -100,7 +100,7 @@ function Footer() {
                     width={24}
                     className=" text-indigo-500 text-3xl mr-3"
                   />
-                  Github
+                  GitHub
                 </a>
               </li>
             </ul>
