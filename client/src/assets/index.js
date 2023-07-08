@@ -1,0 +1,1 @@
+export { default as signupIMG } from './signupIMG.jpg';

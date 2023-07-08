@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaUserAlt } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { AiFillEye, AiFillMail, AiFillEyeInvisible, AiFillGoogleCircle, AiFillFacebook, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
+import { signupIMG } from "../assets";
 import Modal from "./Modal";
 
 const navigation = [
@@ -217,23 +218,15 @@ export default function Example() {
           setshowSignup(false);
         }}
       >
-        <div className="flex justify-evenly w-[700px] items-center bg-cyan-200 p-4 gap-6 rounded-md shadow-xl">
+        <div className="flex justify-evenly w-[800px] items-center bg-cyan-200 p-4 gap-6 rounded-md shadow-xl">
 
           {/* left part */}
-          <div className="flex flex-col justify-between gap-20 items-center">
-            <div className="flex flex-col gap-4">
-              <h1 className="font-extrabold text-6xl">Stoccoin</h1>
-              <h2 className="font-semibold text-2xl font-sans">Welcome</h2>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-4">
-              <p className="font-semibold text-purple-700 text-xl">Sign Up using</p>
-              <div className="flex gap-4 justify-center items-center">
-                <AiFillGoogleCircle className="text-4xl hover:text-yellow-700 text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
-                <AiFillFacebook className="text-4xl hover:text-[#3b5998] text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
-                <AiFillTwitterCircle className="text-4xl hover:text-[#00acee] text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
-                <AiFillGithub className="text-4xl hover:text-black text-gray-700 transition-all duration-200 ease-in-out cursor-pointer hover:transform hover:scale-110" />
-              </div>
-            </div>
+          <div className="flex flex-col justify-between gap-2 items-center">
+            <img
+              src={signupIMG}
+              alt="signup image"
+              className="w-[400px] h-[420px] object-fill shadow-xl"
+            />
             <p className="font-semibold">
               Already have an account?{" "}
               <button
@@ -249,10 +242,13 @@ export default function Example() {
           </div>
 
           {/* right part */}
-          <form className="bg-white flex flex-col rounded-md shadow-lg justify-center items-start p-6 px-8 gap-4 text-lg">
-            <h2 className="mx-auto text-3xl md:text-2xl font-semibold">
-              Signup to our platform
-            </h2>
+          <form className="bg-white flex flex-col rounded-md shadow-lg justify-center items-center p-6 px-8 gap-4 text-md">
+            <div className="flex flex-col justify-center items-center">
+              <h1 className="text-center font-extrabold text-3xl">Stoccoin</h1>
+              <h2 className="mx-auto text-3xl md:text-2xl font-semibold">
+                Signup to our platform
+              </h2>
+            </div>
             <div className="gap-4 flex flex-col">
               <div className="w-[320px] flex items-center">
                 <FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-2 ml-2 text-center' />
