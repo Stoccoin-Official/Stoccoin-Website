@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 let tvScriptLoadingPromise;
 
-export default function Widget2() {
+export default function StocksWidget() {
   const onLoadScriptRef = useRef();
 
   useEffect(
@@ -26,11 +26,11 @@ export default function Widget2() {
       return () => onLoadScriptRef.current = null;
 
       function createWidget() {
-        if (document.getElementById('tradingview_20a86') && 'TradingView' in window) {
+        if (document.getElementById('tradingview_7d84a') && 'TradingView' in window) {
           new window.TradingView.widget({
             width: 1000,
             height: 600,
-            symbol: "BINANCE:BTCUSDT",
+            symbol: "NASDAQ:AAPL",
             interval: "D",
             timezone: "Etc/UTC",
             theme: "light",
@@ -39,7 +39,7 @@ export default function Widget2() {
             toolbar_bg: "#f1f3f6",
             enable_publishing: false,
             allow_symbol_change: true,
-            container_id: "tradingview_20a86"
+            container_id: "tradingview_7d84a"
           });
         }
       }
@@ -49,9 +49,8 @@ export default function Widget2() {
 
   return (
     <div className='tradingview-widget-container'>
-      <div id='tradingview_20a86' />
-      <div className="tradingview-widget-copyright">
-      </div>
+      <div id='tradingview_7d84a' />
+        <div className="tradingview-widget-copyright"> </div>
     </div>
   );
 }
