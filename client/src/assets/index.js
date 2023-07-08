@@ -1,1 +1,1 @@
-export { default as loginIMG } from './loginIMG.jpg';
+export { default as loginIMG } from './loginIMG.svg';
