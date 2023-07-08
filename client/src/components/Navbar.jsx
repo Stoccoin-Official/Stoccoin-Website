@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { AiFillEye, AiFillMail, AiFillEyeInvisible, AiFillGoogleCircle, AiFillFacebook, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 import { Dialog } from "@headlessui/react";
+import { loginIMG } from "../assets/index";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Modal from "./Modal";
 
@@ -23,6 +26,16 @@ export default function Example() {
   const [showResetPassword, setshowResetPassword] = useState(false);
   const [createPasswordValue, setcreatePasswordValue] = useState("");
   const [confirmPasswordValue, setconfirmPasswordValue] = useState("");
+
+  const [show, setShow] = useState(false);
+
+  function showPW() {
+    document.getElementById("password").setAttribute("type", "text");
+  }
+
+  function hidePW() {
+    document.getElementById("password").setAttribute("type", "password");
+  }
 
   return (
     <div className="bg-white">
@@ -137,54 +150,18 @@ export default function Example() {
           setshowLogin(false);
         }}
       >
-        <form className="flex flex-col items-start p-4 px-6 gap-6 text-lg">
-          <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
-            Login in to our platform
-          </h2>
-          <div className="w-full flex flex-col items-start gap-2">
-            <label for="loginEmail">Your Email</label>
-            <input
-              name="loginEmail"
-              placeholder="name@company.com"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+        <div className="flex justify-evenly w-[800px] h-full items-center bg-white p-4 gap-4 rounded-md shadow-xl">
+          {/* left part */}
+          <div className="flex flex-col justify-center items-center gap-2">
+            <img
+              src={loginIMG}
+              alt="logo"
+              className="w-full h-[400px] object-cover"
             />
-          </div>
-          <div className="w-full flex flex-col items-start gap-2">
-            <label for="loginPassword">Your Password</label>
-            <input
-              name="loginPassword"
-              type="password"
-              placeholder="*********"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
-            />
-          </div>
-          <div className="w-full flex flex-row justify-between items-center">
-            <div className="flex flex-row justify-between items-center">
-              <input type="checkbox" name="checkbox" className="h-4 w-4" />
-              <label className="px-2" for="checkbox">
-                {" "}
-                Remember Me
-              </label>
-            </div>
-            <a
-              href="#"
-              className="text-blue-700 hover:underline duration-300 ease-out"
-              onClick={() => {
-                setshowLogin(false);
-                setshowResetPassword(true);
-              }}
-            >
-              Forgot password?
-            </a>
-          </div>
-          <button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out ">
-            Login to your account
-          </button>
-          <div className="mx-auto">
-            <p>
+            <p className="font-semibold">
               Not Registered?{" "}
               <button
-                className="text-blue-700 hover:underline duration-200 ease-out"
+                className="text-blue-700 hover:underline duration-200 ease-in-out font-semibold hover:text-purple-700"
                 onClick={() => {
                   setshowLogin(false);
                   setshowSignup(true);
@@ -194,15 +171,78 @@ export default function Example() {
               </button>{" "}
             </p>
           </div>
-        </form>
-      </Modal>
+
+          {/* right part --form */}
+          <form className="bg-cyan-200 w-[550px] flex flex-col rounded-lg shadow-lg justify-center items-start p-6 px-8 gap-8 text-lg">
+            <div className="flex flex-col justify-center items-center">
+              <h1 className="text-center text-3xl font-extrabold">Stoccoin</h1>
+              <h2 className="mx-auto text-3xl md:text-2xl font-semibold"> Login in to our platform </h2>
+            </div>
+            <div className="gap-6 flex flex-col">
+              <div className="flex flex-col w-full items-start gap-2">
+                <AiFillMail className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <input
+                  name="loginEmail"
+                  placeholder="name@company.com"
+                  className="w-[100%] bg-slate-100 py-2 px-10 focus:outline-indigo-500 block text-center"
+                />
+              </div>
+              <div className="flex flex-col w-full items-start gap-2">
+                <RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+                <input
+                  id="password"
+                  name="loginPassword"
+                  type="password"
+                  placeholder="*********"
+                  className="w-[100%] bg-slate-100 py-2 px-10 focus:outline-indigo-500 block text-center"
+                />
+                {show ?
+                  <AiFillEyeInvisible className='w-[20px] h-[20px] text-cyan-600 absolute text-center cursor-pointer mt-3 ml-[255px]'
+                    onClick={() => {
+                      setShow(false);
+                      hidePW();
+                    }} />
+                  :
+                  <AiFillEye className='w-[20px] h-[20px] text-cyan-600 absolute  text-center cursor-pointer mt-3 ml-[255px]' onClick={() => {
+                    setShow(true);
+                    showPW();
+                  }} />
+                }
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-2 justify-between items-center">
+              <div className="flex flex-row justify-between items-center">
+                <input type="checkbox" name="checkbox" className="h-4 w-4" />
+                <label className="px-2 font-semibold" for="checkbox">
+                  {" "}
+                  Remember Me
+                </label>
+              </div>
+              <a
+                href="#"
+                className="text-blue-700 hover:underline duration-300 ease-in-out font-semibold text-md hover:text-purple-700"
+                onClick={() => {
+                  setshowLogin(false);
+                  setshowResetPassword(true);
+                }}
+              >
+                Forgot password?
+              </a>
+            </div>
+            <button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out">
+              Login to your account
+            </button>
+          </form>
+        </div>
+      </Modal >
 
       {/* Signup Modal */}
-      <Modal
+      <Modal Modal
         isOpen={showSignup}
         closeModal={() => {
           setshowSignup(false);
-        }}
+        }
+        }
       >
         <form className="flex flex-col items-start p-4 px-6 gap-6 text-lg">
           <h2 className="mx-auto text-2xl md:text-2xl font-semibold">
@@ -263,7 +303,7 @@ export default function Example() {
                 placeholder="********"
                 className={
                   !confirmPasswordValue.length == 0 &&
-                  confirmPasswordValue === createPasswordValue
+                    confirmPasswordValue === createPasswordValue
                     ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
                     : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
                 }
@@ -277,10 +317,10 @@ export default function Example() {
             Signup to our platform
           </button>
         </form>
-      </Modal>
+      </Modal >
 
       {/* Reset Password Modal */}
-      <Modal
+      < Modal
         isOpen={showResetPassword}
         closeModal={() => {
           setshowResetPassword(false);
@@ -319,7 +359,7 @@ export default function Example() {
                 placeholder="********"
                 className={
                   !confirmPasswordValue.length == 0 &&
-                  confirmPasswordValue === createPasswordValue
+                    confirmPasswordValue === createPasswordValue
                     ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
                     : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
                 }
@@ -333,7 +373,7 @@ export default function Example() {
             Reset Password
           </button>
         </form>
-      </Modal>
-    </div>
+      </Modal >
+    </div >
   );
 }

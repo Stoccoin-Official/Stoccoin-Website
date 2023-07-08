@@ -1,0 +1,1 @@
+export { default as loginIMG } from './loginIMG.jpg';
