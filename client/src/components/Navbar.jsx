@@ -167,6 +167,55 @@ export default function Example() {
 							alt='logo'
 							className='w-full h-full object-cover pl-10 pr-10 py-5'
 						/>
+						<div className='flex flex-col justify-center items-center gap-2.5'>
+							<p className='font-semibold text-ind-700 text-x'>SignUp using</p>
+							<div className='flex gap-4 justify-center items-center'>
+								<div className='group'>
+									<AiFillGoogleCircle
+										className='text-4xl'
+										style={{
+											color: "#DB4437",
+											transition: "all 200ms ease-in-out",
+										}}
+										onMouseEnter={(e) => (e.target.style.color = "black")}
+										onMouseLeave={(e) => (e.target.style.color = "#DB4437")}
+									/>
+								</div>
+								<div className='group'>
+									<AiFillFacebook
+										className='text-4xl'
+										style={{
+											color: "#3b5998",
+											transition: "all 200ms ease-in-out",
+										}}
+										onMouseEnter={(e) => (e.target.style.color = "black")}
+										onMouseLeave={(e) => (e.target.style.color = "#3b5998")}
+									/>
+								</div>
+								<div className='group'>
+									<AiFillTwitterCircle
+										className='text-4xl'
+										style={{
+											color: "#00acee",
+											transition: "all 200ms ease-in-out",
+										}}
+										onMouseEnter={(e) => (e.target.style.color = "black")}
+										onMouseLeave={(e) => (e.target.style.color = "#00acee")}
+									/>
+								</div>
+								<div className='group'>
+									<AiFillGithub
+										className='text-4xl'
+										style={{
+											color: "black",
+											transition: "all 200ms ease-in-out",
+										}}
+										onMouseEnter={(e) => (e.target.style.color = "black")}
+										onMouseLeave={(e) => (e.target.style.color = "black")}
+									/>
+								</div>
+							</div>
+						</div>
 						<p className='font-semibold'>
 							Not Registered?{" "}
 							<button
@@ -182,14 +231,14 @@ export default function Example() {
 					</div>
 
 					{/* right part --form */}
-					<form className='bg-indigo-300 w-[550px] flex flex-col rounded-lg shadow-lg justify-center items-start p-6 px-5 gap-8 text-lg'>
-						<div className='flex flex-col justify-center items-center pl-10 py-0 pt-0'>
+					<form className='bg-indigo-300 w-[550px] h-full flex flex-col rounded-lg shadow-lg justify-center items-start p-6 px-5 gap-8 text-lg'>
+						<div className='flex flex-col justify-center items-center pl-12 py-0 pt-0'>
 							<h1 className='text-center text-5xl font-extrabold py-3'>
 								Stoccoin
 							</h1>
-							<h2 className='mx-auto text-3xl md:text-2xl font-semibold pb-0 pt-3'>
+							<h2 className='mx-auto text-3xl md:text-2xl font-semibold'>
 								{" "}
-								Login in to our platform{" "}
+								Login to our platform{" "}
 							</h2>
 						</div>
 						<div className='gap-6 flex flex-col pl-7 pt-0'>
@@ -262,19 +311,68 @@ export default function Example() {
 					setshowSignup(false);
 				}}
 			>
-				<div className="flex justify-evenly w-[800px] items-center bg-white p-4 gap-6 rounded-md shadow-xl">
-
+				<div className='flex justify-evenly w-[900px] h-full items-center bg-white p-4 gap-4 rounded-md shadow-xl'>
 					{/* left part */}
-					<div className="flex flex-col justify-between gap-2 items-center">
+					<div className='flex flex-col justify-between gap-2 items-center'>
 						<img
 							src={signupIMG}
-							alt="signup image"
-							className="w-[400px] h-[420px] object-fill shadow-xl"
+							alt='signup image'
+							className='w-full h-full object-cover pl-10 pr-10 py-5'
 						/>
-						<p className="font-semibold">
+						<br />
+						<div className='flex flex-col justify-center items-center gap-2.5'>
+							<p className='font-semibold text-ind-700 text-x'>SignUp using</p>
+							<div className='flex gap-4 justify-center items-center'>
+								<div className='group'>
+									<AiFillGoogleCircle
+										className='text-4xl'
+										style={{
+											color: "#DB4437",
+											transition: "all 200ms ease-in-out",
+										}}
+										onMouseEnter={(e) => (e.target.style.color = "black")}
+										onMouseLeave={(e) => (e.target.style.color = "#DB4437")}
+									/>
+								</div>
+								<div className='group'>
+									<AiFillFacebook
+										className='text-4xl'
+										style={{
+											color: "#3b5998",
+											transition: "all 200ms ease-in-out",
+										}}
+										onMouseEnter={(e) => (e.target.style.color = "black")}
+										onMouseLeave={(e) => (e.target.style.color = "#3b5998")}
+									/>
+								</div>
+								<div className='group'>
+									<AiFillTwitterCircle
+										className='text-4xl'
+										style={{
+											color: "#00acee",
+											transition: "all 200ms ease-in-out",
+										}}
+										onMouseEnter={(e) => (e.target.style.color = "black")}
+										onMouseLeave={(e) => (e.target.style.color = "#00acee")}
+									/>
+								</div>
+								<div className='group'>
+									<AiFillGithub
+										className='text-4xl'
+										style={{
+											color: "black",
+											transition: "all 200ms ease-in-out",
+										}}
+										onMouseEnter={(e) => (e.target.style.color = "black")}
+										onMouseLeave={(e) => (e.target.style.color = "black")}
+									/>
+								</div>
+							</div>
+						</div>
+						<p className='font-semibold'>
 							Already have an account?{" "}
 							<button
-								className="text-blue-700 hover:underline duration-200 ease-in-out font-semibold hover:text-purple-700"
+								className='text-blue-700 hover:underline duration-200 ease-in-out font-semibold hover:text-purple-700'
 								onClick={() => {
 									setshowLogin(true);
 									setshowSignup(false);
@@ -286,61 +384,61 @@ export default function Example() {
 					</div>
 
 					{/* right part */}
-					<form className="bg-indigo-300 flex flex-col rounded-lg shadow-lg justify-center items-center p-6 px-8 gap-4 text-md">
-						<div className="flex flex-col justify-center items-center">
-							<h1 className="text-center font-extrabold text-3xl">Stoccoin</h1>
-							<h2 className="mx-auto text-3xl md:text-2xl font-semibold">
-								Signup to our platform
+					<form className='bg-indigo-300 w-[550px] h-full flex flex-col rounded-lg shadow-lg justify-center items-start p-6 px-5 gap-8 text-lg'>
+						<div className='flex flex-col justify-center items-center pl-12 py-0 pt-0'>
+							<h1 className='text-center text-5xl font-extrabold'>Stoccoin</h1>
+							<h2 className='mx-auto text-3xl md:text-2xl font-semibold pb-0 pt-3'>
+								{" "}
+								SignUp to our platform{" "}
 							</h2>
 						</div>
-						<div className="gap-4 flex flex-col">
-							<div className="w-[320px] flex items-center">
+						<div className='gap-4 flex flex-col'>
+							<div className='w-[320px] flex items-center'>
 								<FaUserAlt className='w-[20px] h-[20px] text-indigo-600 absolute mt-2 ml-2 text-center' />
 								<input
-									name="fullname"
-									placeholder="Full Name | John Doe"
-									className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+									name='fullname'
+									placeholder='Full Name | John Doe'
+									className='w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500'
 								/>
 							</div>
-							<div className="w-[320px] flex flex-col items-start gap-2">
+							<div className='w-[320px] flex flex-col items-start gap-2'>
 								<FaUserAlt className='w-[20px] h-[20px] text-indigo-600 absolute mt-3 ml-2 text-center' />
 								<input
-									name="username"
-									placeholder="Username | john007"
-									className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+									name='username'
+									placeholder='Username | john007'
+									className='w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500'
 								/>
 							</div>
-							<div className="w-[320px] flex flex-col items-start gap-2">
+							<div className='w-[320px] flex flex-col items-start gap-2'>
 								<AiFillMail className='w-[20px] h-[20px] text-indigo-600 absolute mt-3 ml-2 text-center' />
 								<input
-									name="signupEmail"
-									placeholder="Email | john@xyz.com"
-									className="w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500"
+									name='signupEmail'
+									placeholder='Email | john@xyz.com'
+									className='w-[100%] bg-slate-100 py-2 px-4 text-center focus:outline-indigo-500'
 								/>
 							</div>
-							<div className="w-[320px] flex flex-col items-start gap-2">
+							<div className='w-[320px] flex flex-col items-start gap-2'>
 								<RiLockPasswordFill className='w-[20px] h-[20px] text-indigo-600 absolute mt-3 ml-2 text-center' />
 								<input
-									name="singupCreatePassword"
-									type="password"
-									placeholder="Create Password"
-									className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500 text-center"
+									name='singupCreatePassword'
+									type='password'
+									placeholder='Create Password'
+									className='w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500 text-center'
 									onChange={(e) => {
 										setcreatePasswordValue(e.target.value);
 									}}
 								/>
-
 							</div>
-							<div className="w-[320px] flex flex-col items-start gap-2">
+							<div className='w-[320px] flex flex-col items-start gap-2'>
 								<RiLockPasswordFill className='w-[20px] h-[20px] text-indigo-600 absolute mt-3 ml-2 text-center' />
 								<input
-									name="signupConfirmPassword"
-									type="password"
-									placeholder="Confirm Password"
-									id="password"
+									name='signupConfirmPassword'
+									type='password'
+									placeholder='Confirm Password'
+									id='password'
 									className={
 										!confirmPasswordValue.length == 0 &&
-											confirmPasswordValue === createPasswordValue
+										confirmPasswordValue === createPasswordValue
 											? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500 text-center"
 											: "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500 text-center"
 									}
@@ -348,21 +446,26 @@ export default function Example() {
 										setconfirmPasswordValue(e.target.value);
 									}}
 								/>
-								{show ?
-									<AiFillEyeInvisible className='w-[20px] h-[20px] text-indigo-600 absolute text-center cursor-pointer mt-3 ml-[290px]'
+								{show ? (
+									<AiFillEyeInvisible
+										className='w-[20px] h-[20px] text-indigo-600 absolute text-center cursor-pointer mt-3 ml-[290px]'
 										onClick={() => {
 											setShow(false);
 											hidePW();
-										}} />
-									:
-									<AiFillEye className='w-[20px] h-[20px] text-indigo-600 absolute  text-center cursor-pointer mt-3 ml-[290px]' onClick={() => {
-										setShow(true);
-										showPW();
-									}} />
-								}
+										}}
+									/>
+								) : (
+									<AiFillEye
+										className='w-[20px] h-[20px] text-indigo-600 absolute  text-center cursor-pointer mt-3 ml-[290px]'
+										onClick={() => {
+											setShow(true);
+											showPW();
+										}}
+									/>
+								)}
 							</div>
 						</div>
-						<button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out ">
+						<button className='w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out '>
 							Signup to our platform
 						</button>
 					</form>
@@ -376,40 +479,40 @@ export default function Example() {
 					setshowResetPassword(false);
 				}}
 			>
-				<form className="flex flex-col items-start p-4 px-6 gap-6 text-lg">
-					<h2 className="mx-auto text-2xl md:text-2xl font-semibold">
+				<form className='flex flex-col items-start p-4 px-6 gap-6 text-lg'>
+					<h2 className='mx-auto text-2xl md:text-2xl font-semibold'>
 						Reset Password
 					</h2>
-					<div className="w-full flex flex-col items-start gap-2">
-						<label for="resetPasswordEmail">Your Email</label>
+					<div className='w-full flex flex-col items-start gap-2'>
+						<label for='resetPasswordEmail'>Your Email</label>
 						<input
-							name="resetPasswordEmail"
-							placeholder="jhon@xyz.com"
-							className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+							name='resetPasswordEmail'
+							placeholder='jhon@xyz.com'
+							className='w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500'
 						/>
 					</div>
-					<div className="w-full items-center justify-between gap-8">
-						<div className="flex flex-col items-start gap-2">
-							<label for="resetCreatePassword">Create Password</label>
+					<div className='w-full items-center justify-between gap-8'>
+						<div className='flex flex-col items-start gap-2'>
+							<label for='resetCreatePassword'>Create Password</label>
 							<input
-								name="resetCreatePassword"
-								type="password"
-								placeholder="********"
-								className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+								name='resetCreatePassword'
+								type='password'
+								placeholder='********'
+								className='w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500'
 								onChange={(e) => {
 									setcreatePasswordValue(e.target.value);
 								}}
 							/>
 						</div>
-						<div className="flex flex-col items-start gap-2">
-							<label for="signupConfirmPassword">Confirm Password</label>
+						<div className='flex flex-col items-start gap-2'>
+							<label for='signupConfirmPassword'>Confirm Password</label>
 							<input
-								name="signupConfirmPassword"
-								type="password"
-								placeholder="********"
+								name='signupConfirmPassword'
+								type='password'
+								placeholder='********'
 								className={
 									!confirmPasswordValue.length == 0 &&
-										confirmPasswordValue === createPasswordValue
+									confirmPasswordValue === createPasswordValue
 										? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
 										: "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
 								}
@@ -419,7 +522,7 @@ export default function Example() {
 							/>
 						</div>
 					</div>
-					<button className="w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out ">
+					<button className='w-full bg-indigo-600 px-4 py-2 rounded-md text-lg text-white hover:bg-indigo-800 duration-200 ease-out '>
 						Reset Password
 					</button>
 				</form>
@@ -465,7 +568,7 @@ export default function Example() {
 								placeholder='********'
 								className={
 									!confirmPasswordValue.length == 0 &&
-										confirmPasswordValue === createPasswordValue
+									confirmPasswordValue === createPasswordValue
 										? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
 										: "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
 								}
