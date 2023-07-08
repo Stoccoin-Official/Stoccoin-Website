@@ -21,7 +21,7 @@
     "react-chartjs-2": "^5.2.0",
     "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.10.1",
     "react-refresh": "^0.14.0",
     "react-router-dom": "^6.11.2",
     "react-scroll-trigger": "^0.6.14",

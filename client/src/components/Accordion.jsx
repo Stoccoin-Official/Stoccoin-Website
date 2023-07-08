@@ -1,38 +1,25 @@
-import React, { useEffect, useRef, useState } from "react";
+import React,{useState} from 'react';
 
 
 function Accordion() {
-
-  const buttonRef2 = useRef(null);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.pageYOffset;
-      setShowButton(scrollPosition > 200); // Adjust the value (200) as per your requirement
-    };
-
-    const scrollToForm = () => {
-      window.scrollTo({
-        top: 3000,
-        behavior: "smooth",
-      });
-
-    };
-
-    const button = buttonRef2.current;
-
-    if (button) {
-      button.addEventListener("click", scrollToForm);
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      if (button) {
-        button.removeEventListener("click", scrollToForm);
-      }
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const faq=[
+    {
+      que:"Do you have free plans?",
+      ans:"Yea we have free plans",
+    },
+    {
+      que:"Do you have free plans?",
+      ans:"Yea we have free plans",
+    },
+    {
+      que:"Do you have free plans?",
+      ans:"Yea we have free plans",
+    },
+    {
+      que:"Do you have free plans?",
+      ans:"Yea we have free plans",
+    },
+  ]
 
   return (
 <section className="relative pt-20 pb-20 bg-blueGray-50 overflow-hidden">
@@ -50,22 +37,40 @@ function Accordion() {
         Frequently Asked Questions
       </h2>
       <div className="mb-11 flex flex-wrap -m-1">
-        <div className="w-full p-1">
-          <a href="#">
-            <div className="py-7 px-8 bg-white bg-opacity-60 border-2 border-indigo-600 rounded-2xl shadow-10xl">
+        {faq.map((member,index)=>(<QnA key={index} faq={member}/>))}
+      </div>
+      <p className="text-gray-600 text-center font-medium">
+        <span>Still have any questions? </span>
+        <a
+          className="font-semibold text-indigo-600 hover:text-indigo-700"
+          href="#"
+        >
+          Contact us
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+  )
+}
+function QnA({faq}){
+  const [show,setshow]=useState(false);
+  return(
+    <div className="w-full p-1">
+          <div className='QnA' onClick={()=>setshow(!show)} >
+            <div className={`py-7 px-8 bg-white bg-opacity-60 border-2 rounded-2xl shadow-10xl ${show?' border-indigo-600':''}`}>
               <div className="flex flex-wrap justify-between -m-2">
                 <div className="flex-1 p-2">
-                  <h3 className="mb-4 text-lg font-semibold leading-normal">
-                    Do you provide any free plan?
+                  <h3 className=" text-lg font-semibold leading-normal">
+                    {faq.que}
                   </h3>
-                  <p className="text-gray-600 font-medium">
-                    Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
-                    Volutpat tempor to the condi mentum vitae vel purus.
+                  <p className={`text-gray-600 font-medium mt-4 ${show?'':'hidden'}` }>
+                    {faq.ans}
                   </p>
                 </div>
                 <div className="w-auto p-2">
                   <svg
-                    className="relative top-1"
+                    className={`relative top-1 ${show?'':'hidden'}`}
                     width={20}
                     height={20}
                     viewBox="0 0 20 20"
@@ -80,26 +85,11 @@ function Accordion() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div className="w-full p-1">
-          <a href="#">
-            <div className="py-7 px-8 bg-white bg-opacity-60 border border-gray-200 hover:border-gray-300 rounded-2xl shadow-10xl">
-              <div className="flex flex-wrap justify-between -m-2">
-                <div className="flex-1 p-2">
-                  <h3 className="text-lg font-semibold leading-normal">
-                    How to claim your 25% discount offer?
-                  </h3>
-                </div>
-                <div className="w-auto p-2">
                   <svg
-                    className="relative top-1"
-                    width={18}
-                    height={18}
-                    viewBox="0 0 18 18"
+                    className={`relative top-1 ${show?'hidden':''}`}
+                    width={20}
+                    height={20}
+                    viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -114,86 +104,9 @@ function Accordion() {
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
-        <div className="w-full p-1">
-          <a href="#">
-            <div className="py-7 px-8 bg-white bg-opacity-60 border border-gray-200 hover:border-gray-300 rounded-2xl shadow-10xl">
-              <div className="flex flex-wrap justify-between -m-2">
-                <div className="flex-1 p-2">
-                  <h3 className="text-lg font-semibold leading-normal">
-                    What’s your refund policy?
-                  </h3>
-                </div>
-                <div className="w-auto p-2">
-                  <svg
-                    className="relative top-1"
-                    width={18}
-                    height={18}
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.25 6.75L9 12L3.75 6.75"
-                      stroke="#18181B"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div className="w-full p-1">
-          <a href="#">
-            <div className="py-7 px-8 bg-white bg-opacity-60 border border-gray-200 hover:border-gray-300 rounded-2xl shadow-10xl">
-              <div className="flex flex-wrap justify-between -m-2">
-                <div className="flex-1 p-2">
-                  <h3 className="text-lg font-semibold leading-normal">
-                    How to get support for the product?
-                  </h3>
-                </div>
-                <div className="w-auto p-2">
-                  <svg
-                    className="relative top-1"
-                    width={18}
-                    height={18}
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.25 6.75L9 12L3.75 6.75"
-                      stroke="#18181B"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <p className="text-gray-600 text-center font-medium">
-        <span>Still have any questions? </span>
-        <a
-          ref = {buttonRef2}
-          className="font-semibold text-indigo-600 hover:text-indigo-700"
-          id = "contact-button"
-        >
-          Contact us
-
-        </a>
-      </p>
-    </div>
-  </div>
-</section>
-  )
+  );
 }
 
 
