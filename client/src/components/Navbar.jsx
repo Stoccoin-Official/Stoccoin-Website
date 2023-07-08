@@ -10,6 +10,7 @@ import {
 	AiFillGithub,
 	AiFillTwitterCircle,
 } from "react-icons/ai";
+import { FaUserAlt } from "react-icons/fa";
 import { Dialog } from "@headlessui/react";
 import { loginIMG, signupIMG } from "../assets/index";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -255,8 +256,6 @@ export default function Example() {
 			</Modal>
 
 			{/* Signup Modal */}
-
-			{/* Signup Modal */}
 			<Modal
 				isOpen={showSignup}
 				closeModal={() => {
@@ -287,7 +286,7 @@ export default function Example() {
 					</div>
 
 					{/* right part */}
-					<form className="bg-cyan-200 flex flex-col rounded-lg shadow-lg justify-center items-center p-6 px-8 gap-4 text-md">
+					<form className="bg-indigo-300 flex flex-col rounded-lg shadow-lg justify-center items-center p-6 px-8 gap-4 text-md">
 						<div className="flex flex-col justify-center items-center">
 							<h1 className="text-center font-extrabold text-3xl">Stoccoin</h1>
 							<h2 className="mx-auto text-3xl md:text-2xl font-semibold">
@@ -296,7 +295,7 @@ export default function Example() {
 						</div>
 						<div className="gap-4 flex flex-col">
 							<div className="w-[320px] flex items-center">
-								<FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-2 ml-2 text-center' />
+								<FaUserAlt className='w-[20px] h-[20px] text-indigo-600 absolute mt-2 ml-2 text-center' />
 								<input
 									name="fullname"
 									placeholder="Full Name | John Doe"
@@ -304,7 +303,7 @@ export default function Example() {
 								/>
 							</div>
 							<div className="w-[320px] flex flex-col items-start gap-2">
-								<FaUserAlt className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+								<FaUserAlt className='w-[20px] h-[20px] text-indigo-600 absolute mt-3 ml-2 text-center' />
 								<input
 									name="username"
 									placeholder="Username | john007"
@@ -312,7 +311,7 @@ export default function Example() {
 								/>
 							</div>
 							<div className="w-[320px] flex flex-col items-start gap-2">
-								<AiFillMail className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+								<AiFillMail className='w-[20px] h-[20px] text-indigo-600 absolute mt-3 ml-2 text-center' />
 								<input
 									name="signupEmail"
 									placeholder="Email | john@xyz.com"
@@ -320,7 +319,7 @@ export default function Example() {
 								/>
 							</div>
 							<div className="w-[320px] flex flex-col items-start gap-2">
-								<RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+								<RiLockPasswordFill className='w-[20px] h-[20px] text-indigo-600 absolute mt-3 ml-2 text-center' />
 								<input
 									name="singupCreatePassword"
 									type="password"
@@ -333,7 +332,7 @@ export default function Example() {
 
 							</div>
 							<div className="w-[320px] flex flex-col items-start gap-2">
-								<RiLockPasswordFill className='w-[20px] h-[20px] text-cyan-600 absolute mt-3 ml-2 text-center' />
+								<RiLockPasswordFill className='w-[20px] h-[20px] text-indigo-600 absolute mt-3 ml-2 text-center' />
 								<input
 									name="signupConfirmPassword"
 									type="password"
@@ -350,13 +349,13 @@ export default function Example() {
 									}}
 								/>
 								{show ?
-									<AiFillEyeInvisible className='w-[20px] h-[20px] text-cyan-600 absolute text-center cursor-pointer mt-3 ml-[290px]'
+									<AiFillEyeInvisible className='w-[20px] h-[20px] text-indigo-600 absolute text-center cursor-pointer mt-3 ml-[290px]'
 										onClick={() => {
 											setShow(false);
 											hidePW();
 										}} />
 									:
-									<AiFillEye className='w-[20px] h-[20px] text-cyan-600 absolute  text-center cursor-pointer mt-3 ml-[290px]' onClick={() => {
+									<AiFillEye className='w-[20px] h-[20px] text-indigo-600 absolute  text-center cursor-pointer mt-3 ml-[290px]' onClick={() => {
 										setShow(true);
 										showPW();
 									}} />

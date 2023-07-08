@@ -14,7 +14,7 @@ const Modal = ({ isOpen, closeModal, children }) => {
         id="modal"
         onClick={handleModal}
       >
-        <div className="w-[85%] md:max-w-[800px] justify-center items-center flex flex-col gap-2">
+        <div className="w-[85%] md:max-w-[800px] justify-center items-center flex flex-col gap-2 mt-4">
           <div
             className="text-xl font-bolder place-self-end hover:bg-red-500 text-white md:p-1 cursor-pointer duration-150 ease-out"
             onClick={() => closeModal()}
