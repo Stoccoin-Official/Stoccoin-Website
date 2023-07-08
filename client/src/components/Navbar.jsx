@@ -218,7 +218,7 @@ export default function Example() {
           setshowSignup(false);
         }}
       >
-        <div className="flex justify-evenly w-[800px] items-center bg-cyan-200 p-4 gap-6 rounded-md shadow-xl">
+        <div className="flex justify-evenly w-[800px] items-center bg-white p-4 gap-6 rounded-md shadow-xl">
 
           {/* left part */}
           <div className="flex flex-col justify-between gap-2 items-center">
@@ -242,7 +242,7 @@ export default function Example() {
           </div>
 
           {/* right part */}
-          <form className="bg-white flex flex-col rounded-md shadow-lg justify-center items-center p-6 px-8 gap-4 text-md">
+          <form className="bg-cyan-200 flex flex-col rounded-lg shadow-lg justify-center items-center p-6 px-8 gap-4 text-md">
             <div className="flex flex-col justify-center items-center">
               <h1 className="text-center font-extrabold text-3xl">Stoccoin</h1>
               <h2 className="mx-auto text-3xl md:text-2xl font-semibold">
