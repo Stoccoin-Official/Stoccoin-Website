@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: stoccoin-website-service
+spec:
+  selector:
+    app: stoccoin-website
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer
+
+
+#kubectl apply -f deployment.yaml(to apply the deployment file)
+#kubectl apply -f service.yaml(To apply the service file)
+#kubectl get service stoccoin-website-service(To get start it)
