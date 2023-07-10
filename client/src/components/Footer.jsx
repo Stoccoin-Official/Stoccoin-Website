@@ -3,14 +3,16 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ScrollToTopButton from "./scrollButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faTwitter,
-  faLinkedinIn,
-  faBitcoin,
-} from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { AiFillInstagram, AiFillMail } from "react-icons/ai";
+import { koo, koo2 } from '../assets';
+
 
 function Footer() {
+
+  const [hover, setHover] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     toast.success("Subscription successful!", {
@@ -22,109 +24,85 @@ function Footer() {
     <footer className="bg-white">
       <div className="container mx-auto px-4 py-8">
         <hr className="border-gray-700 my-8" />
-        <div className="flex flex-wrap justify-center">
-          <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0 text-left">
-            <h2 className="text-xl font-bold text-black mb-4">About Us</h2>
-            <p className="text-gray-600 leading-loose" style={{ maxWidth: "300px" }}>
+        <div className="flex justify-between p-2 items-start  ">
+          <div className="flex flex-col gap-2 justify-start items-start">
+            <Link to="/">
+              <img
+                src='./logo.svg'
+                alt="logo"
+                height={50}
+                width={50}
+                className="text-indigo-500 text-3xl mr-3 hover:transform hover:scale-110 transition duration-300 ease-in-out"
+              />
+            </Link>
+            <h1 className="text-4xl font-sans font-extrabold text-black mb-4 text-center">Stoccoin</h1>
+            <p className="font-semibold font-sans text-start w-96">
               Discover our mission to provide real-time market data and curated news feeds for stocks and cryptocurrencies. <br /> Stay informed and make confident investment decisions with our comprehensive resources.
             </p>
-
           </div>
 
-          <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0 text-left">
-            <h2 className="text-xl font-bold text-black mb-4">Follow Us</h2>
-            <ul className="list-none">
-              <li className="mb-2">
-                <a
-                  href="https://www.instagram.com/stoccoin/"
-                  target="blank"
-                  className="text-gray-600 hover:text-black flex flex-row items-center">
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className="text-indigo-500 text-3xl mr-2"
-                  />
-                  Instagram
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="https://twitter.com/stoccoinco"
-                  target="blank"
-                  className="text-gray-600 hover:text-black flex flex-row items-center">
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    className="text-indigo-500 text-3xl mr-2"
-                  />
-                  Twitter
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="https://www.linkedin.com/company/stoccoin/"
-                  target="blank"
-                  className="text-gray-600 hover:text-black flex flex-row items-center">
-                  <FontAwesomeIcon
-                    icon={faLinkedinIn}
-                    className="text-indigo-500 text-3xl mr-2"
-                  />
-                  LinkedIn
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="https://www.kooapp.com/profile/stoccoin/"
-                  target="blank"
-                  className="text-gray-600 hover:text-black flex flex-row items-center">
-                  <img
-                    src="/koo-icon.svg"
-                    alt="koo"
-                    height={24}
-                    width={24}
-                    className=" text-indigo-500 text-3xl mr-3"
-                  />
-                  Koo
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="https://github.com/Stoccoin-Official/Stoccoin-Website"
-                  target="blank"
-                  className="text-gray-600 hover:text-black flex flex-row items-center">
-                  <img
-                    src="/github.svg"
-                    alt="github"
-                    height={24}
-                    width={24}
-                    className=" text-indigo-500 text-3xl mr-3"
-                  />
-                  GitHub
-                </a>
-              </li>
-            </ul>
+          <div className="flex flex-col justify-start text-left items-start gap-2">
+            <h2 className="text-xl font-bold text-slate-800 mb-4">Follow Us</h2>
+            <div className="list-none flex flex-col">
+              <div className="mb-2">
+                <Link to="https://www.instagram.com/stoccoin/">
+                  <AiFillInstagram size={30} className="fill-gray-700 hover:fill-red-600 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
+                </Link>
+              </div>
+              <div className="mb-2">
+                <Link to="https://twitter.com/stoccoinco">
+                  <BsTwitter size={30} className="fill-gray-700 hover:fill-[#00acee] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
+                </Link>
+              </div>
+              <div className="mb-2">
+                <Link to="https://www.linkedin.com/company/stoccoin/">
+                  <BsLinkedin size={30} className="fill-gray-700 hover:fill-[#0A66C2] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
+                </Link>
+              </div>
+              <div className="mb-2">
+                <Link to="https://www.kooapp.com/profile/stoccoin/" >
+                  {
+                    hover
+                      ?
+                      <img src={koo2} alt="koo-icon" className="cls-1 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} />
+                      :
+                      <img src={koo} alt="koo-icon" className="cls-1 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} />
+                  }
+                </Link>
+              </div>
+              <div className="mb-2">
+                <Link to="https://github.com/Stoccoin-Official/Stoccoin-Website" >
+                  <BsGithub size={30} className="fill-gray-700 hover:fill-[black] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
+                </Link>
+              </div>
+            </div>
           </div>
-          <div className="w-full md:w-1/4 px-3 mb-3 md:mb-0 text-left">
-            <h2 className="text-xl font-bold text-black mb-4">Newsletter</h2>
+          <div className="w-[110%] md:w-1/4 px-3 mb-3 md:mb-0 text-left">
+            <h2 className="text-xl font-bold text-slate-800 mb-4">Newsletter</h2>
             <form onSubmit={handleSubmit}>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-gray-200 rounded-md py-2 px-3 text-gray-900 w-full mb-2 duration-200 ease-out focus:outline-gray-900"
-              />
+              <div className="flex flex-col">
+                <AiFillMail className="relative top-[30px] ml-2 text-gray-700" size={20} />
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="bg-gray-200 rounded-md py-2 px-3 text-gray-900 w-[110%] mb-2 duration-200 ease-in-out focus:outline-gray-900 pl-10"
+                />
+              </div>
               <br />
               <button
                 type="submit"
-                className="bg-gray-600 hover:bg-gray-700 rounded py-2 px-4 text-white w-full duration-200 ease-out">
+                className="bg-gray-600 hover:bg-gray-700 rounded py-2 px-4 text-white w-[110%] duration-200 ease-out">
                 Subscribe
               </button>
             </form>
             <br />
-            <p className="text-gray-500 text-center">
-          &copy; 2023 Stoccoin. All rights reserved.
-        </p>
+            <p className="text-gray-500 text-center font-semibold w-[110%]">
+              &copy; 2023 Stoccoin. All rights reserved.
+            </p>
           </div>
         </div>
         <br />
-        
+
         <ScrollToTopButton />
       </div>
       <ToastContainer />
