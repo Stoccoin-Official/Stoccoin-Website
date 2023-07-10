@@ -24,8 +24,8 @@ function Footer() {
     <footer className="bg-white">
       <div className="container mx-auto px-4 py-8">
         <hr className="border-gray-700 my-8" />
-        <div className="flex justify-between p-2 items-start  ">
-          <div className="flex flex-col gap-2 justify-start items-start">
+        <div className="md:flex-row justify-center items-center flex md:justify-between flex-col p-2 md:items-start md:1/4">
+          <div className="flex flex-col justify-center items-center gap-2 md:justify-start md:items-start md:1/4">
             <Link to="/">
               <img
                 src='./logo.svg'
@@ -36,31 +36,31 @@ function Footer() {
               />
             </Link>
             <h1 className="text-4xl font-sans font-extrabold text-black mb-4 text-center">Stoccoin</h1>
-            <p className="font-semibold font-sans text-start w-96">
-              Discover our mission to provide real-time market data and curated news feeds for stocks and cryptocurrencies. <br /> Stay informed and make confident investment decisions with our comprehensive resources.
-            </p>
+              <p className="font-semibold font-sans text-center md:text-start w-full md:w-96">
+                Discover our mission to provide real-time market data and curated news feeds for stocks and cryptocurrencies. <br /> Stay informed and make confident investment decisions with our comprehensive resources.
+              </p>
           </div>
 
-          <div className="flex flex-col justify-start text-left items-start gap-2">
+          <div className="flex md:flex-col md:mt-0 mt-4  md:1/4 justify-start text-left items-start gap-2">
             <h2 className="text-xl font-bold text-slate-800 mb-4">Follow Us</h2>
-            <div className="list-none flex flex-col">
+            <div className="list-none flex gap-4 md:flex-col">
               <div className="mb-2">
-                <Link to="https://www.instagram.com/stoccoin/">
+                <Link to="https://www.instagram.com/stoccoin/" target="_blank">
                   <AiFillInstagram size={30} className="fill-gray-700 hover:fill-red-600 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
               <div className="mb-2">
-                <Link to="https://twitter.com/stoccoinco">
+                <Link to="https://twitter.com/stoccoinco" target="_blank">
                   <BsTwitter size={30} className="fill-gray-700 hover:fill-[#00acee] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
               <div className="mb-2">
-                <Link to="https://www.linkedin.com/company/stoccoin/">
+                <Link to="https://www.linkedin.com/company/stoccoin/" target="_blank">
                   <BsLinkedin size={30} className="fill-gray-700 hover:fill-[#0A66C2] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
               <div className="mb-2">
-                <Link to="https://www.kooapp.com/profile/stoccoin/" >
+                <Link to="https://www.kooapp.com/profile/stoccoin/" target="_blank">
                   {
                     hover
                       ?
@@ -71,13 +71,13 @@ function Footer() {
                 </Link>
               </div>
               <div className="mb-2">
-                <Link to="https://github.com/Stoccoin-Official/Stoccoin-Website" >
+                <Link to="https://github.com/Stoccoin-Official/Stoccoin-Website" target="_blank">
                   <BsGithub size={30} className="fill-gray-700 hover:fill-[black] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
             </div>
           </div>
-          <div className="w-[110%] md:w-1/4 px-3 mb-3 md:mb-0 text-left">
+          <div className="md:w-1/4 w-full px-3 mb-3 md:mb-0 text-left">
             <h2 className="text-xl font-bold text-slate-800 mb-4">Newsletter</h2>
             <form onSubmit={handleSubmit}>
               <div className="flex flex-col">
