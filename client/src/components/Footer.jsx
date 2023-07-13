@@ -24,7 +24,7 @@ function Footer() {
     <footer className="bg-white">
       <div className="container mx-auto px-4 py-8">
         <hr className="border-gray-700 my-8" />
-        <div className="md:flex-row justify-center items-center flex md:justify-between flex-col p-2 md:items-start md:1/4">
+        <div className="md:flex-row justify-center items-center flex md:justify-around flex-col p-2 md:items-start md:1/4">
           <div className="flex flex-col justify-center items-center gap-2 md:justify-start md:items-start md:1/4">
             <Link to="/">
               <img
@@ -35,14 +35,14 @@ function Footer() {
                 className="text-indigo-500 text-3xl mr-3 hover:transform hover:scale-110 transition duration-300 ease-in-out"
               />
             </Link>
-            <h1 className="text-4xl font-sans font-extrabold text-black mb-4 text-center">Stoccoin</h1>
-              <p className="font-semibold font-sans text-center md:text-start w-full md:w-96">
-                Discover our mission to provide real-time market data and curated news feeds for stocks and cryptocurrencies. <br /> Stay informed and make confident investment decisions with our comprehensive resources.
-              </p>
+            <h1 className="text-6xl font-sans font-extrabold text-black mb-4 text-center">Stoccoin</h1>
+            <p className="font-semibold font-sans text-center md:text-start w-full md:w-96">
+              Discover our mission to provide real-time market data and curated news feeds for stocks and cryptocurrencies. <br /> Stay informed and make confident investment decisions with our comprehensive resources.
+            </p>
           </div>
 
           <div className="flex md:flex-col md:mt-0 mt-4  md:1/4 justify-start text-left items-start gap-2">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">Follow Us</h2>
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">Follow Us</h2>
             <div className="list-none flex gap-4 md:flex-col">
               <div className="mb-2">
                 <Link to="https://www.instagram.com/stoccoin/" target="_blank">
@@ -78,7 +78,7 @@ function Footer() {
             </div>
           </div>
           <div className="md:w-1/4 w-full px-3 mb-3 md:mb-0 text-left">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">Newsletter</h2>
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">Newsletter</h2>
             <form onSubmit={handleSubmit}>
               <div className="flex flex-col">
                 <AiFillMail className="relative top-[30px] ml-2 text-gray-700" size={20} />
