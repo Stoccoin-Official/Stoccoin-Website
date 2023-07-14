@@ -46,33 +46,33 @@ function Footer() {
             <div className="list-none flex gap-6 md:grid grid-cols-2">
               <div className="mb-2">
                 <Link to="https://www.instagram.com/stoccoin/" target="_blank">
-                  <AiFillInstagram size={30} className="fill-gray-700 hover:fill-red-600 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
+                  <AiFillInstagram title="Instagram" size={30} className="fill-gray-700 hover:fill-red-600 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
               <div className="mb-2">
                 <Link to="https://twitter.com/stoccoinco" target="_blank">
-                  <BsTwitter size={30} className="fill-gray-700 hover:fill-[#00acee] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
+                  <BsTwitter title="Twitter" size={30} className="fill-gray-700 hover:fill-[#00acee] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
               <div className="mb-2">
                 <Link to="https://www.linkedin.com/company/stoccoin/" target="_blank">
-                  <BsLinkedin size={30} className="fill-gray-700 hover:fill-[#0A66C2] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
+                  <BsLinkedin size={30} title="Linkedin" className="fill-gray-700 hover:fill-[#0A66C2] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
-              <div className="">
+              <div className="w-[28px]">
                 <Link to="https://www.kooapp.com/profile/stoccoin/" target="_blank">
                   {
                     hover
                       ?
-                      <img src={koo2} alt="koo-icon" className="cls-1 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} />
+                      <img src={koo2} title="Koo" alt="koo-icon" className=" hover:transform hover:scale-125 transition-all duration-200 ease-in-out" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} />
                       :
-                      <img src={koo} alt="koo-icon" className="cls-1 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} />
+                      <img src={koo} title="Koo" alt="koo-icon" className=" hover:transform hover:scale-125 transition-all duration-200 ease-in-out" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} />
                   }
                 </Link>
               </div>
               <div className="mb-2">
                 <Link to="https://github.com/Stoccoin-Official/Stoccoin-Website" target="_blank">
-                  <BsGithub size={30} className="fill-gray-700 hover:fill-[black] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
+                  <BsGithub title="Github" size={30} className="fill-gray-700 hover:fill-[black] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
             </div>
