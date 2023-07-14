@@ -281,7 +281,7 @@ export default function Example() {
 						<div className='w-full flex flex-col gap-2 justify-between items-center'>
 							<div className='flex flex-row justify-between items-center'>
 								<input type='checkbox' name='checkbox' className='h-4 w-4' />
-								<label className='px-2 font-semibold' for='checkbox'>
+								<label className='px-2 font-semibold' htmlFor='checkbox'>
 									{" "}
 									Remember Me
 								</label>
