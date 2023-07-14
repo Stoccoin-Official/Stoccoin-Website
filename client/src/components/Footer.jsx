@@ -22,7 +22,7 @@ function Footer() {
   };
   return (
     <footer className="bg-white">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4">
         <hr className="border-gray-700 my-8" />
         <div className="md:flex-row justify-center items-center flex md:justify-around flex-col p-2 md:items-start md:1/4">
           <div className="flex flex-col justify-center items-center gap-2 md:justify-start md:items-start md:1/4">
@@ -41,9 +41,9 @@ function Footer() {
             </p>
           </div>
 
-          <div className="flex md:flex-col md:mt-0 mt-4  md:1/4 justify-start text-left items-start gap-2">
+          <div className="flex md:flex-col md:mt-0 mt-4  md:1/4 justify-start text-left items-center gap-6 md:items-start">
             <h2 className="text-3xl font-bold text-slate-800 mb-4">Follow Us</h2>
-            <div className="list-none flex gap-4 md:flex-col">
+            <div className="list-none flex gap-6 md:grid grid-cols-2">
               <div className="mb-2">
                 <Link to="https://www.instagram.com/stoccoin/" target="_blank">
                   <AiFillInstagram size={30} className="fill-gray-700 hover:fill-red-600 hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
@@ -59,7 +59,7 @@ function Footer() {
                   <BsLinkedin size={30} className="fill-gray-700 hover:fill-[#0A66C2] hover:transform hover:scale-125 transition-all duration-200 ease-in-out" />
                 </Link>
               </div>
-              <div className="mb-2">
+              <div className="">
                 <Link to="https://www.kooapp.com/profile/stoccoin/" target="_blank">
                   {
                     hover
@@ -101,8 +101,6 @@ function Footer() {
             </p>
           </div>
         </div>
-        <br />
-
         <ScrollToTopButton />
       </div>
       <ToastContainer />
