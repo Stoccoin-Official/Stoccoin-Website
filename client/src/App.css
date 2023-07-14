@@ -57,3 +57,19 @@
   transition: transform 0.5s;
   transform-origin: center;
 }
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: spin infinite 1s linear;
+}
+
+@keyframes spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}

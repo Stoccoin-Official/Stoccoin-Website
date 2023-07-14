@@ -1,17 +1,16 @@
-import Navbar from "../components/Navbar";
+import Header from "../components/trade/Header";
+import StocksWidget from "../components/trade/StocksWidget";
+import CryptoWidget from "../components/trade/CryptoWidget";
+
 const Trade = () => {
   return (
     <div>
-      <Navbar />
-      <h1 className="text-5xl text-center p-8 m-8">Trade</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
-        placeat blanditiis, est non atque cum aut ratione pariatur quas eligendi
-        iure earum illo quos aspernatur beatae nesciunt expedita. Quidem nam ad
-        illo blanditiis optio consequuntur quis veritatis laudantium cum
-        consectetur animi magni nemo eveniet, reiciendis expedita, aperiam
-        laborum ut quaerat?
-      </p>
+      <Header />
+      <br />
+      <CryptoWidget />
+      <br />
+      <StocksWidget />
+      <br />
     </div>
   );
 };

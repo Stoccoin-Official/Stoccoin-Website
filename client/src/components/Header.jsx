@@ -1,4 +1,4 @@
-export default function Example() {
+export default function Header() {
   return (
     <div className="bg-white">
       <div className="relative isolate px-6 pt-20 lg:px-8">
@@ -37,8 +37,8 @@ export default function Example() {
           >
             <img
               src="./header.svg"
-              alt="your-image-description"
-              style={{ maxHeight: "50rem", maxWidth: "35rem", width: "100%" }}
+              alt="stoccoin-homepage-header"
+              style={{ height: "25rem", maxHeight: "50rem", maxWidth: "35rem", width: "100%" }}
             />
           </div>
         </div>
