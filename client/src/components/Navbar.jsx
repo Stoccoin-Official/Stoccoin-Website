@@ -12,8 +12,6 @@ import {
 import { Dialog } from "@headlessui/react";
 import { loginIMG, signupIMG } from "../assets/index";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import { FaUserAlt } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import Modal from "./Modal";
