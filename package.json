@@ -2,7 +2,7 @@
   "name": "stoccoin-website",
   "version": "1.0.0",
   "description": "Welcome to Stoccoin's GitHub repository! Here, you'll find all the code and resources needed to build and deploy our user-friendly news, trading platform for stocks and cryptocurrencies.",
-  "main": "server.js",
+  "main": "App.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
