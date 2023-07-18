@@ -46,6 +46,7 @@ const Ticker = () => {
   }, []);
 
   const tickerContainerStyle = {
+    maxWidth: '100%',
     width: '1000px',
     margin: '0 auto',
   };
