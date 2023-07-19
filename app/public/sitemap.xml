@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>http://localhost:5173/Login</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/Login#</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/SignUp</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/Dashboard</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/Stocks</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/Cryptocurrencies</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/News</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/NFT</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/Trade</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/Institutional</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/Derivatives</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://localhost:5173/Support</loc>
+	<lastmod>2023-07-19T11:30:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
