@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "API_KEY_HERE",
-  authDomain: "stoccoin-website.firebaseapp.com",
-  projectId: "stoccoin-website",
-  storageBucket: "stoccoin-website.appspot.com",
-  messagingSenderId: "1033424071835",
-  appId: "1:1033424071835:web:dde4cc100d714406ce6a3e",
+	apiKey: import.meta.env.VITE_API_KEY,
+	authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+	projectId: import.meta.env.VITE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_APP_ID,
 };
 
 // Initialize Firebase
