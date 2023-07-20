@@ -6,11 +6,11 @@ import Accordion from "../components/Accordion";
 import Pricing from "../components/Pricing";
 import Ticker from "../components/Ticker";
 
-const Homepage = ({ props }) => {
+const Homepage = ({ darkMode }) => {
   return (
     <div className="dark:bg-slate-900">
       <Header />
-      <Ticker />
+      <Ticker darkMode={darkMode} />
       <Stats />
       <Features />
       <Pricing />

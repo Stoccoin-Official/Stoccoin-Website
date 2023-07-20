@@ -34,7 +34,7 @@ export default function Example() {
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(false)}
     >
-      <div className="bg-white py-7 sm:py-35 pb-14">
+      <div className="bg-white py-7 sm:py-35 pb-14 dark:bg-slate-900">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-y-16 gap-x-8 text-center lg:grid-cols-3">
             {stats.map((stat) => (
@@ -42,10 +42,10 @@ export default function Example() {
                 key={stat.id}
                 className="mx-auto flex max-w-xs flex-col gap-y-4"
               >
-                <dt className="text-base leading-7 text-gray-600">
+                <dt className="text-base leading-7 text-gray-600 dark:text-cyan-400">
                   {stat.name}
                 </dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                <dd className="order-first text-3xl font-semibold tracking-tight dark:text-cyan-100 text-gray-900 sm:text-5xl">
                   {stat.suffix}
                   {counterOn && (
                     <CountUp

@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 
-const Ticker = () => {
+const Ticker = ({ darkMode }) => {
   const widgetContainerRef = useRef(null);
 
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
     script.async = true;
-    script.innerHTML = `
-      {
+    script.innerHTML =JSON.stringify({
         "symbols": [
           {
             "proName": "FOREXCOM:SPXUSD",
@@ -32,18 +31,17 @@ const Ticker = () => {
           }
         ],
         "showSymbolLogo": true,
-        "colorTheme": "light",
+        "colorTheme": darkMode ? "dark" : "light",
         "isTransparent": true,
         "displayMode": "adaptive",
         "locale": "in"
-      }
-    `;
+      });
     widgetContainerRef.current.appendChild(script);
 
     return () => {
       widgetContainerRef.current.removeChild(script);
     };
-  }, []);
+  }, [darkMode]);
 
   const tickerContainerStyle = {
     maxWidth: '100%',

@@ -57,77 +57,77 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex mt-16 m-10">
       <div className="my-auto hidden md:block md:w-1/2">
         <img src={signupIMG} alt="" />
       </div>
 
       {/* Signup Form */}
       <form className="md:w-1/2 flex flex-col items-start p-4 px-6 mx-auto gap-6 text-lg">
-        <h2 className="mx-auto text-2xl md:text-3xl font-bold">
+        <h2 className="mx-auto text-2xl md:text-3xl font-bold dark:text-cyan-100">
           Signup to our platform
         </h2>
         <div className="text-red-600"> {error && <p>{error}</p>}</div>
         <div className="w-full flex flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="fName">First Name</label>
+            <label htmlFor="fName" className="dark:text-cyan-300">First Name</label>
             <input
               type="text"
               name="fName"
               value={user.fName}
               onChange={handleChange}
               placeholder="Jhon"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500  dark:bg-slate-700 dark:text-cyan-50"
             />
           </div>
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="lName">Last Name</label>
+            <label htmlFor="lName" className="dark:text-cyan-300">Last Name</label>
             <input
               type="text"
               name="lName"
               value={user.lName}
               onChange={handleChange}
               placeholder="Doe"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500  dark:bg-slate-700 dark:text-cyan-50"
             />
           </div>
         </div>
         <div className="w-full flex flex-col items-start gap-2">
-          <label htmlFor="userName">Username</label>
+          <label htmlFor="userName" className="dark:text-cyan-300">Username</label>
           <input
             type="text"
             name="userName"
             value={user.userName}
             onChange={handleChange}
             placeholder="jhon007"
-            className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+            className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500  dark:bg-slate-700 dark:text-cyan-50"
           />
         </div>
         <div className="w-full flex flex-col items-start gap-2">
-          <label htmlFor="email">Your Email</label>
+          <label htmlFor="email" className="dark:text-cyan-300">Your Email</label>
           <input
             type="email"
             name="email"
             value={user.email}
             onChange={handleChange}
             placeholder="jhon@xyz.com"
-            className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+            className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500  dark:bg-slate-700 dark:text-cyan-50"
           />
         </div>
         <div className="w-full flex flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="pass">Create Password</label>
+            <label htmlFor="pass" className="dark:text-cyan-300">Create Password</label>
             <input
               type="password"
               name="pass"
               value={user.pass}
               onChange={handleChange}
               placeholder="********"
-              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+              className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500  dark:bg-slate-700 dark:text-cyan-50"
             />
           </div>
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="confirmPass">Confirm Password</label>
+            <label htmlFor="confirmPass" className="dark:text-cyan-300">Confirm Password</label>
             <input
               type="password"
               name="confirmPass"
@@ -136,8 +136,8 @@ const SignUp = () => {
               placeholder="********"
               className={
                 !user.confirmPass.length == 0 && user.confirmPass === user.pass
-                  ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500"
-                  : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500"
+                  ? "w-[100%] bg-slate-100 py-2 px-4 focus:outline-green-500  dark:bg-slate-700 dark:text-cyan-50"
+                  : "w-[100%] bg-slate-100 py-2 px-4 focus:outline-red-500  dark:bg-slate-700 dark:text-cyan-50"
               }
             />
           </div>
@@ -149,7 +149,7 @@ const SignUp = () => {
           Signup to our platform
         </button>
         <div className="mx-auto">
-          <p>
+          <p className="dark:text-cyan-400">
             Already have an account?{" "}
             <Link
               to="/Login"

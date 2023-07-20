@@ -46,7 +46,7 @@ const App = () => {
             <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
             <Suspense fallback={<FaCircleNotch className="spinner" size="5em" />}>
               <Routes>
-                <Route path="/" element={<Homepage />} />
+                <Route path="/" element={<Homepage darkMode={darkMode} />} />
                 <Route path="/Dashboard" element={<Dashboard />} />
                 <Route path="/Stocks" element={<Stocks darkMode={darkMode} />} />
                 <Route path="/Cryptocurrencies" element={<Cryptocurrencies darkMode={darkMode} />} />
