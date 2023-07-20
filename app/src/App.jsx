@@ -21,6 +21,7 @@ import { auth } from "./firebase/auth";
 
 const App = () => {
   const [user, setUser] = useState(null);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const authorizeUser = auth.onAuthStateChanged((authUser) => {
@@ -40,25 +41,29 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
-        <Suspense fallback={<FaCircleNotch className="spinner" size="5em" />}>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/Dashboard" element={<Dashboard />} />
-            <Route path="/Stocks" element={<Stocks />} />
-            <Route path="/Cryptocurrencies" element={<Cryptocurrencies />} />
-            <Route path="/News" element={<News />} />
-            <Route path="/NFT" element={<NFT />} />
-            <Route path="/Trade" element={<Trade />} />
-            <Route path="/Institutional" element={<Institutional />} />
-            <Route path="/Derivatives" element={<Derivatives />} />
-            <Route path="/Support" element={<Support />} />
-            <Route path="/SignUp" element={<SignUp />} />
-            <Route path="/Login" element={<Login />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-        <Footer />
+        <div className={darkMode ? "dark" : ""}>
+          <div className="dark:bg-slate-900">
+            <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+            <Suspense fallback={<FaCircleNotch className="spinner" size="5em" />}>
+              <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/Dashboard" element={<Dashboard />} />
+                <Route path="/Stocks" element={<Stocks />} />
+                <Route path="/Cryptocurrencies" element={<Cryptocurrencies darkMode={darkMode} />} />
+                <Route path="/News" element={<News />} />
+                <Route path="/NFT" element={<NFT />} />
+                <Route path="/Trade" element={<Trade />} />
+                <Route path="/Institutional" element={<Institutional />} />
+                <Route path="/Derivatives" element={<Derivatives />} />
+                <Route path="/Support" element={<Support />} />
+                <Route path="/SignUp" element={<SignUp />} />
+                <Route path="/Login" element={<Login />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+            <Footer />
+          </div>
+        </div>
       </BrowserRouter>
     </div>
   );

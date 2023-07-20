@@ -4,6 +4,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { auth } from "../firebase/auth";
 import { signOut } from "firebase/auth";
+import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
 
 const navigation = [
   { name: "Dashboard", route: "/Dashboard" },
@@ -17,7 +18,7 @@ const navigation = [
   { name: "Support", route: "/Support" },
 ];
 
-export default function Example() {
+export default function Example({ darkMode, setDarkMode }) {
   let navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -33,10 +34,10 @@ export default function Example() {
   };
 
   return (
-    <div className="bg-white">
+    <div className={darkMode ? "dark" : ""}>
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between p-6 lg:px-8 bg-white dark:bg-slate-900"
           aria-label="Global"
         >
           <div className="flex lg:flex-1 ">
@@ -59,7 +60,7 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="dark:text-cyan-100 h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-8">
@@ -67,7 +68,7 @@ export default function Example() {
               <NavLink to={item.route} key={item.name}>
                 <div
                   // href={item.href}
-                  className="nav text-sm font-semibold leading-6 text-gray-900 relative w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-indigo-600 after:rounded-full after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
+                  className="nav text-sm font-semibold leading-6 text-gray-900 relative w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-indigo-600 after:rounded-full after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center dark:text-cyan-100"
                 >
                   {item.name}
                 </div>
@@ -76,12 +77,24 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <button
-              className="text-sm font-semibold leading-6 text-gray-900 hover:bg-indigo-500 px-3 py-1 rounded-sm duration-200 ease-out hover:text-white"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:bg-indigo-500 px-3 py-1 rounded-sm duration-200 ease-out hover:text-white dark:text-cyan-100"
               onClick={logout}
             >
               Log out <span aria-hidden="true">&rarr;</span>
             </button>
           </div>
+          {darkMode
+            ?
+            <BsFillSunFill
+              className="ml-8 transform hover:scale-150 cursor-pointer text-xl text-yellow-200 hover:text-yellow-500 transition-all ease-in-out duration-300"
+              onClick={() => setDarkMode(false)}
+            />
+            :
+            <BsFillMoonStarsFill
+              onClick={() => setDarkMode(true)}
+              className="ml-8 transform hover:scale-150 cursor-pointer text-xl text-gray-700 hover:text-gray-800 transition-all ease-in-out duration-300"
+            />
+          }
         </nav>
         <Dialog
           as="div"

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Widget1 = () => {
+const Widget1 = ({ darkMode }) => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-screener.js';
@@ -11,7 +11,7 @@ const Widget1 = () => {
       defaultColumn: 'overview',
       screener_type: 'crypto_mkt',
       displayCurrency: 'USD',
-      colorTheme: 'light',
+      colorTheme: `${darkMode ? 'dark' : 'light'}`,
       locale: 'in',
     });
 
@@ -25,7 +25,7 @@ const Widget1 = () => {
         widgetContainer.innerHTML = '';
       }
     };
-  }, []);
+  }, [darkMode]);
 
   return (
     <div className="tradingview-widget-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>

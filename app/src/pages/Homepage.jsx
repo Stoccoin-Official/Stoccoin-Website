@@ -8,7 +8,7 @@ import Ticker from "../components/Ticker";
 
 const Homepage = ({ props }) => {
   return (
-    <div>
+    <div className="dark:bg-slate-900">
       <Header />
       <Ticker />
       <Stats />
