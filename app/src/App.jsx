@@ -36,7 +36,8 @@ const App = () => {
     };
   }, [user]);
 
-  return user ? (
+  // Always show the homepage regardless of user login status
+  return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
@@ -52,22 +53,12 @@ const App = () => {
             <Route path="/Institutional" element={<Institutional />} />
             <Route path="/Derivatives" element={<Derivatives />} />
             <Route path="/Support" element={<Support />} />
+            <Route path="/SignUp" element={<SignUp />} />
+            <Route path="/Login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
         <Footer />
-      </BrowserRouter>
-    </div>
-  ) : (
-    <div className="App">
-      <BrowserRouter>
-        <Suspense fallback={<FaCircleNotch className="spinner" size="5em" />}>
-          <Routes>
-            <Route path="/SignUp" element={<SignUp />} />
-            <Route path="/Login" element={<Login />} />
-            <Route path="*" element={<Login />} />
-          </Routes>
-        </Suspense>
       </BrowserRouter>
     </div>
   );
