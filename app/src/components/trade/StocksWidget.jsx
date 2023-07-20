@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 let tvScriptLoadingPromise;
 
-export default function StocksWidget() {
+export default function StocksWidget({ darkMode }) {
   const onLoadScriptRef = useRef();
 
   useEffect(
@@ -33,7 +33,7 @@ export default function StocksWidget() {
             symbol: "NASDAQ:AAPL",
             interval: "D",
             timezone: "Etc/UTC",
-            theme: "light",
+            theme: darkMode ? "dark" : "light",
             style: "1",
             locale: "in",
             toolbar_bg: "#f1f3f6",
@@ -44,7 +44,7 @@ export default function StocksWidget() {
         }
       }
     },
-    []
+    [darkMode]
   );
 
   return (

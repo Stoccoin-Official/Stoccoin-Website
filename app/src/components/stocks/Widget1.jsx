@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 
-const Widget1 = () => {
+const Widget1 = ({ darkMode }) => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js';
     script.async = true;
-    script.innerHTML = `{
-      "title": "Stocks",
-      "width": 1000,
-      "height": 800,
-      "locale": "in",
-      "showSymbolLogo": true,
-      "symbolsGroups": [
+    script.innerHTML = JSON.stringify({
+      title: "Stocks",
+      width: 1000,
+      height: 800,
+      locale: "in",
+      showSymbolLogo: true,
+      symbolsGroups: [
         {
           "name": "Financial",
           "symbols": [
@@ -96,12 +96,12 @@ const Widget1 = () => {
           ]
         }
       ],
-      "colorTheme": "light"
-    }`;
+      colorTheme: `${darkMode ? 'dark' : 'light'}`,
+    });
 
     const widgetContainer = document.createElement('div');
     widgetContainer.className = 'tradingview-widget-container';
-   
+
 
     widgetContainer.appendChild(script);
 
@@ -115,7 +115,7 @@ const Widget1 = () => {
         container.innerHTML = '';
       }
     };
-  }, []);
+  }, [darkMode]);
 
   return (
     <div className="tradingview-widget-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>

@@ -48,11 +48,11 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/Dashboard" element={<Dashboard />} />
-                <Route path="/Stocks" element={<Stocks />} />
+                <Route path="/Stocks" element={<Stocks darkMode={darkMode} />} />
                 <Route path="/Cryptocurrencies" element={<Cryptocurrencies darkMode={darkMode} />} />
-                <Route path="/News" element={<News />} />
+                <Route path="/News" element={<News darkMode={darkMode} />} />
                 <Route path="/NFT" element={<NFT />} />
-                <Route path="/Trade" element={<Trade />} />
+                <Route path="/Trade" element={<Trade darkMode={darkMode} />} />
                 <Route path="/Institutional" element={<Institutional />} />
                 <Route path="/Derivatives" element={<Derivatives />} />
                 <Route path="/Support" element={<Support />} />

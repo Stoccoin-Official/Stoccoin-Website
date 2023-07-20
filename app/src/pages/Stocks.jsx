@@ -1,11 +1,11 @@
 import Widget1 from "../components/stocks/Widget1";
 import Header from "../components/stocks/Header";
 
-const Stocks = () => {
+const Stocks = ({ darkMode }) => {
   return (
     <div>
       <Header />
-      <Widget1 />
+      <Widget1 darkMode={darkMode} />
       <br/>
     </div>
   );
