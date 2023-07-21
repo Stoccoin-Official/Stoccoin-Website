@@ -98,13 +98,13 @@ export default function Example({ darkMode, setDarkMode }) {
         </nav>
         <Dialog
           as="div"
-          className="lg:hidden"
+          className="lg:hidden flex"
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
         >
-          <div className="fixed inset-0 z-10" />
+          <div className="" />
           <Dialog.Panel
-            className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10`}
+            className={`fixed dark:bg-slate-800 inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ${darkMode ? "bg-slate-800" : "bg-white"}`}
           >
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
@@ -117,17 +117,17 @@ export default function Example({ darkMode, setDarkMode }) {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className={`h-6 w-6 ${darkMode ? "text-white" : ""}`} aria-hidden="true" />
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+              <div className={`-my-6 divide-y ${darkMode ? "divide-white" : "divide-gray-500/10"}`}>
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <NavLink to={item.route} key={item.name}>
                       <div
                         key={item.name}
-                        className="nav py-3 text-sm font-semibold leading-6 text-gray-900 relative w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-indigo-600 after:rounded-full after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
+                        className={`nav py-3 text-sm font-semibold leading-6 ${darkMode ? "text-cyan-300" : "text-gray-900"} relative w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-indigo-600 after:rounded-full after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center`}
                       >
                         {item.name}
                         {/* <NavLink to={item.route}>{item.name}</NavLink> */}
@@ -137,7 +137,7 @@ export default function Example({ darkMode, setDarkMode }) {
                 </div>
                 <div className="py-6">
                   <button
-                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className={`-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 ${darkMode ? "text-cyan-100 hover:bg-indigo-900 transition-all duration-200 ease-in-out" : "text-gray-900 hover:bg-gray-50 transition-all duration-200 ease-in-out"} `}
                     onClick={logout}
                   >
                     Log out
