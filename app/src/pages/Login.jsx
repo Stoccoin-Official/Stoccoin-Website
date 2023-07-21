@@ -44,39 +44,39 @@ const Login = () => {
   };
 
   return (
-    <div className="mt-16 flex">
+    <div className="mt-16 m-10 flex">
       {/* Login Form */}
       <form className="md:w-1/2 flex flex-col items-start p-4 px-6 mx-auto gap-6 text-lg">
-        <h2 className="mx-auto text-2xl md:text-3xl font-bold">
+        <h2 className="mx-auto text-2xl md:text-3xl font-bold dark:text-cyan-100">
           Login to our platform
         </h2>
         <div className="text-red-600"> {error && <p>{error}</p>}</div>
         <div className="w-full flex flex-col items-start gap-2">
-          <label htmlFor="email">Your Email</label>
+          <label htmlFor="email" className="dark:text-cyan-300">Your Email</label>
           <input
             type="email"
             name="email"
             value={user.email}
             onChange={handleChange}
             placeholder="name@company.com"
-            className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+            className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500 dark:bg-slate-700 dark:text-cyan-50"
           />
         </div>
         <div className="w-full flex flex-col items-start gap-2">
-          <label htmlFor="pass">Your Password</label>
+          <label htmlFor="pass" className="dark:text-cyan-300">Your Password</label>
           <input
             type="password"
             name="pass"
             value={user.pass}
             onChange={handleChange}
             placeholder="*********"
-            className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500"
+            className="w-[100%] bg-slate-100 py-2 px-4 focus:outline-indigo-500 dark:bg-slate-700 dark:text-cyan-50"
           />
         </div>
         <div className="w-full flex flex-row justify-between items-center">
           <div className="flex flex-row justify-between items-center">
             <input type="checkbox" name="checkbox" className="h-4 w-4" />
-            <label className="px-2" htmlFor="checkbox">
+            <label className="px-2 dark:text-cyan-400" htmlFor="checkbox">
               {" "}
               Remember Me
             </label>
@@ -96,7 +96,7 @@ const Login = () => {
           Login to your account
         </button>
         <div className="mx-auto">
-          <p>
+          <p className="dark:text-cyan-400">
             Not Registered?{" "}
             <Link
               to="/SignUp"

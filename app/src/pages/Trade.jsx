@@ -2,14 +2,14 @@ import Header from "../components/trade/Header";
 import StocksWidget from "../components/trade/StocksWidget";
 import CryptoWidget from "../components/trade/CryptoWidget";
 
-const Trade = () => {
+const Trade = ({ darkMode }) => {
   return (
     <div>
       <Header />
       <br />
-      <CryptoWidget />
+      <CryptoWidget darkMode={darkMode} />
       <br />
-      <StocksWidget />
+      <StocksWidget darkMode={darkMode} />
       <br />
     </div>
   );

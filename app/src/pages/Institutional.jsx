@@ -1,9 +1,9 @@
 
 const Institutional = () => {
   return (
-    <div>
-      <h1 className="text-5xl text-center p-8 m-8">Institutional</h1>
-      <p>
+    <div className="dark:bg-slate-900 flex justify-center flex-col items-center">
+      <h1 className="text-5xl text-center p-14 m-8  dark:text-cyan-100 ">Institutional</h1>
+      <p className="dark:text-cyan-100 text-center w-[1100px]">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
         placeat blanditiis, est non atque cum aut ratione pariatur quas eligendi
         iure earum illo quos aspernatur beatae nesciunt expedita. Quidem nam ad

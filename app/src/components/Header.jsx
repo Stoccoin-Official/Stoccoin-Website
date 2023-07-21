@@ -1,18 +1,18 @@
 export default function Header() {
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-slate-900">
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"></div>
         <div className="container mx-auto flex flex-wrap-reverse justify-center">
           <div className="md:w-1/2 max-w-xl w-full flex justify-center items-center my-1.5">
             <div className="md:text-left text-center">
               <h1
-                className="font-extrabold tracking-tight text-gray-900 text-7xl"
+                className="font-extrabold tracking-tight text-gray-900 text-7xl dark:text-cyan-100"
                 style={{ fontFamily: "'Open Sans Extra Bold', sans-serif" }}
               >
                 Stoccoin
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-cyan-400">
                 Learn-Invest-Repeat
               </p>
               <div className="mt-10 flex items-center md:justify-left gap-x-6 w-60 mx-auto md:mx-0">
@@ -24,7 +24,7 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="text-sm font-semibold leading-6 text-gray-900"
+                  className="text-sm font-semibold leading-6 text-gray-900 dark:text-cyan-50"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </a>

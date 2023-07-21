@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <div
-      className="mx-auto grid max-w-screen-xl grid-cols-1 gap-8 rounded-lg bg-white-100 px-8 py-16 text-gray-900 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 pt-55 pb-20"
+      className="mx-auto grid max-w-screen-xl grid-cols-1 gap-8 rounded-lg bg-white-100 px-8 py-16 dark:text-white text-gray-900 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 pt-55 pb-20"
       id="contact"
     >
       <div className="flex flex-col justify-between">
@@ -34,7 +34,7 @@ export default function App() {
           <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
             Get in Touch
           </h2>
-          <div className="mt-8 text-gray-700">
+          <div className="mt-8 text-gray-700 dark:text-cyan-300">
             Reach out to us with any questions or feedback you may have
           </div>
         </div>
@@ -45,32 +45,32 @@ export default function App() {
       <form onSubmit={handleSubmit}>
         <div className="">
           <div>
-            <span className="text-sm font-bold uppercase text-gray-600">
+            <span className="text-sm font-bold uppercase text-gray-600 dark:text-cyan-200">
               Full Name
             </span>
             <input
-              className="focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
+              className="dark:bg-slate-800 dark:text-cyan-300 focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
               type="text"
               placeholder=""
               onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="mt-8">
-            <span className="text-sm font-bold uppercase text-gray-600">
+            <span className="text-sm font-bold uppercase text-gray-600 dark:text-cyan-200">
               Email
             </span>
             <input
-              className="focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
+              className="dark:bg-slate-800 dark:text-cyan-300 focus:shadow-outline mt-2 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="mt-8">
-            <span className="text-sm font-bold uppercase text-gray-600">
+            <span className="text-sm font-bold uppercase text-gray-600 dark:text-cyan-200">
               Message
             </span>
             <textarea
-              className="focus:shadow-outline mt-2 h-32 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
+              className="dark:bg-slate-800 dark:text-cyan-300 focus:shadow-outline mt-2 h-32 w-full rounded-lg bg-gray-300 p-3 text-gray-900 focus:outline-none"
               defaultValue={""}
               onChange={(e) => setMessage(e.target.value)}
             />
