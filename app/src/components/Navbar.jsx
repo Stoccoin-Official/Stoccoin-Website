@@ -75,7 +75,7 @@ export default function Example({ darkMode, setDarkMode }) {
               </NavLink>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:pl-4">
             <button
               className="text-sm font-semibold leading-6 text-gray-900 hover:bg-indigo-500 px-3 py-1 rounded-sm duration-200 ease-out hover:text-white dark:text-cyan-100"
               onClick={logout}
@@ -86,13 +86,13 @@ export default function Example({ darkMode, setDarkMode }) {
           {darkMode
             ?
             <BsFillSunFill
-              className="ml-8 transform hover:scale-150 cursor-pointer text-xl text-yellow-200 hover:text-yellow-500 transition-all ease-in-out duration-300"
+              className="ml-8 lg:ml-4 transform hover:scale-150 cursor-pointer text-xl text-yellow-200 hover:text-yellow-500 transition-all ease-in-out duration-300"
               onClick={() => setDarkMode(false)}
             />
             :
             <BsFillMoonStarsFill
               onClick={() => setDarkMode(true)}
-              className="ml-8 transform hover:scale-150 cursor-pointer text-xl text-gray-700 hover:text-gray-800 transition-all ease-in-out duration-300"
+              className="ml-8 lg:ml-4 transform hover:scale-150 cursor-pointer text-xl text-gray-700 hover:text-gray-800 transition-all ease-in-out duration-300"
             />
           }
         </nav>

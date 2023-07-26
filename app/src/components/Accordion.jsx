@@ -22,7 +22,7 @@ function Accordion() {
   ]
 
   return (
-<section className="relative pt-20 pb-20 bg-blueGray-50 overflow-hidden">
+<section className="relative pt-20 pb-20 lg:pt-2.5 lg:pb-2.5 bg-blueGray-50 overflow-hidden">
   <img
     className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
     src="flaro-assets/images/faqs/gradient.svg"

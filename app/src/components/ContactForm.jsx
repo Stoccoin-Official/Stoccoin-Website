@@ -31,11 +31,11 @@ export default function App() {
     >
       <div className="flex flex-col justify-between">
         <div>
-          <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
+          <h2 className="text-4xl lg:pt-5 font-bold leading-tight lg:text-5xl">
             Get in Touch
           </h2>
-          <div className="mt-8 text-gray-700 dark:text-cyan-300">
-            Reach out to us with any questions or feedback you may have
+          <div className="mt-8 text-gray-700 lg:text-base lg:mt-4 dark:text-cyan-300">
+            Reach out to us with any questions or feedback
           </div>
         </div>
         <div className="mt-8 text-center">

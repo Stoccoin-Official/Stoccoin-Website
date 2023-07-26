@@ -24,7 +24,7 @@ function Footer() {
     <footer className="bg-white dark:bg-slate-900">
       <div className="container mx-auto px-4">
         <hr className="border-gray-700 my-8" />
-        <div className="md:flex-row justify-center items-center flex md:justify-around flex-col p-2 md:items-start md:1/4">
+        <div className="md:flex-row lg:pb-10 justify-center items-center flex md:justify-around flex-col p-2 md:items-start md:1/4">
           <div className="flex flex-col justify-center items-center gap-2 md:justify-start md:items-start md:1/4">
             <Link to="/">
               <img
@@ -35,7 +35,7 @@ function Footer() {
                 className="text-indigo-500 text-3xl mr-3 hover:transform hover:scale-110 transition duration-300 ease-in-out"
               />
             </Link>
-            <h1 className="text-6xl font-sans font-extrabold text-black dark:text-cyan-100 mb-4 text-center">Stoccoin</h1>
+            <h1 className="text-3xl font-sans font-extrabold text-black dark:text-cyan-100 mb-4 text-center">Stoccoin</h1>
             <p className="font-semibold font-sans text-center md:text-start w-full md:w-96 dark:text-cyan-400">
               Discover our mission to provide real-time market data and curated news feeds for stocks and cryptocurrencies. <br /> Stay informed and make confident investment decisions with our comprehensive resources.
             </p>
@@ -81,7 +81,7 @@ function Footer() {
           <div className="md:w-1/4 w-full px-3 mb-3 md:mb-0 text-left">
             <h2 className="text-3xl font-bold text-slate-800 mb-4 dark:text-cyan-100">Newsletter</h2>
             <form onSubmit={handleSubmit}>
-              <div className="flex flex-col">
+              <div className="flex flex-col pb-4">
                 <AiFillMail className="relative top-[30px] ml-2 text-gray-700" size={20} />
                 <input
                   type="email"
@@ -89,7 +89,7 @@ function Footer() {
                   className="bg-gray-200 rounded-md py-2 px-3 text-gray-900 w-[110%] mb-2 duration-200 ease-in-out focus:outline-gray-900 pl-10"
                 />
               </div>
-              <br />
+              
               <button
                 type="submit"
                 className="bg-gray-600 hover:bg-gray-700 rounded py-2 px-4 text-white w-[110%] duration-200 ease-out">
@@ -97,7 +97,7 @@ function Footer() {
               </button>
             </form>
             <br />
-            <p className="text-gray-500 text-center font-semibold w-[110%]">
+            <p className="text-gray-500 text-center lg:text-sm font-semibold w-[110%]">
               &copy; 2023 Stoccoin. All rights reserved.
             </p>
           </div>

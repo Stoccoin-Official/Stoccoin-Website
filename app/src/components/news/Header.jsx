@@ -7,7 +7,7 @@ export default function Header() {
           <div className="md:w-1/2 max-w-xl w-full flex justify-center items-center my-1.5">
             <div className="md:text-left text-center">
               <h1
-                className="font-extrabold tracking-tight dark:text-cyan-100 text-gray-900 text-6xl"
+                className="font-extrabold tracking-tight dark:text-cyan-100 text-gray-900 text-5xl"
                 style={{ fontFamily: "'Open Sans Extra Bold', sans-serif" }}
               >
                 News

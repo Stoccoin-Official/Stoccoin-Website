@@ -7,12 +7,12 @@ export default function Header() {
           <div className="md:w-1/2 max-w-xl w-full flex justify-center items-center my-1.5">
             <div className="md:text-left text-center">
               <h1
-                className="font-extrabold tracking-tight text-gray-900 text-7xl dark:text-cyan-100"
+                className="font-extrabold tracking-tight text-gray-900 text-5xl dark:text-cyan-100"
                 style={{ fontFamily: "'Open Sans Extra Bold', sans-serif" }}
               >
                 Stoccoin
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-cyan-400">
+              <p className="mt-6 text-lg leading-8 text-gray-600 lg:mt-0 dark:text-cyan-400">
                 Learn-Invest-Repeat
               </p>
               <div className="mt-10 flex items-center md:justify-left gap-x-6 w-60 mx-auto md:mx-0">

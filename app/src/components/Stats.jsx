@@ -34,7 +34,7 @@ export default function Example() {
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(false)}
     >
-      <div className="bg-white py-7 sm:py-35 pb-14 dark:bg-slate-900">
+      <div className="bg-white py-7 lg:pb-0.5 sm:py-35 pb-14 dark:bg-slate-900">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-y-16 gap-x-8 text-center lg:grid-cols-3">
             {stats.map((stat) => (
