@@ -19,8 +19,8 @@ This is a web application for trading stocks and crypto, as well as displaying n
 
 The technology stack used for this project is:
 
-- Frontend: React.js, Bootstrap
-- Backend: Node.js, Express.js, MongoDB
+- Frontend: React.js, Tailwind CSS
+- Backend: Node.js, Express.js, MongoDB, Firebase
 
 ## Getting started
 
