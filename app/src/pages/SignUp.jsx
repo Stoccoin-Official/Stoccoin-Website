@@ -14,47 +14,43 @@ const SignUp = () => {
     pass: "",
     confirmPass: "",
   });
-  const [error, setError] = useState("");
+const [error, setError] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setUser((prev) => ({ ...prev, [name]: value }));
-  };
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setUser((prev) => ({ ...prev, [name]: value }));
+};
 
-  const signup = (e) => {
-    e.preventDefault();
+const fields = [
+  { key: 'fName', error: 'First Name is Required!' },
+  { key: 'lName', error: 'Last Name is Required!' },
+  { key: 'userName', error: 'Username is Required!' },
+  { key: 'email', error: 'Email is Required!' },
+  { key: 'pass', error: 'Password is Required!' },
+  { key: 'confirmPass', error: 'Please confirm your Password!' },
+];
 
-    if (!user.fName) {
-      setError("First Name is Required!");
-      return;
-    } else if (!user.lName) {
-      setError("Last Name is Required!");
-      return;
-    } else if (!user.userName) {
-      setError("Username is Required!");
-      return;
-    } else if (!user.email) {
-      setError("Email is Required!");
-      return;
-    } else if (!user.pass) {
-      setError("Password is Required!");
-      return;
-    } else if (!user.confirmPass) {
-      setError("Please confirm your Password!");
-      return;
-    }
+const signup = (e) => {
+  e.preventDefault();
 
-    createUserWithEmailAndPassword(auth, user.email, user.pass)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        navigate("/");
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
-        setError(errorMessage);
-      });
-  };
+for (const field of fields) {
+  if (!user[field.key]) {
+    setError(field.error);
+    return;
+  }
+}
+
+createUserWithEmailAndPassword(auth, user.email, user.pass)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+    navigate("/");
+  })
+  .catch((error) => {
+    const errorMessage = error.message;
+    setError(errorMessage);
+  });
+};
 
   return (
     <div className="flex mt-16 m-10">
