@@ -6,7 +6,7 @@ const Stocks = ({ darkMode }) => {
     <div>
       <Header />
       <Widget1 darkMode={darkMode} />
-      <br/>
+      <br />
     </div>
   );
 };

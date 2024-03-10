@@ -6,11 +6,11 @@ const News = ({ darkMode }) => {
   return (
     <div>
       <Header />
-      <br/>
+      <br />
       <CryptoWidget darkMode={darkMode} />
-      <br/>
+      <br />
       <StocksWidget darkMode={darkMode} />
-      <br/>
+      <br />
     </div>
   );
 };
