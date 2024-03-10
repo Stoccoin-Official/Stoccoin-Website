@@ -40,13 +40,13 @@
   color: #888;
 }
 
-.active{
+.active {
   width: fit-content;
   position: relative;
 }
-.active::after{
+.active::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   height: 3px;
   background-color: #4f46e5;
@@ -65,10 +65,10 @@
 }
 
 @keyframes spin {
-from {
-  transform: rotate(0deg);
-}
-to {
-  transform: rotate(360deg);
-}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

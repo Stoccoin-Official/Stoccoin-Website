@@ -1,4 +1,4 @@
-name: 'Lock new issues'
+name: "Lock new issues"
 
 on:
   issues:
@@ -14,8 +14,8 @@ jobs:
       - uses: dessant/repo-lockdown@v3
         with:
           close-issue: false
-          exclude-issue-labels: 'status: ready for dev'
-          process-only: 'issues'
+          exclude-issue-labels: "status: ready for dev"
+          process-only: "issues"
           skip-closed-issue-comment: true
           issue-comment: >
             To reduce notifications, issues are locked. Your issue will be unlock when we will add label as `status: ready for dev`.  Check out the [contributing guide](https://github.com/Stoccoin-Official/Stoccoin-Website/blob/main/CONTRIBUTING.md) for more information.

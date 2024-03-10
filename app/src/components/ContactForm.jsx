@@ -1,10 +1,9 @@
 import { React, useState } from "react";
 
 export default function App() {
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,13 +14,13 @@ export default function App() {
       message,
     };
 
-    const res = await fetch('http://localhost:3000/mail', {
+    const res = await fetch("http://localhost:3000/mail", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(data)
-    })
+      body: JSON.stringify(data),
+    });
   };
 
   return (

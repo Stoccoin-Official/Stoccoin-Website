@@ -1,5 +1,3 @@
-
-
 const NFT = () => {
   return (
     <div className="dark:bg-slate-900 flex justify-center flex-col items-center">

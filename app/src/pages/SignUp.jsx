@@ -70,7 +70,9 @@ const SignUp = () => {
         <div className="text-red-600"> {error && <p>{error}</p>}</div>
         <div className="w-full flex flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="fName" className="dark:text-cyan-300">First Name</label>
+            <label htmlFor="fName" className="dark:text-cyan-300">
+              First Name
+            </label>
             <input
               type="text"
               name="fName"
@@ -81,7 +83,9 @@ const SignUp = () => {
             />
           </div>
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="lName" className="dark:text-cyan-300">Last Name</label>
+            <label htmlFor="lName" className="dark:text-cyan-300">
+              Last Name
+            </label>
             <input
               type="text"
               name="lName"
@@ -93,7 +97,9 @@ const SignUp = () => {
           </div>
         </div>
         <div className="w-full flex flex-col items-start gap-2">
-          <label htmlFor="userName" className="dark:text-cyan-300">Username</label>
+          <label htmlFor="userName" className="dark:text-cyan-300">
+            Username
+          </label>
           <input
             type="text"
             name="userName"
@@ -104,7 +110,9 @@ const SignUp = () => {
           />
         </div>
         <div className="w-full flex flex-col items-start gap-2">
-          <label htmlFor="email" className="dark:text-cyan-300">Your Email</label>
+          <label htmlFor="email" className="dark:text-cyan-300">
+            Your Email
+          </label>
           <input
             type="email"
             name="email"
@@ -116,7 +124,9 @@ const SignUp = () => {
         </div>
         <div className="w-full flex flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="pass" className="dark:text-cyan-300">Create Password</label>
+            <label htmlFor="pass" className="dark:text-cyan-300">
+              Create Password
+            </label>
             <input
               type="password"
               name="pass"
@@ -127,7 +137,9 @@ const SignUp = () => {
             />
           </div>
           <div className="flex flex-col items-start gap-2">
-            <label htmlFor="confirmPass" className="dark:text-cyan-300">Confirm Password</label>
+            <label htmlFor="confirmPass" className="dark:text-cyan-300">
+              Confirm Password
+            </label>
             <input
               type="password"
               name="confirmPass"

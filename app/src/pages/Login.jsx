@@ -52,7 +52,9 @@ const Login = () => {
         </h2>
         <div className="text-red-600"> {error && <p>{error}</p>}</div>
         <div className="w-full flex flex-col items-start gap-2">
-          <label htmlFor="email" className="dark:text-cyan-300">Your Email</label>
+          <label htmlFor="email" className="dark:text-cyan-300">
+            Your Email
+          </label>
           <input
             type="email"
             name="email"
@@ -63,7 +65,9 @@ const Login = () => {
           />
         </div>
         <div className="w-full flex flex-col items-start gap-2">
-          <label htmlFor="pass" className="dark:text-cyan-300">Your Password</label>
+          <label htmlFor="pass" className="dark:text-cyan-300">
+            Your Password
+          </label>
           <input
             type="password"
             name="pass"
@@ -123,7 +127,9 @@ const Login = () => {
             Reset Password
           </h2>
           <div className="w-full flex flex-col items-start gap-2">
-            <label for="email" className="dark:text-cyan-300">Your Email</label>
+            <label for="email" className="dark:text-cyan-300">
+              Your Email
+            </label>
             <input
               name="email"
               placeholder="jhon@xyz.com"
@@ -132,7 +138,9 @@ const Login = () => {
           </div>
           <div className="w-full items-center justify-between gap-8">
             <div className="flex flex-col items-start gap-2">
-              <label for="pass" className="dark:text-cyan-300">Create Password</label>
+              <label for="pass" className="dark:text-cyan-300">
+                Create Password
+              </label>
               <input
                 name="pass"
                 type="password"
@@ -141,7 +149,9 @@ const Login = () => {
               />
             </div>
             <div className="flex flex-col items-start gap-2">
-              <label for="confirmPass" className="dark:text-cyan-300">Confirm Password</label>
+              <label for="confirmPass" className="dark:text-cyan-300">
+                Confirm Password
+              </label>
               <input
                 name="confirmPass"
                 type="password"

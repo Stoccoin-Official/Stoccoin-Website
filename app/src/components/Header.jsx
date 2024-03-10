@@ -38,7 +38,12 @@ export default function Header() {
             <img
               src="./header.svg"
               alt="stoccoin-homepage-header"
-              style={{ height: "25rem", maxHeight: "50rem", maxWidth: "35rem", width: "100%" }}
+              style={{
+                height: "25rem",
+                maxHeight: "50rem",
+                maxWidth: "35rem",
+                width: "100%",
+              }}
             />
           </div>
         </div>

@@ -60,7 +60,10 @@ export default function Example({ darkMode, setDarkMode }) {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="dark:text-cyan-100 h-6 w-6" aria-hidden="true" />
+              <Bars3Icon
+                className="dark:text-cyan-100 h-6 w-6"
+                aria-hidden="true"
+              />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-8">
@@ -83,18 +86,17 @@ export default function Example({ darkMode, setDarkMode }) {
               Log out <span aria-hidden="true">&rarr;</span>
             </button>
           </div>
-          {darkMode
-            ?
+          {darkMode ? (
             <BsFillSunFill
               className="ml-8 lg:ml-4 transform hover:scale-150 cursor-pointer text-xl text-yellow-200 hover:text-yellow-500 transition-all ease-in-out duration-300"
               onClick={() => setDarkMode(false)}
             />
-            :
+          ) : (
             <BsFillMoonStarsFill
               onClick={() => setDarkMode(true)}
               className="ml-8 lg:ml-4 transform hover:scale-150 cursor-pointer text-xl text-gray-700 hover:text-gray-800 transition-all ease-in-out duration-300"
             />
-          }
+          )}
         </nav>
         <Dialog
           as="div"
@@ -117,11 +119,16 @@ export default function Example({ darkMode, setDarkMode }) {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className={`h-6 w-6 ${darkMode ? "text-white" : ""}`} aria-hidden="true" />
+                <XMarkIcon
+                  className={`h-6 w-6 ${darkMode ? "text-white" : ""}`}
+                  aria-hidden="true"
+                />
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className={`-my-6 divide-y ${darkMode ? "divide-white" : "divide-gray-500/10"}`}>
+              <div
+                className={`-my-6 divide-y ${darkMode ? "divide-white" : "divide-gray-500/10"}`}
+              >
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <NavLink to={item.route} key={item.name}>
