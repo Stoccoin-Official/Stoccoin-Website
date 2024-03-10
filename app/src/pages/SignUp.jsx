@@ -14,43 +14,43 @@ const SignUp = () => {
     pass: "",
     confirmPass: "",
   });
-const [error, setError] = useState("");
+  const [error, setError] = useState("");
 
-const handleChange = (e) => {
-  const { name, value } = e.target;
-  setUser((prev) => ({ ...prev, [name]: value }));
-};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser((prev) => ({ ...prev, [name]: value }));
+  };
 
-const fields = [
-  { key: 'fName', error: 'First Name is Required!' },
-  { key: 'lName', error: 'Last Name is Required!' },
-  { key: 'userName', error: 'Username is Required!' },
-  { key: 'email', error: 'Email is Required!' },
-  { key: 'pass', error: 'Password is Required!' },
-  { key: 'confirmPass', error: 'Please confirm your Password!' },
-];
+  const fields = [
+    { key: "fName", error: "First Name is Required!" },
+    { key: "lName", error: "Last Name is Required!" },
+    { key: "userName", error: "Username is Required!" },
+    { key: "email", error: "Email is Required!" },
+    { key: "pass", error: "Password is Required!" },
+    { key: "confirmPass", error: "Please confirm your Password!" },
+  ];
 
-const signup = (e) => {
-  e.preventDefault();
+  const signup = (e) => {
+    e.preventDefault();
 
-for (const field of fields) {
-  if (!user[field.key]) {
-    setError(field.error);
-    return;
-  }
-}
+    for (const field of fields) {
+      if (!user[field.key]) {
+        setError(field.error);
+        return;
+      }
+    }
 
-createUserWithEmailAndPassword(auth, user.email, user.pass)
-  .then((userCredential) => {
-    // Signed in
-    const user = userCredential.user;
-    navigate("/");
-  })
-  .catch((error) => {
-    const errorMessage = error.message;
-    setError(errorMessage);
-  });
-};
+    createUserWithEmailAndPassword(auth, user.email, user.pass)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        navigate("/");
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        setError(errorMessage);
+      });
+  };
 
   return (
     <div className="flex mt-16 m-10">
