@@ -5,12 +5,7 @@ const Support = () => {
         Support
       </h1>
       <p className="dark:text-cyan-100 text-center w-[1100px]">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate,
-        placeat blanditiis, est non atque cum aut ratione pariatur quas eligendi
-        iure earum illo quos aspernatur beatae nesciunt expedita. Quidem nam ad
-        illo blanditiis optio consequuntur quis veritatis laudantium cum
-        consectetur animi magni nemo eveniet, reiciendis expedita, aperiam
-        laborum ut quaerat?
+        The work for support is in progress.
       </p>
     </div>
   );
